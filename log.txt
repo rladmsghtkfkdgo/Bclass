@@ -1,10 +1,10 @@
-2024-06-17 11:37:26 UTC
+2024-06-17 12:53:06 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
-Early init took 0.08s
-Loading error handling took 0.05s
-Loading script took 0.86s
+Early init took 0.06s
+Loading error handling took 0.04s
+Loading script took 0.76s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 
@@ -14,7 +14,7 @@ File "game/h3.rpy", line 43: Line is indented, but the preceding say statement s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 1.41s
+Interface start took 0.14s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
