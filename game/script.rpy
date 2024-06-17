@@ -36,13 +36,7 @@ label start:
             "유튜브 추천 방송":
                 jump jn
             "산악 자전거 커뮤니티 추천":
-                jump yj
-            
-    label jn:
-        "제나"
-
-    label yj:
-        "유진"   
+                jump yj   
 
     label world2:
         with Pause(3.0)
@@ -57,9 +51,5 @@ label start:
                 jump jw
             "집도 완전 좋아보이잖아..?집구경이나 해볼까?":
                 jump mk1
-
-    label jw:
-        "지우"   
-        
 
     return
