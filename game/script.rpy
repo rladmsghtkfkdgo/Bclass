@@ -17,7 +17,7 @@ label start:
 
     e "두가지 세계가 있다냥.\n잘 생각하고 결정해라냥!"
 
-    menu first:
+    menu world_all:
         #hide 고양이소개그림
         "너의 선택을 존중한다냥"
         "현대사회":
