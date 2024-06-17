@@ -42,7 +42,7 @@ image street = "street.png"
 image bedroom = "bedroom.png"
 
 # 여기에서부터 게임이 시작합니다.
-label start:
+label jw:
 
     l "-거리-"
     play music "shinebgm.ogg"
