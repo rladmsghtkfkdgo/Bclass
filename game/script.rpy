@@ -41,7 +41,7 @@ label start:
     label world2:
         with Pause(3.0)
         
-        scene room2
+        scene hu_room2
         p "으 머리야..."
 
         p "여기가...판타지세계라고?"

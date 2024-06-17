@@ -7,9 +7,9 @@ image hu_looking="hu_looking.png"
 image hu_intro="hu_intro.png"
 image hu_intro1="hu_intro1.png"
 image hu_comein="hu_comein.png"
-image room="room.png"
-image room2="room2.png"
-image room3="room3.png"
+image hu_room="hu_room.png"
+image hu_room2="hu_room2.png"
+image hu_room3="hu_room3.png"
 # 게임에서 사용할 캐릭터를 정의합니다.
 
 define e = Character('푸리', color="#c8ffc8")
