@@ -1,1 +1,0 @@
-{"error": true, "size": [1280, 720], "name": "casanoba project", "version": "1.0", "location": {"label": {"mk1": ["game/h1.rpy", 1], "mk2": ["game/h2.rpy", 1], "firstgnight": ["game/h2_night.rpy", 1], "firstbnight": ["game/h2_night.rpy", 31]}, "define": {"gui.system_font": ["game/tl/None/common.rpym", 1504]}, "screen": {}, "transform": {}, "callable": {}}}
