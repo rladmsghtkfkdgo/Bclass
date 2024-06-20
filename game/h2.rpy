@@ -1,5 +1,5 @@
-label mk2:
-    #play sound 짹짹
+label mk1:
+    play sound 짹짹
     ph "일어나라 인간! 심심하다!"
     show hu_looking
     ph "오늘은 짐에게 무엇을 가르쳐주겠느냐?"

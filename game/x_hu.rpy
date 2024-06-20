@@ -4,6 +4,7 @@
 image hu_magic="hu_magic.png"
 image hu_huntingmouse="hu_huntingmouse.png"
 image hu_looking="hu_looking.png"
+image hu_crying="hu_crying.png"
 image hu_intro="hu_intro.png"
 image hu_intro1="hu_intro1.png"
 image hu_comein="hu_comein.png"
@@ -17,6 +18,7 @@ define e = Character('푸리', color="#c8ffc8")
 define pp = Character('pname',dynamic =True, color="#402fd6")
 define pname= "???"
 define pl=0
+define fade =Fade(0.5,0.0,0.5)
 #변수 표현은 "[변수]"
 init python:
 
