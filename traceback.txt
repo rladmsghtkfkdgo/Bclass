@@ -1,14 +1,14 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/jena_script.rpy", line 237, in script
+  File "game/jena2.rpy", line 61, in script
     jump j_io
 ScriptError: could not find label 'j_io'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/jena_script.rpy", line 237, in script
+  File "game/jena2.rpy", line 61, in script
     jump j_io
   File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
     rv = renpy.game.script.lookup(target)
@@ -19,4 +19,4 @@ ScriptError: could not find label 'j_io'.
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Thu Jun 20 22:10:50 2024
+Fri Jun 21 03:54:53 2024
