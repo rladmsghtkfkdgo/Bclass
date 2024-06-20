@@ -1,8 +1,8 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/jiwooking.rpy", line 49, in script
-    scene street
+  File "game/jiwooking.rpy", line 75, in script
+    scene home
   File "renpy/common/000window.rpy", line 119, in _window_auto_callback
     _window_hide(auto=True)
   File "renpy/common/000window.rpy", line 104, in _window_hide
@@ -12,8 +12,8 @@ OSError: Couldn't find file 'shinebgm.ogg'.
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/jiwooking.rpy", line 49, in script
-    scene street
+  File "game/jiwooking.rpy", line 75, in script
+    scene home
   File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1242, in execute
     statement_name("scene")
   File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 52, in statement_name
@@ -48,4 +48,4 @@ OSError: Couldn't find file 'shinebgm.ogg'.
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Fri Jun 21 07:08:28 2024
+Fri Jun 21 07:23:33 2024
