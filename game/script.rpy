@@ -1,6 +1,18 @@
 ﻿# 이 파일에 게임 스크립트를 입력합니다.
+define l=0
+init python:
 
+    def hogamm(l):
+        if (l>=50):
+            return "휴"
+        elif(l<=20):
+            return "마왕"
+        else:
+            return "르웨인 디카프리나 엘란트 휴"
+
+default h =Character(hogamm(l), color="#d53366")
 # 여기에서부터 게임이 시작합니다.
+
 label start:
     #play music "movie.ogg"
     #show 고양이캐릭터 영화 사자 그거마냥 움짤 되나 이거 확인해야하는디
@@ -17,7 +29,7 @@ label start:
 
     e "두가지 세계가 있다냥.\n잘 생각하고 결정해라냥!"
 
-    menu first:
+    menu world_all:
         #hide 고양이소개그림
         "너의 선택을 존중한다냥"
         "현대사회":
@@ -36,18 +48,12 @@ label start:
             "유튜브 추천 방송":
                 jump jn
             "산악 자전거 커뮤니티 추천":
-                jump yj
-            
-    label jn:
-        "제나"
-
-    label yj:
-        "유진"   
+                jump yj   
 
     label world2:
         with Pause(3.0)
         
-        scene room2
+        scene hu_room2
         p "으 머리야..."
 
         p "여기가...판타지세계라고?"
@@ -57,9 +63,5 @@ label start:
                 jump jw
             "집도 완전 좋아보이잖아..?집구경이나 해볼까?":
                 jump mk1
-
-    label jw:
-        "지우"   
-        
 
     return
