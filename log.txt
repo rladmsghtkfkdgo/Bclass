@@ -1,14 +1,12 @@
-2024-06-20 17:46:17 UTC
+2024-06-20 17:57:43 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
 Early init took 0.06s
 Loading error handling took 0.02s
-Loading script took 0.16s
+Loading script took 0.17s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-
-File "game/jena2.rpy", line 1: Unexpected indentation at start of file.
 
 File "game/jena_script.rpy", line 12: Line with id jn_08917b01 appears twice. The other line is game/jena1.rpy:12
 
@@ -127,6 +125,142 @@ File "game/jena_script.rpy", line 167: Line with id j_ka_dce03ebb appears twice.
 File "game/jena_script.rpy", line 168: Line with id j_ka_2275095d appears twice. The other line is game/jena1.rpy:168
 
 File "game/jena_script.rpy", line 170: Line with id j_ka_90372855 appears twice. The other line is game/jena1.rpy:170
+
+File "game/jena_script.rpy", line 178: Line with id j_ho_9ea2f78c appears twice. The other line is game/jena2.rpy:4
+
+File "game/jena_script.rpy", line 186: Line with id j_mu_f5e40a6b appears twice. The other line is game/jena2.rpy:12
+
+File "game/jena_script.rpy", line 195: Line with id j_qw_ed684e48 appears twice. The other line is game/jena2.rpy:21
+
+File "game/jena_script.rpy", line 196: Line with id j_qw_bcb700b4 appears twice. The other line is game/jena2.rpy:22
+
+File "game/jena_script.rpy", line 197: Line with id j_qw_325737f5 appears twice. The other line is game/jena2.rpy:23
+
+File "game/jena_script.rpy", line 198: Line with id j_qw_96b68381 appears twice. The other line is game/jena2.rpy:24
+
+File "game/jena_script.rpy", line 199: Line with id j_qw_0ebdc98a appears twice. The other line is game/jena2.rpy:25
+
+File "game/jena_script.rpy", line 200: Line with id j_qw_ea0df17f appears twice. The other line is game/jena2.rpy:26
+
+File "game/jena_script.rpy", line 201: Line with id j_qw_c642114a appears twice. The other line is game/jena2.rpy:27
+
+File "game/jena_script.rpy", line 204: Line with id j_er_f835c18f appears twice. The other line is game/jena2.rpy:30
+
+File "game/jena_script.rpy", line 205: Line with id j_er_fc3fe81f appears twice. The other line is game/jena2.rpy:31
+
+File "game/jena_script.rpy", line 206: Line with id j_er_96b68381 appears twice. The other line is game/jena2.rpy:32
+
+File "game/jena_script.rpy", line 207: Line with id j_er_0ebdc98a appears twice. The other line is game/jena2.rpy:33
+
+File "game/jena_script.rpy", line 208: Line with id j_er_ea0df17f appears twice. The other line is game/jena2.rpy:34
+
+File "game/jena_script.rpy", line 209: Line with id j_er_c642114a appears twice. The other line is game/jena2.rpy:35
+
+File "game/jena_script.rpy", line 212: Line with id j_tr_32beb8ef appears twice. The other line is game/jena2.rpy:38
+
+File "game/jena_script.rpy", line 213: Line with id j_tr_23f8573d appears twice. The other line is game/jena2.rpy:39
+
+File "game/jena_script.rpy", line 214: Line with id j_tr_d084b6f3 appears twice. The other line is game/jena2.rpy:40
+
+File "game/jena_script.rpy", line 215: Line with id j_tr_436920b4 appears twice. The other line is game/jena2.rpy:41
+
+File "game/jena_script.rpy", line 216: Line with id j_tr_2117d2f5 appears twice. The other line is game/jena2.rpy:42
+
+File "game/jena_script.rpy", line 217: Line with id j_tr_25ea79fc appears twice. The other line is game/jena2.rpy:43
+
+File "game/jena_script.rpy", line 218: Line with id j_tr_6718e91f appears twice. The other line is game/jena2.rpy:44
+
+File "game/jena_script.rpy", line 219: Line with id j_tr_e3aeef5d appears twice. The other line is game/jena2.rpy:45
+
+File "game/jena_script.rpy", line 220: Line with id j_tr_fea87b6d appears twice. The other line is game/jena2.rpy:46
+
+File "game/jena_script.rpy", line 224: Line with id j_we_1ad9099e appears twice. The other line is game/jena2.rpy:49
+
+File "game/jena_script.rpy", line 225: Line with id j_we_3109a141 appears twice. The other line is game/jena2.rpy:50
+
+File "game/jena_script.rpy", line 226: Line with id j_we_15beec35 appears twice. The other line is game/jena2.rpy:51
+
+File "game/jena_script.rpy", line 227: Line with id j_we_20b976b8 appears twice. The other line is game/jena2.rpy:52
+
+File "game/jena_script.rpy", line 228: Line with id j_we_aa8be011 appears twice. The other line is game/jena2.rpy:53
+
+File "game/jena_script.rpy", line 229: Line with id j_we_7bfba0ba appears twice. The other line is game/jena2.rpy:54
+
+File "game/jena_script.rpy", line 230: Line with id j_we_fea87b6d appears twice. The other line is game/jena2.rpy:55
+
+File "game/jena_script.rpy", line 234: Line with id j_yu_5e56d56b appears twice. The other line is game/jena2.rpy:58
+
+File "game/jena_script.rpy", line 242: Line with id j_ui_9352dab6 appears twice. The other line is game/jena2.rpy:66
+
+File "game/jena_script.rpy", line 244: Line with id j_ui_55b770ce appears twice. The other line is game/jena2.rpy:68
+
+File "game/jena_script.rpy", line 245: Line with id j_ui_b395e695 appears twice. The other line is game/jena2.rpy:69
+
+File "game/jena_script.rpy", line 246: Line with id j_ui_cb57c832 appears twice. The other line is game/jena2.rpy:70
+
+File "game/jena_script.rpy", line 247: Line with id j_ui_bdc19008 appears twice. The other line is game/jena2.rpy:71
+
+File "game/jena_script.rpy", line 251: Line with id j_ui_122baa02 appears twice. The other line is game/jena2.rpy:75
+
+File "game/jena_script.rpy", line 252: Line with id j_ui_9b06f9fc appears twice. The other line is game/jena2.rpy:76
+
+File "game/jena_script.rpy", line 253: Line with id j_ui_c4c192af appears twice. The other line is game/jena2.rpy:77
+
+File "game/jena_script.rpy", line 254: Line with id j_ui_791a59e7 appears twice. The other line is game/jena2.rpy:78
+
+File "game/jena_script.rpy", line 256: Line with id j_ui_ff59c233 appears twice. The other line is game/jena2.rpy:80
+
+File "game/jena_script.rpy", line 258: Line with id j_ui_e9e1e0c3 appears twice. The other line is game/jena2.rpy:82
+
+File "game/jena_script.rpy", line 259: Line with id j_ui_3ac386d1 appears twice. The other line is game/jena2.rpy:83
+
+File "game/jena_script.rpy", line 260: Line with id j_ui_dcc80e11 appears twice. The other line is game/jena2.rpy:84
+
+File "game/jena_script.rpy", line 265: Line with id j_ui_f0f2fe3f appears twice. The other line is game/jena2.rpy:88
+
+File "game/jena_script.rpy", line 266: Line with id j_ui_1927d28d appears twice. The other line is game/jena2.rpy:89
+
+File "game/jena_script.rpy", line 267: Line with id j_ui_2c1464ae appears twice. The other line is game/jena2.rpy:90
+
+File "game/jena_script.rpy", line 268: Line with id j_ui_e2e0cb3d appears twice. The other line is game/jena2.rpy:92
+
+File "game/jena_script.rpy", line 269: Line with id j_ui_1d960e4a appears twice. The other line is game/jena2.rpy:93
+
+File "game/jena_script.rpy", line 276: Line with id j_op_a5655164 appears twice. The other line is game/jena2.rpy:100
+
+File "game/jena_script.rpy", line 280: Line with id j_pa_ac50ce32 appears twice. The other line is game/jena2.rpy:104
+
+File "game/jena_script.rpy", line 282: Line with id j_pa_91854304 appears twice. The other line is game/jena2.rpy:105
+
+File "game/jena_script.rpy", line 283: Line with id j_pa_4d5f577f appears twice. The other line is game/jena2.rpy:106
+
+File "game/jena_script.rpy", line 286: Line with id j_pa_c2859e55 appears twice. The other line is game/jena2.rpy:109
+
+File "game/jena_script.rpy", line 287: Line with id j_pa_96fbe8a8 appears twice. The other line is game/jena2.rpy:110
+
+File "game/jena_script.rpy", line 288: Line with id j_pa_a0fa5f5f appears twice. The other line is game/jena2.rpy:111
+
+File "game/jena_script.rpy", line 289: Line with id j_pa_a9f42a15 appears twice. The other line is game/jena2.rpy:112
+
+File "game/jena_script.rpy", line 291: Line with id j_pa_6deb7841 appears twice. The other line is game/jena2.rpy:114
+
+File "game/jena_script.rpy", line 294: Line with id j_pa_c259ab8f appears twice. The other line is game/jena2.rpy:117
+
+File "game/jena_script.rpy", line 295: Line with id j_pa_bd759463 appears twice. The other line is game/jena2.rpy:118
+
+File "game/jena_script.rpy", line 298: Line with id j_pa_52e09a47 appears twice. The other line is game/jena2.rpy:121
+
+File "game/jena_script.rpy", line 301: Line with id j_pa_b9e86d4e appears twice. The other line is game/jena2.rpy:124
+
+File "game/jena_script.rpy", line 302: Line with id j_pa_2d437c4d appears twice. The other line is game/jena2.rpy:125
+
+File "game/jena_script.rpy", line 304: Line with id j_pa_513455be appears twice. The other line is game/jena2.rpy:127
+
+File "game/jena_script.rpy", line 307: Line with id j_pa_dc2ffaf2 appears twice. The other line is game/jena2.rpy:130
+
+File "game/jena_script.rpy", line 311: Line with id j_pa_f8ed9d6b appears twice. The other line is game/jena2.rpy:133
+
+File "game/jena_script.rpy", line 313: Line with id j_pa_68df4fd6 appears twice. The other line is game/jena2.rpy:136
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
