@@ -301,7 +301,7 @@ label jn:
                         js"서윤이에요, 서서윤."
                         js"이름이 어떻게 되세요?"
                         $jplayer_name = renpy.input("아! 제 이름은")
-                        jp "아! 제 이름은 [player_name](이)예요. "
+                        jp "아! 제 이름은 [jplayer_name](이)예요. "
                         hide j_su3
                         show j_su2 at right
                         jp "앞으로 인사하고 지내도 괜찮을까요?"
