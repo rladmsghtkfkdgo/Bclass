@@ -25,9 +25,36 @@ label j_lz:
             hide j_su2
             show j_su3 at right
             js "안녕하세요"
+            hide j_su3
+            show j_su2 at right
             jp "어디가세요?"
             "잠시 산책하러 가려구요"
             "[jp]씨는요?"
+            jp "앗, 저도 마침 산책 가려했는데 같이 가도 되나요?"
+            js"그래주시면 저야 좋죠"
+            show bg j_room_sa
+            "그 후, 같이 산책하며 이런저런 이야기를 나눴다."
+            "산책이 끝난 후.."
+            jp"번호 주실 수 있나요?"
+            jp"그래도 이웃인데 번호 가지고 있으면 좋을 것 같아서요."
+            hide j_su2
+            show j_su3 at right
+            js"좋아요"
+            hide j_su3
+            show j_su2 at right
+            js"휴대폰 주세요"
+            jp"감사합니다!"
+            jp"아 맞다"
+            jp"오늘 같이 산책해서 좋았어요"
+            jp"조심히 들어가세요!"
+            hide j_su2
+            show j_su3 at right
+            js"저도요, 조심히 들어가세요"
+            jp"네!"
+            show bg j_room1
+            "그 후, 집에 돌아와서 한동안 서윤에 대해 생각했다."
+
+                
 
 
 

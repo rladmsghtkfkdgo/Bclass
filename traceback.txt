@@ -1,22 +1,51 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/jena2.rpy", line 61, in script
-    jump j_io
-ScriptError: could not find label 'j_io'.
+  File "game/jiwooking.rpy", line 49, in script
+    scene street
+  File "renpy/common/000window.rpy", line 119, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 104, in _window_hide
+    renpy.with_statement(trans)
+OSError: Couldn't find file 'shinebgm.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/jena2.rpy", line 61, in script
-    jump j_io
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'j_io'.
+  File "game/jiwooking.rpy", line 49, in script
+    scene street
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1242, in execute
+    statement_name("scene")
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 52, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 119, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 104, in _window_hide
+    renpy.with_statement(trans)
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 3022, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'shinebgm.ogg'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Fri Jun 21 04:33:36 2024
+Fri Jun 21 07:08:28 2024
