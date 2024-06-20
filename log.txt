@@ -1,11 +1,11 @@
-2024-06-20 17:57:43 UTC
+2024-06-20 18:14:58 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
 Early init took 0.06s
 Loading error handling took 0.02s
-Loading script took 0.17s
-Loading save slot metadata took 0.04s
+Loading script took 0.11s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 
 File "game/jena_script.rpy", line 12: Line with id jn_08917b01 appears twice. The other line is game/jena1.rpy:12
@@ -264,7 +264,7 @@ File "game/jena_script.rpy", line 313: Line with id j_pa_68df4fd6 appears twice.
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.17s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
