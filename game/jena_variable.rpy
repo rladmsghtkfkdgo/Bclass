@@ -7,6 +7,7 @@ define jplayer_name = "플레이어이름"
 define jp = Character("jplayer_name",dynamic = True, color="#9fbaff")
 define jhh = Character('헬스 트레이너', color="#9fdfff")
 define jco = Character('편의점 점원', color="#ede8ab")
+define fade = Fade(0.5,0.0,0.5)
 
 image bg j_room1 = "j_room1.jpg" #거실
 image bg j_room_bo = "j_room_bo.png" #아파트 복도
@@ -25,8 +26,6 @@ image j_labe_3 = "j_labe_3.png" #3시간 후
 image j_labe_za = "j_labe_za.png" #잠시 후
 image j_labe_da = "j_labe_da.png" #다음날 아침
 image j_labe_ge = "j_labe_ge.png" #몇 개월 후
-
-
 
 image j_hand = "j_hand1.png" #핸드폰&손
 image j_alm = "j_utb_1.png" #유튜브 알람

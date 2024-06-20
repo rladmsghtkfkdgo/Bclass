@@ -19,6 +19,16 @@ label j_lz:
 
         label j_xc:
             "꽤 자주 마주쳐 같이 움직일 떄도 있다."
+            scene bg j_room_bo
+            show j_su2 at right
+            jp "아, 서윤씨! 안녕하세요!"
+            hide j_su2
+            show j_su3 at right
+            js "안녕하세요"
+            jp "어디가세요?"
+            "잠시 산책하러 가려구요"
+            "[jp]씨는요?"
+
 
 
 

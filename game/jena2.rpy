@@ -137,12 +137,12 @@ label j_ho:
                     hide j_su3
                     jump j_sd
                     label j_sd:
-                        jw "이제 편의점 가야지."
+                        jp "이제 편의점 가야지."
                         show bg j_room_co
                         show j_co_1 at left
                         jco "안녕하세요, Gu입니다."
-                        jw "안녕하세요."
-                        jw "흠.. 뭐 먹지?"
+                        jp "안녕하세요."
+                        jp "흠.. 뭐 먹지?"
                         menu:
                             "따끈한 라면 먹자":
                                 jump j_df
@@ -151,7 +151,7 @@ label j_ho:
                             "뭘 고민해, 둘 다 먹자":
                                 jump j_gh
                         label j_df:
-                            jw "계산해 주세요."
+                            jp "계산해 주세요."
                             play sound "j_Beep.ogg"
                             jco "(삑)"
                             play sound "j_dodo.ogg"
@@ -159,7 +159,7 @@ label j_ho:
                             jco "감사합니다."
                             jump j_hj
                         label j_fg:
-                            jw "계산해 주세요."
+                            jp "계산해 주세요."
                             play sound "j_Beep.ogg"
                             jco "(삑)"
                             play sound "j_dodo.ogg"
@@ -167,7 +167,7 @@ label j_ho:
                             jco "감사합니다."
                             jump j_hj
                         label j_gh:
-                            jw "계산해 주세요."
+                            jp "계산해 주세요."
                             play sound "j_Beep.ogg"
                             jco "(삑)"
                             play sound "j_dodo.ogg"
@@ -180,10 +180,10 @@ label j_ho:
                             jump j_kl
                         label j_jk:
                             "과식했더니 속이 더부룩하다."
-                            jw "앞으로는 적당히 먹어야지.."
+                            jp "앞으로는 적당히 먹어야지.."
                             jump j_kl
                         label j_kl:
-                            jw "밥도 먹었겠다, 집으로 돌아가자"
+                            jp "밥도 먹었겠다, 집으로 돌아가자"
                             hide bg j_room_co2
                             show bg j_room1
                             "그 후, 침대에 누워 오늘 일을 떠올리며 이른 잠에 들었다."
