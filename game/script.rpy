@@ -1,17 +1,4 @@
 ﻿# 이 파일에 게임 스크립트를 입력합니다.
-define l=0
-init python:
-
-    def hogamm(l):
-        if (l>=50):
-            return "휴"
-        elif(l<=20):
-            return "마왕"
-        else:
-            return "르웨인 디카프리나 엘란트 휴"
-
-default h =Character(hogamm(l), color="#d53366")
-# 여기에서부터 게임이 시작합니다.
 
 label start:
     #play music "movie.ogg"
@@ -51,17 +38,17 @@ label start:
                 jump yj   
 
     label world2:
-        with Pause(3.0)
+        with Pause(2.0)
         
         scene hu_room2
-        p "으 머리야..."
+        "으 머리야..."
 
-        p "여기가...판타지세계라고?"
+        "여기가...판타지세계라고?"
 
         menu:
             "뭐...일단 밖에 나가볼까?":
                 jump jw
             "집도 완전 좋아보이잖아..?집구경이나 해볼까?":
-                jump mk1
+                jump mk
 
     return
