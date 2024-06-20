@@ -1,36 +1,136 @@
-2024-06-20 17:27:01 UTC
+2024-06-20 17:46:17 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
 Early init took 0.06s
-Loading error handling took 0.03s
-Loading script took 0.27s
+Loading error handling took 0.02s
+Loading script took 0.16s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.10s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
+
+File "game/jena2.rpy", line 1: Unexpected indentation at start of file.
+
+File "game/jena_script.rpy", line 12: Line with id jn_08917b01 appears twice. The other line is game/jena1.rpy:12
+
+File "game/jena_script.rpy", line 15: Line with id jn_9ea2f78c appears twice. The other line is game/jena1.rpy:15
+
+File "game/jena_script.rpy", line 18: Line with id jn_86d3a961 appears twice. The other line is game/jena1.rpy:18
+
+File "game/jena_script.rpy", line 19: Line with id jn_a76d9114 appears twice. The other line is game/jena1.rpy:19
+
+File "game/jena_script.rpy", line 21: Line with id jn_88b6c238 appears twice. The other line is game/jena1.rpy:21
+
+File "game/jena_script.rpy", line 25: Line with id jn_7c95f426 appears twice. The other line is game/jena1.rpy:25
+
+File "game/jena_script.rpy", line 31: Line with id j_fir_2e9ea6a4 appears twice. The other line is game/jena1.rpy:31
+
+File "game/jena_script.rpy", line 34: Line with id j_fir_9ea2f78c appears twice. The other line is game/jena1.rpy:34
+
+File "game/jena_script.rpy", line 38: Line with id j_fir_5f4176ac appears twice. The other line is game/jena1.rpy:38
+
+File "game/jena_script.rpy", line 51: Line with id j_bab_954b01b0 appears twice. The other line is game/jena1.rpy:51
+
+File "game/jena_script.rpy", line 60: Line with id j_two_ff1fad4a appears twice. The other line is game/jena1.rpy:60
+
+File "game/jena_script.rpy", line 61: Line with id j_two_9c078410 appears twice. The other line is game/jena1.rpy:61
+
+File "game/jena_script.rpy", line 62: Line with id j_two_2656d5fd appears twice. The other line is game/jena1.rpy:62
+
+File "game/jena_script.rpy", line 64: Line with id j_two_9ea2f78c appears twice. The other line is game/jena1.rpy:64
+
+File "game/jena_script.rpy", line 66: Line with id j_two_35f01493 appears twice. The other line is game/jena1.rpy:66
+
+File "game/jena_script.rpy", line 67: Line with id j_two_eaa9ae04 appears twice. The other line is game/jena1.rpy:67
+
+File "game/jena_script.rpy", line 69: Line with id j_two_98073953 appears twice. The other line is game/jena1.rpy:69
+
+File "game/jena_script.rpy", line 72: Line with id j_two_b2e38ec4 appears twice. The other line is game/jena1.rpy:72
+
+File "game/jena_script.rpy", line 75: Line with id j_two_39baf620 appears twice. The other line is game/jena1.rpy:75
+
+File "game/jena_script.rpy", line 78: Line with id j_two_827774ec appears twice. The other line is game/jena1.rpy:78
+
+File "game/jena_script.rpy", line 79: Line with id j_two_b3884a2b appears twice. The other line is game/jena1.rpy:79
+
+File "game/jena_script.rpy", line 80: Line with id j_two_a3297acf appears twice. The other line is game/jena1.rpy:80
+
+File "game/jena_script.rpy", line 85: Line with id j_na_fa08c22d appears twice. The other line is game/jena1.rpy:85
+
+File "game/jena_script.rpy", line 87: Line with id j_na_e879fe87 appears twice. The other line is game/jena1.rpy:87
+
+File "game/jena_script.rpy", line 90: Line with id j_muc_c829ebf9 appears twice. The other line is game/jena1.rpy:90
+
+File "game/jena_script.rpy", line 91: Line with id j_muc_5a78b770 appears twice. The other line is game/jena1.rpy:91
+
+File "game/jena_script.rpy", line 92: Line with id j_muc_674e1e4c appears twice. The other line is game/jena1.rpy:92
+
+File "game/jena_script.rpy", line 96: Line with id j_utb_61e4e646 appears twice. The other line is game/jena1.rpy:96
+
+File "game/jena_script.rpy", line 97: Line with id j_utb_1ea5c032 appears twice. The other line is game/jena1.rpy:97
+
+File "game/jena_script.rpy", line 99: Line with id j_utb_9ea2f78c appears twice. The other line is game/jena1.rpy:99
+
+File "game/jena_script.rpy", line 101: Line with id j_utb_ff90ce6e appears twice. The other line is game/jena1.rpy:101
+
+File "game/jena_script.rpy", line 102: Line with id j_utb_f5f8886b appears twice. The other line is game/jena1.rpy:102
+
+File "game/jena_script.rpy", line 103: Line with id j_utb_509eac3c appears twice. The other line is game/jena1.rpy:103
+
+File "game/jena_script.rpy", line 108: Line with id j_vip_e0e6ad40 appears twice. The other line is game/jena1.rpy:108
+
+File "game/jena_script.rpy", line 111: Line with id j_vip_bee64edd appears twice. The other line is game/jena1.rpy:111
+
+File "game/jena_script.rpy", line 112: Line with id j_vip_998f6ff7 appears twice. The other line is game/jena1.rpy:112
+
+File "game/jena_script.rpy", line 121: Line with id j_hi_49b978f4 appears twice. The other line is game/jena1.rpy:121
+
+File "game/jena_script.rpy", line 122: Line with id j_hi_13d660ef appears twice. The other line is game/jena1.rpy:122
+
+File "game/jena_script.rpy", line 127: Line with id j_by_c7583c41 appears twice. The other line is game/jena1.rpy:127
+
+File "game/jena_script.rpy", line 130: Line with id j_by_ec7cf1e7 appears twice. The other line is game/jena1.rpy:130
+
+File "game/jena_script.rpy", line 133: Line with id j_ry_4c8640a0 appears twice. The other line is game/jena1.rpy:133
+
+File "game/jena_script.rpy", line 142: Line with id j_ma_cf7b5819 appears twice. The other line is game/jena1.rpy:142
+
+File "game/jena_script.rpy", line 143: Line with id j_ma_78688ba5 appears twice. The other line is game/jena1.rpy:143
+
+File "game/jena_script.rpy", line 145: Line with id j_ma_9f28287b appears twice. The other line is game/jena1.rpy:145
+
+File "game/jena_script.rpy", line 147: Line with id j_ma_9f53f67f appears twice. The other line is game/jena1.rpy:147
+
+File "game/jena_script.rpy", line 148: Line with id j_ma_5f294e73 appears twice. The other line is game/jena1.rpy:148
+
+File "game/jena_script.rpy", line 150: Line with id j_ma_d2e6a86e appears twice. The other line is game/jena1.rpy:150
+
+File "game/jena_script.rpy", line 151: Line with id j_ma_fbfddef5 appears twice. The other line is game/jena1.rpy:151
+
+File "game/jena_script.rpy", line 152: Line with id j_ma_da42ecbd appears twice. The other line is game/jena1.rpy:152
+
+File "game/jena_script.rpy", line 156: Line with id j_ka_0da8c9f4 appears twice. The other line is game/jena1.rpy:156
+
+File "game/jena_script.rpy", line 157: Line with id j_ka_83785779 appears twice. The other line is game/jena1.rpy:157
+
+File "game/jena_script.rpy", line 160: Line with id j_ka_2f9832b0 appears twice. The other line is game/jena1.rpy:160
+
+File "game/jena_script.rpy", line 161: Line with id j_ka_9aaab7f0 appears twice. The other line is game/jena1.rpy:161
+
+File "game/jena_script.rpy", line 162: Line with id j_ka_dfcf53e6 appears twice. The other line is game/jena1.rpy:162
+
+File "game/jena_script.rpy", line 163: Line with id j_ka_1b83638b appears twice. The other line is game/jena1.rpy:163
+
+File "game/jena_script.rpy", line 166: Line with id j_ka_55ef9c34 appears twice. The other line is game/jena1.rpy:166
+
+File "game/jena_script.rpy", line 167: Line with id j_ka_dce03ebb appears twice. The other line is game/jena1.rpy:167
+
+File "game/jena_script.rpy", line 168: Line with id j_ka_2275095d appears twice. The other line is game/jena1.rpy:168
+
+File "game/jena_script.rpy", line 170: Line with id j_ka_90372855 appears twice. The other line is game/jena1.rpy:170
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.12s
+Interface start took 0.17s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
