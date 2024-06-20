@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label j_gh is defined twice, at File "game/jena2.rpy", line 168:
-                        label j_gh:
-and File "game/jena2.rpy", line 176:
-                        label j_gh:
-
+File "game/jena3.rpy", line 2: expected statement.
+    def ending():
+              ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Jun 21 03:19:20 2024
+Fri Jun 21 03:33:20 2024

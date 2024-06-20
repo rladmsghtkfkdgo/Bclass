@@ -24,6 +24,7 @@ image j_labe_2 = "j_labe_2.png" #2시간 후
 image j_labe_3 = "j_labe_3.png" #3시간 후
 image j_labe_za = "j_labe_za.png" #잠시 후
 image j_labe_da = "j_labe_da.png" #다음날 아침
+image j_labe_ge = "j_labe_ge.png" #몇 개월 후
 
 
 

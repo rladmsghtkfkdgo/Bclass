@@ -134,6 +134,7 @@ label j_ho:
                     $u = +20
                     
                     "그 후, 서윤을 배웅했다."
+                    hide j_su3
                     jump j_sd
                     label j_sd:
                         jw "이제 편의점 가야지."
@@ -172,7 +173,23 @@ label j_ho:
                             play sound "j_dodo.ogg"
                             jco "3800원입니다."
                             jco "감사합니다."
-                            jump j_hj
+                            jump j_jk
                         label j_hj:
-                            "ji"
+                            show bg j_room_co2
+                            "적당히 먹어 기분이 좋다"
+                            jump j_kl
+                        label j_jk:
+                            "과식했더니 속이 더부룩하다."
+                            jw "앞으로는 적당히 먹어야지.."
+                            hide bg j_room_co2
+                            jump j_kl
+                        label j_kl:
+                            jw "밥도 먹었겠다, 집으로 돌아가자"
+                            show bg j_room1
+                            "그 후, 침대에 누워 오늘 일을 떠올리며 이른 잠에 들었다."
+                            jump j_lz
+
+                        
+
+                        
                             
