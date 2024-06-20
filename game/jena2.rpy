@@ -173,5 +173,6 @@ label j_ho:
                             jco "3800원입니다."
                             jco "감사합니다."
                             jump j_hj
-                        label j_gh:
+                        label j_hj:
+                            "ji"
                             
