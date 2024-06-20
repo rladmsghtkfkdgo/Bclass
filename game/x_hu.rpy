@@ -12,8 +12,20 @@ image hu_room2="hu_room2.png"
 image hu_room3="hu_room3.png"
 # 게임에서 사용할 캐릭터를 정의합니다.
 
-define e = Character('푸리', color="#c8ffc8")
-define p = Character('name',dynamic =True, color="#402fd6")
-define name= "???"
-
 #변수 표현은 "[변수]"
+define e = Character('푸리', color="#c8ffc8")
+define pp = Character('pname',dynamic =True, color="#402fd6")
+define pname= "???"
+define pl=0
+#변수 표현은 "[변수]"
+init python:
+
+    def hogamm(pl):
+        if (pl>=50):
+            return "휴"
+        elif(pl<=20):
+            return "마왕"
+        else:
+            return "르웨인 디카프리나 엘란트 휴"
+
+default ph =Character(hogamm(pl), color="#d53366")
