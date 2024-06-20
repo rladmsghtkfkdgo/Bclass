@@ -6,18 +6,18 @@
 
 # 여기에서부터 게임이 시작합니다.
 label jn:
-    scene bg room1
+    scene bg j_room1
 
     play sound "j_dodo.ogg"
     "유튜브에서 알람이 왔다"
-    show hand
-    show alm
+    show j_hand
+    show j_alm
     " "
-    hide alm
-    show utb
+    hide j_alm
+    show j_utb
     jw"아, 유튜브 알람이네"
     jw"이왕 들어온거 유튜브나 볼까"
-    hide utb
+    hide j_utb
     "뭐 볼까?"
 
     menu:
@@ -25,15 +25,15 @@ label jn:
             "(유피아의 영상이 뜬다)"
             jump j_fir
         "숏츠 보자":
-            show upi_1
+            show j_upi_1
             jump j_fir
     label j_fir:
         jw "요즘 이 사람 많이 보이네"
-        hide upi_1
-        show labe_2
+        hide j_upi_1
+        show j_labe_2
         " "
-        hide hand
-        hide labe_2
+        hide j_hand
+        hide j_labe_2
 
         jw"유튜브만 2시간 봤네, 슬 다른거 할까?"
     
@@ -60,17 +60,17 @@ label jn:
                 jw"오랜만에 치킨 먹을까.."
                 "(뚜르르)"
                 jw"네, 여기 00아파트 00동...."
-                show labe_za
+                show j_labe_za
                 " "
-                hide labe_za
+                hide j_labe_za
                 "(띵동)"
                 jw"오 왔다!"
-                scene bg room_bo
+                scene bg j_room_bo
                 "(문을 연다)"
-                show su1 at right
+                show j_su1 at right
                 
                 jw ".....!"
-                scene bg room1
+                scene bg j_room1
                 hide su1
                 "놀라서 인사도 잊어버린 채 다시 들어왔다."
                 $u = -10
@@ -95,19 +95,19 @@ label jn:
     label j_utb:
         jw "아니다."
         jw "보는 김에 마저 볼까?"
-        show labe_3
+        show j_labe_3
         " "
-        hide labe_3
+        hide j_labe_3
         jw "벌써 시간이.."
         jw "저녁 먹어야겠다."
         jw "배달시켜 먹어야지"
         jump j_two
 
     label j_vip:
-        scene bg room_bo
+        scene bg j_room_bo
         "집을 나선다"
         
-        show su1 at right
+        show j_su1 at right
         "어, 옆집사람이네.."
         "어쩌지?"
         menu:
@@ -116,17 +116,17 @@ label jn:
             "갑작스러운 만남에 당황스러워한다.":
                 jump j_by
         label j_hi:
-            hide su1
-            show su2 at right
+            hide j_su1
+            show j_su2 at right
             "(꾸벅)"
             "옆집 사람도 목례하며 집으로 들어간다."
             $u = +10
-            hide su2
+            hide j_su2
             jump j_ry
         label j_by:
             "당황한 사이 옆집 사람이 들어가버렸다. "
             $u = -10
-            hide su1
+            hide j_su1
             jw"아.. 어쩔 수 없지"
             jump j_ry
         label j_ry:
@@ -141,12 +141,12 @@ label jn:
             label j_ma:
                 jw"아 그랬었지"
                 jw"장 보러 가자"
-                show bg room_k
+                show bg j_room_k
                 "그 후, 장 봐온 것들로 음식을 만들어 먹었다."
-                show food_pa
+                show j_food_pa
                 jw"음, 맛있네~"
                 jw"요리.. 꽤 재능 있을지도?"
-                hide food_pa
+                hide j_food_pa
                 jw"아.. 근데 설거지.."
                 jw"일단 자고 일어나서 할까.."
                 "그 후, 피곤해서 금방 잠들었다."
@@ -155,28 +155,28 @@ label jn:
             label j_ka:
                 jw"아, 그랬었지"
                 jw"운동하러 가자"
-                scene bg room_h
-                show hh_1 at left
+                scene bg j_room_h
+                show j_hh_1 at left
                 jhh"오랜만에 오셨네요."
                 jw"네, 오랜만에 운동하려 왔어요"
                 jhh "즐거운 운동되세요."
                 jw "네!"
-                hide hh_1
+                hide j_hh_1
 
                 "그 후, 열심히 운동했다"
                 jw"너무 무리했나?"
                 jw"집가서 쉬어야겠다."
-                scene bg room1
+                scene bg j_room1
                 "너무 무리해서인지 집에 돌아오자마자 뻗어서 잤다"
                 jump j_ho
 
 
 
     label j_ho:
-        show bg room1
-        show labe_da
+        show bg j_room1
+        show j_labe_da
         " "
-        hide labe_da
+        hide j_labe_da
         menu:
             "지금 일어날까?":
                 jump j_mu
@@ -238,16 +238,16 @@ label jn:
                     "밖에서 먹자":
                         jump j_ui
                 label j_ui:
-                    scene bg room_bo
+                    scene bg j_room_bo
                     "집을 나선다."
-                    scene bg room_ca
+                    scene bg j_room_ca
                     jw"어,"
                     jw"고양이다!"
                     jw"배고픈가..?"
                     jw"뭐라도 사올까.."
-                    hide bg room_ca
-                    show bg room_co
-                    show co_1 at left
+                    hide bg j_room_ca
+                    show bg j_room_co
+                    show j_co_1 at left
                     jco "안녕하세요, Gu입니다."
                     jw "안녕하세요."
                     jw "흠.. 츄르면 되려나?"
@@ -258,9 +258,9 @@ label jn:
                     jco "3800원입니다."
                     jco "감사합니다, 또 오세요"
                     jw "안녕히 계세요~"
-                    hide co_1
-                    hide bg room_co
-                    show bg room_ca
+                    hide j_co_1
+                    hide bg j_room_co
+                    show bg j_room_ca
 
                     jw"고양이.. 아직 있으려나?"
                     jw"아, 있다!"
@@ -278,42 +278,42 @@ label jn:
                         jump j_sd
                     label j_pa:
                         jw"저.. 안녕하세요?"
-                        show su1 at right
+                        show j_su1 at right
                         jd"아..안녕하세요."
                         jw"고양이.. 좋아하세요?"
-                        hide su1 
-                        show su2 at right
+                        hide j_su1 
+                        show j_su2 at right
                         jd"네, 좋아해요."
                         jd"고양이 좋아하세요?"
                         jw" 네, 좋아해요."
                         jw"아, 방금 츄르 사왔는데 줘보실래요?"
-                        show su4 at right
+                        show j_su4 at right
                         jd"어...!"
-                        hide su4
-                        show su3 at right
+                        hide j_su4
+                        show j_su3 at right
                         jd"좋아요!"
                         jw"여기요."
-                        hide su3
-                        show su2 at right
+                        hide j_su3
+                        show j_su2 at right
                         jw"그러고보니 이름이 어떻게 되세요?"
-                        hide su2
-                        show su3 at right
+                        hide j_su2
+                        show j_su3 at right
                         js"서윤이에요, 서서윤."
                         js"이름이 어떻게 되세요?"
                         $jplayer_name = renpy.input("아! 제 이름은")
                         jp "아! 제 이름은 [player_name](이)예요. "
-                        hide su3
-                        show su2 at right
+                        hide j_su3
+                        show j_su2 at right
                         jp "앞으로 인사하고 지내도 괜찮을까요?"
-                        hide su2
-                        show su3 at right
+                        hide j_su2
+                        show j_su3 at right
 
                         js "좋아요"
                         
                         "그 후, 서윤을 배웅했다."
                         jw "이제 편의점 가야지."
-                        show bg room_co
-                        show co_1 at left
+                        show bg j_room_co
+                        show j_co_1 at left
                         jco "안녕하세요, Gu입니다."
                         jw "안녕하세요."
                         jw "흠.. 뭐 먹지?"
