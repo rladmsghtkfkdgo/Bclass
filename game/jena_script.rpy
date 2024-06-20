@@ -252,7 +252,7 @@ label jn:
                     jw "안녕하세요."
                     jw "흠.. 츄르면 되려나?"
                     jw "계산해 주세요."
-                    play sound "Beep.ogg"
+                    play sound "j_Beep.ogg"
                     jco "(삑)"
                     play sound "j_dodo.ogg"
                     jco "3800원입니다."
