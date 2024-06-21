@@ -48,10 +48,6 @@ label j_cv:
 
 
 
-    label j_bn:
-
-
-
 
 
 
