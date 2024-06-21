@@ -8,6 +8,7 @@ label start:
     #with blinds
     
     #play music "opening.ogg"
+    
     e "새로운 도전자냥?"
     #scene 모든캐릭터그림
     #hide 고양이캐릭터

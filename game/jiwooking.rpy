@@ -52,7 +52,7 @@ image kzibab = "zabcho_front_door.jpg"
 label jw:
 
     kl "-거리-"
-    play music "zabcho_bg.ogg"
+    play sound "test_zabcho_bg.ogg"
     scene kstreet
     ke "이세계의 거리.. 기대했는데 별거없잖아...?"
 
