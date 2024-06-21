@@ -22,31 +22,38 @@ image zabcho_smile = "zabcho_smile.png"
 image zabcho_sad = "zabcho_sad.png"
 image zabcho_smilet = "zabcho_smilet.png"
 image zabcho_sadt = "zabcho_sadt.png"
-image sailer = "zabcho_sailer.png"
+image ksailer = "zabcho_sailer.png"
 image NG = "zabcho_NG.png"
-image kitchen = "zabcho_kitchen.png"
-image Rb = "zabcho_randome_box.png"
+image kkitchen = "zabcho_kitchen.png"
+image kRb = "zabcho_randome_box.png"
 image zabcho_pain = "zabcho_pain.png"
-image phone = "zabcho_phone.png"
-image phone_n = "zabcho_phone_n.png"
+image kphone = "zabcho_phone.png"
+image kphone_n = "zabcho_phone_n.png"
 
 define kp = Character("[zabcho_name]")
 define km = Character("[man_name]")
 
-image home = "zabcho_living_P.jpg" 
-image home2 = "zabcho_living_NP.png"   
-image market = "zabcho_mart_food.jpg"     
-image market_sail = "zabcho_mart_sail.jpg"
-image CS = "zabcho_cutscene.png"
-image street = "zabcho_street.png"
-image bedroom = "zabcho_bedroom.png"
+image khome = "zabcho_living_P.jpg" 
+image khome2 = "zabcho_living_NP.png"   
+image kmarket = "zabcho_mart_food.jpg"     
+image kmarket_sail = "zabcho_mart_sail.jpg"
+image kCS = "zabcho_cutscene.png"
+image kstreet = "zabcho_street.png"
+image kbedroom = "zabcho_bedroom.png"
+image kdrive = "zabcho_drive.jpg"
+image kswim = "zabcho_swim.jpg"
+image kswim_CS = "zabcho_swim_CS.jpg"
+image kwinebar = "zabcho_winebar.jpg"
+image khotel = "zabcho_hotel.jpg"
+image khotel_R = "zabcho_hotel_room.jpg"
+image kzibab = "zabcho_front_door.jpg"
 
 # 여기에서부터 게임이 시작합니다.
 label jw:
 
     kl "-거리-"
-    play music "shinebgm.ogg"
-    scene street
+    play music "zabcho_bg.ogg"
+    scene kstreet
     ke "이세계의 거리.. 기대했는데 별거없잖아...?"
 
     ke "응? 이게뭐지"
@@ -65,14 +72,14 @@ label jw:
         "집에가져가서 화분에 심어야지!"         
     else:
         "에이 귀찮다!"
-    stop music
-    play sound "MBS.ogg"
-    hide street
+   
+    
+    hide kstreet
     kl "-며칠 후-"
-    stop music
-    play sound "shinebgm.ogg"
+    
+    
  
-    scene home    
+    scene khome    
     
     ke "벌써 이렇게 많이 자랐네! 무럭무럭 자라라~"
 
@@ -83,13 +90,13 @@ label jw:
     #다음일차로 넘어가는 1~2초 정도의 BGM
     kl "다음 날 저녁"
     #음악끄기
-    #play sound "GB.OGG"
-    hide home
-    scene home2
+
+    hide khome
+    scene khome2
     ke "오늘도~ 잡초에~ 물을 주러 가보실게요옹~"
     #음악끄기
     ke "...??? 엥? 어디갔지? 잡초가 사라졌다??? 뭐야 어디갔어ㅓㅓ"
-    #
+    
     ke "(두리번 두리번)"
 
     menu:
@@ -105,12 +112,12 @@ label jw:
         "에잉 모르겠다."
 
     kl "거실 구석을 살펴보니 처음보는 여자가 나를 쳐다보고 있다."
-    hide home2
-    scene CS
+    hide khome2
+    scene kCS
     
     ke "!!"
-    hide CS
-    scene home2
+    hide kCS
+    scene khome2
     show zabcho_mung at right
     ke "?!?!?!?!! 으악!!"
     hide zabcho_mung
@@ -119,7 +126,7 @@ label jw:
 
     ke "누..누구냐 넌?"
     show zabcho_mung at right
-    z "아.. 나는"
+    kz "아.. 나는"
 
     ke "누군데 남의 집에 들어와 있는거야? 아니 애초에 어떻게 들어온거야?"
     hide zabcho_mung
@@ -256,10 +263,10 @@ label jw:
 
         kp "알겠어. 내일보자"
         hide zabcho_smilet
-        hide home2
+        hide khome2
     
         kl "2일차"
-        scene bedroom
+        scene kbedroom
         kl "너무 다사다난한 하루를 보내 잠을 설쳐서 늦잠잤다.."
 
         km "흐아.. 몇시야.."
@@ -267,9 +274,9 @@ label jw:
         kl "(치지직 부스럭부스럭)"
 
         km "뭔 소리지?"
-        hide bedroom
+        hide kbedroom
         kl "<거실>"
-        scene home2
+        scene khome2
         show zabcho_smilet at right
         kp "난나나"
 
@@ -290,7 +297,7 @@ label jw:
         show zabcho_smile at right
         km "음.. (가르쳐야할게 많다..)"
 
-        m "이건 밥이 아니야.. "
+        km "이건 밥이 아니야.. "
         hide zabcho_smile
         show zabcho_sadt at right
         kp "아니라고?!!!"
@@ -303,8 +310,8 @@ label jw:
         km "아침은 내가 만들게."
         hide zabcho_sad
         km "(식물이니까 채소는 빼야겠지?)"
-        hide home2
-        scene kitchen
+        hide khome2
+        scene kkitchen
         kl "채소가 안들어간 오므라이스를 만들었다."
 
         km "어때?"
@@ -318,11 +325,11 @@ label jw:
                 $k = -15
 
         if b_taste:
-            p "너무 맛있다. 이런 건 처음이야!"
+            kp "너무 맛있다. 이런 건 처음이야!"
             show zabcho_smilet at right
             #호감도 +5
         else:
-            p "음... ^^"
+            kp "음... ^^"
             show zabcho_sad at right
             #호감도 -5
 
@@ -331,10 +338,10 @@ label jw:
         kp "나도 갈래!!"
 
         km "그래 너를 혼자 두기도 불안하니까."
-        hide kitchen
-        hide zabcho_smilet
+        hide kkitchen
+        hide kzabcho_smilet
         kl "<마트>"
-        show market
+        scene kmarket
         km "음.. 어디보자 뭘 먼저 살까~"
 
         kp "우와!! 저거 뭐야!"
@@ -356,10 +363,10 @@ label jw:
         kp "웅 앙았엉 암냠"
 
         km "(좀.. 귀엽네..)"
-        hide market
-        show market_sail
+        hide kmarket
+        show kmarket_sail
         kl "삑"
-        show sailer at left
+        show ksailer at left
         kj "115,000원 입니다."
 
         km "카드로 할게요."
@@ -367,15 +374,15 @@ label jw:
         kj "카드 받았습니다."
 
         kj "고객님 저희 마트가 오픈 1주년을 맞이해 이벤트를 진행하고 있습니다." 
-        show Rb at right
+        show kRb at right
         kj "10만원 이상 구매 손님은 영수증에 성함과 연락처 남기고 저기에 넣으면 추첨을 통해 여러 상품을 증정해 드리고 있습니다."
-        hide Rb
-        hide sailer
+        hide kRb
+        hide ksailer
         km "어 정말요? 해봐야겠다."
 
         kl "추첨통에 영수증을 넣고 마트에서 나왔다."
-        hide market_sail
-        scene street
+        hide kmarket_sail
+        scene kstreet
         show zabcho_smilet at right
         kp "저거 당첨되면 좋은거야?"
         hide zabcho_smilet
@@ -389,9 +396,9 @@ label jw:
 
         kl "[zabcho_name]은 무언가 결심한 듯 보인다."
         hide zabcho_mung
-        hide street
+        hide kstreet
         kl "-저녁-"
-        scene home2
+        scene khome2
         km "그럼 잘자~"
         show zabcho_smilet
         kp "응 너두~~"
@@ -399,20 +406,20 @@ label jw:
         kp "좋아 한번 해보는 거야"
 
         kp "으랴ㅏㅏㅏㅏ"
-        hide home2
+        hide khome2
         hide zabcho_smilet
         kl "-며칠 후-"
-        scene home2
-        play sound "Pling-Sound.ogg" 
+        scene khome2
+        play sound "zabcho_Pling-Sound.ogg" 
         kl "띠링~"
-
+        play music "zabcho_bg.ogg"
         km "뭐지"
         #핸드폰을 꺼내며
-        show phone
-        hide phone
-        show phone_n
+        show kphone
+        hide kphone
+        show kphone_n
         km "!!!!"
-        hide phone_n
+        hide kphone_n
         km "헉! 당첨 됐잖아!"
 
         km "어디보자 상품이!!" 
@@ -462,12 +469,13 @@ label jw:
         kp "좋아ㅏㅏㅏ"
         hide zabcho_smilet
         kl "-다음날-"
-
+        scene kzibab
         km "좋아 이제 가면 될 것 같아"
         "준비됐어?"
 
         kp "준비됐어 가자!!"
-
+        hide kzibab
+        scene kdrive
         km "가는데 좀 걸리니까 자고 있어."
 
         kp "안잘거야! 너 심심하잖아."
@@ -477,16 +485,22 @@ label jw:
         kp "zzzz"
 
         km "잘거면서 버티긴.."
-        "근데 자는 모습도 예쁘네.. 어떻게 사람이 이렇게 생겼지?"
-        "아 사람이 아니지 참.."
-        "흠.. 다왔다."
-        "[zabcho_name], 일어나~ 다왔어"
+
+        km "(근데 자는 모습도 예쁘네.. 어떻게 사람이 이렇게 생겼지?)"
+
+        km "(아 사람이 아니지 참..)"
+
+        km "흠.. 다왔다."
+
+        km "[zabcho_name], 일어나~ 다왔어"
 
         kp "흠냐.. 다왔어!!"
-        "우와 호텔은 이렇게 생겼구나 신기해"
+        hide kdrive
+        scene khotel
+        km "우와 호텔은 이렇게 생겼구나 신기해"
     
-
     return
+
 
 
     label kfirst:
