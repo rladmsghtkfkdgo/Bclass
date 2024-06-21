@@ -15,7 +15,8 @@ image bg j_room_h = "j_room_h.png" #헬스장
 image bg j_room_k = "j_room_k.png" #부엌
 image bg j_room_co = "j_room_co.png" #편의점
 image bg j_room_co2 = "j_room_co2.png" #편의점 벤치
-image bg j_room_ca = "j_room_ca.png" #고양이 담벼락
+image bg j_room_ca1 = "j_room_ca1.png" #고양이 담벼락
+image bg j_room_ca2 = "j_room_ca2.png" #고양이 담벼락 없이
 image bg j_room_sa = "j_room_sa.png" #산책로
 image bg j_zero = "j_zero.png"
 

@@ -64,13 +64,13 @@ label j_ho:
             label j_ui:
                 scene bg j_room_bo
                 "집을 나선다."
-                scene bg j_room_ca
+                scene bg j_room_ca1
                 jw"어,"
                 jw"고양이다!"
                 jw"배고픈가..?"
                 jw"뭐라도 사올까.."
                 hide bg j_room_ca
-                show bg j_room_co
+                show bg j_room_co1
                 show j_co_1 at left
                 jco "안녕하세요, Gu입니다."
                 jw "안녕하세요."
@@ -84,8 +84,9 @@ label j_ho:
                 jw "안녕히 계세요~"
                 hide j_co_1
                 hide bg j_room_co
-                show bg j_room_ca
+                show bg j_room_ca2
                 jw"고양이.. 아직 있으려나?"
+                show bg j_room_co1
                 jw"아, 있다!"
                 jw"어, 고양이랑..."
                 show j_su1 at right
