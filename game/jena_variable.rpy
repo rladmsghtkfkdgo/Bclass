@@ -20,12 +20,14 @@ image bg j_room_sa = "j_room_sa.png" #산책로
 image bg j_zero = "j_zero.png"
 
 image j_food_pa = "j_food_pa.png" #파스타
+image j_food_so = "j_food_so.png" #스프
 
 image j_labe_2 = "j_labe_2.png" #2시간 후
 image j_labe_3 = "j_labe_3.png" #3시간 후
 image j_labe_za = "j_labe_za.png" #잠시 후
 image j_labe_da = "j_labe_da.png" #다음날 아침
 image j_labe_ge = "j_labe_ge.png" #몇 개월 후
+image j_labe_zu = "j_labe_zu.png" #한가로운 주말 아침
 
 image j_hand = "j_hand1.png" #핸드폰&손
 image j_alm = "j_utb_1.png" #유튜브 알람

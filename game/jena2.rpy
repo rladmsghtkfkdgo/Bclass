@@ -188,6 +188,22 @@ label j_ho:
                             show bg j_room1
                             "그 후, 침대에 누워 오늘 일을 떠올리며 이른 잠에 들었다."
                             jump j_lz
+            label j_io:
+                jw "새로운 음식.. 만들어볼까?"
+                jw "내 마음대로 레시피를 바꿔서 만들어봐야겠다."
+                show bg j_room_k
+                show j_labe_za
+                ""
+                hide j_labe_za
+                show j_food_so
+                jw "음.."
+                jw "먹을만하긴 한데..."
+                jw "더이상 못먹겠다.."
+                jw "다음번엔 레시피대로 해봐야지"
+                jw "편의점이나 갔다와야겠다."
+                hide j_food_so
+                jump j_ui
+                            
 
                         
 

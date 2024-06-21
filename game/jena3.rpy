@@ -53,6 +53,7 @@ label j_lz:
             jp"네!"
             show bg j_room1
             "그 후, 집에 돌아와서 한동안 서윤에 대해 생각했다."
+            jump j_cv
 
                 
 
