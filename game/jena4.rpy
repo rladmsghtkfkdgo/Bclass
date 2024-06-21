@@ -7,7 +7,8 @@ label j_cv:
             jump j_vb
         "집이 최고지 집에 있자":
             "뭐할까?"
-            jump j_bn
+            "흠.. 유튜브나 보자"
+            jump j_qwe
     label j_vb:
         "나가는김에 과자나 사러가야겠다."
         "고양이 있으려나?"
@@ -40,8 +41,21 @@ label j_cv:
             "유튜브 보면서 과자나 먹을까"
             jump j_qwe
 
-    label j_bn:
-        "뭐할까?"
+    label j_qwe:
+        show j_hand
+        "유튜브를 본다"
+        "유피아의 영상에 심한 악플이 달린 것을 보게 된다."
+        menu:
+            "이 사람도 고생이 많네.. \n 근데 좀 심한 거 아닌가..?":
+                jump j_wer
+            "욕 먹을 만한 짓을 했겠지, 다른 영상이나 보자.":
+                jump j_ert
+        label j_wer:
+            "잠시 멈칫 했지만 금방 다른 영상으로 넘어갔다."
+
+        
+
+
 
 
 
