@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('j_room_ca.png') at 0x00000000051a5d90>:
-  File "game/jena2.rpy", line 68, in script
-    jw"어,"
-  File "renpy/common/000window.rpy", line 122, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 70, in _window_show
+While running game code:
+  File "game/jiwooking.rpy", line 75, in script
+    scene home
+  File "renpy/common/000window.rpy", line 119, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 104, in _window_hide
     renpy.with_statement(trans)
-OSError: Couldn't find file 'j_room_ca.png'.
+OSError: Couldn't find file 'shinebgm.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/jena2.rpy", line 68, in script
-    jw"어,"
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 583, in execute
-    statement_name(stmt_name)
+  File "game/jiwooking.rpy", line 75, in script
+    scene home
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1242, in execute
+    statement_name("scene")
   File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 52, in statement_name
     i(name)
-  File "renpy/common/000window.rpy", line 122, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 70, in _window_show
+  File "renpy/common/000window.rpy", line 119, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 104, in _window_hide
     renpy.with_statement(trans)
   File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\exports.py", line 1781, in with_statement
     return renpy.game.interface.do_with(trans, paired, clear=clear)
@@ -30,52 +28,24 @@ Full traceback:
     return self.interact(trans_pause=True,
   File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 2818, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 1352, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\transition.py", line 383, in render
-    bottom = render(self.old_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\transform.py", line 957, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\im.py", line 626, in render
-    return cache.get(self, render=True)
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\im.py", line 309, in get
-    surf = image.load()
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\im.py", line 761, in load
-    raise e
-  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\im.py", line 711, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\display\core.py", line 3022, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
   File "C:\Users\jena1\Desktop\RenPy\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'j_room_ca.png'.
+OSError: Couldn't find file 'shinebgm.ogg'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Fri Jun 21 11:59:39 2024
+Fri Jun 21 12:34:40 2024

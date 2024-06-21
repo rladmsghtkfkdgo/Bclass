@@ -69,8 +69,8 @@ label j_ho:
                 jw"고양이다!"
                 jw"배고픈가..?"
                 jw"뭐라도 사올까.."
-                hide bg j_room_ca
-                show bg j_room_co1
+                hide bg j_room_ca1
+                show bg j_room_co
                 show j_co_1 at left
                 jco "안녕하세요, Gu입니다."
                 jw "안녕하세요."
@@ -86,7 +86,7 @@ label j_ho:
                 hide bg j_room_co
                 show bg j_room_ca2
                 jw"고양이.. 아직 있으려나?"
-                show bg j_room_co1
+                show bg j_room_ca1
                 jw"아, 있다!"
                 jw"어, 고양이랑..."
                 show j_su1 at right
@@ -174,6 +174,7 @@ label j_ho:
                             play sound "j_dodo.ogg"
                             jco "3800원입니다."
                             jco "감사합니다."
+                            hide j_co_1
                             jump j_jk
                         label j_hj:
                             show bg j_room_co2
