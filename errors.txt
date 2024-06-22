@@ -2,35 +2,9 @@
 errors listed below, and try again.
 
 
-The label mk1 is defined twice, at File "game/h1.rpyc", line 1:
-
-and File "game/hu_code/h1.rpy", line 1:
-label mk1:
-
-
-The label mk2 is defined twice, at File "game/h2.rpyc", line 1:
-
-and File "game/hu_code/h2.rpy", line 1:
-label mk2:
-
-
-The label firstgnight is defined twice, at File "game/h2_night.rpyc", line 1:
-
-and File "game/hu_code/h2_night.rpy", line 1:
-label firstgnight:
-
-
-The label firstbnight is defined twice, at File "game/h2_night.rpyc", line 31:
-
-and File "game/hu_code/h2_night.rpy", line 31:
-label firstbnight:
-
-
-The label first is defined twice, at File "game/jiwoo_code/jiwooking.rpy", line 492:
-    label first:
-and File "game/script.rpy", line 20:
-    menu first:
-
+File "game/jiwooking.rpy", line 728: choice menuitem expects a non-empty block.
+    "과일주":
+          ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Jun 18 01:07:13 2024
+Sat Jun 22 13:25:47 2024

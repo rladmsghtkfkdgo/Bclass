@@ -1,36 +1,20 @@
-2024-06-21 04:43:39 UTC
+2024-06-22 04:25:47 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
 Early init took 0.09s
-Loading error handling took 0.04s
-Loading script took 0.17s
-Loading save slot metadata took 0.07s
+Loading error handling took 0.05s
+Loading script took 0.26s
+Loading save slot metadata took 0.05s
 Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Dump and make backups took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.11s
+
+File "game/jiwooking.rpy", line 728: choice menuitem expects a non-empty block.
+    "과일주":
+          ^
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.20s
+Interface start took 0.12s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1600)
@@ -40,5 +24,92 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.4032'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2552, 1435) drawable=(2552, 1435)
+Screen sizes: virtual=(1920, 1080) physical=(2544, 1431) drawable=(2544, 1431)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 35.87s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\Bclass':
+Dump and make backups took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1600)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4032'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2544, 1431) drawable=(2544, 1431)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/h1.rpy", line 4, in script
+    " ?"
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 585, in execute
+    statement_name("say")
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 52, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 122, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 70, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 3022, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'breakingthings.ogg'.
+
+While running game code:
+  File "game/h1.rpy", line 4, in script
+    " ?"
+  File "renpy/common/000window.rpy", line 122, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 70, in _window_show
+    renpy.with_statement(trans)
+OSError: Couldn't find file 'breakingthings.ogg'.

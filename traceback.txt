@@ -50,4 +50,4 @@ OSError: Couldn't find file 'breakingthings.ogg'.
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Fri Jun 21 12:33:44 2024
+Sat Jun 22 13:26:32 2024
