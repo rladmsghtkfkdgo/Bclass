@@ -1,24 +1,24 @@
 label mk:
     scene hu_room2
     $pl = 0
-    play sound "hu_breakingthings.ogg"
+    play sound "hu_breakingthings.ogg"volume 0.1
     "?"
     menu:
         "무슨일이지?저쪽방에서 소리가 난건가?":
             scene hu_huntingmouse
             with fade
-            " "
+            "쥐새낀줄알았는데, 넌 또 뭐야." 
         "뭐야 무섭게...밖으로 도망쳐야하나..?":
             "으아...근데 왠지 문으로 나가기도 좀 무서운데.."
             with Pause(2.0)
-            play sound "hu_dooropen.ogg"
+            play sound "hu_dooropen.ogg"volume 1.0
             show hu_comein at right
             "너로구나 침입자가!"
         
     pp "?!"
     scene hu_room3
     show hu_intro1 at left
-    ph "이몸은 르웨인 디카프리나 엘란트 휴! 마왕이시다!"
+    ph "이몸은 르웨인 디카프리나 엘란트 휴! 마왕이니라."
 
     menu:
         "미친여자다":
@@ -31,24 +31,26 @@ label mk:
         "마왕...?":
             hide hu_intro1            
             $pl=pl+25
-            show hu
-            ph "그래. 그대는 누구인데 나의 처소에 있는것이지?"
+            show hu_너그러움
+            ph "그래. 그대는 어째서 나의 처소에 있는것이지?"
             $ptest=renpy.input('')
-            hide hu
+            hide hu_너그러움
 
-
-
+    "[pl]"
         
     show hu_lighteye at left
-    ph "!! 너로구나! 마신이 내린 짐의 하수인!"
+    ph "!!!"
+    ph "너로구나! 마신이 내린 짐의 하수인!"
     pp "제가요?"
     hide hu_lighteye
     show hu_withcat
     ph "응. 짐은 원래 마계를 이끌어갈 마왕의 자손이었다."
     play music "hu_magye.ogg"
-    scene 마계
+    scene hu_magye
+    with fade
     ph "마왕은 피에따라 계승되는것은 아니나\n강한자의 자식일수록 강한건 당연한것이라 "
     ph "짐이 다음 마왕을 물려받을 예정이었지."
+    scene hu_magye1
     ph "허나 일순간 마계와 인간세계 사이에 균열이 생겼고,\n짐은 눈 깜빡하니 인간세계에 떨어져있었다."
     stop music
     scene hu_room2
@@ -57,6 +59,7 @@ label mk:
     ph "그때 짐은 태어난지 2년된 유체였다네.\n자네의 이름은 무엇인고?"
     $pname=renpy.input("내 이름은 ")
     $pl=pl+30
+    "[pl]"
 
 
     show hu_handswithchest
