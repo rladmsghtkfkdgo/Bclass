@@ -29,11 +29,6 @@ define fade =Fade(0.5,0.0,0.5)
 #변수 표현은 "[변수]"
 init python:
     def hogamm(pl):
-        if (pl>=50):
-            return "휴"
-        elif(pl<=20):
-            return "마왕"
-        else:
-            return "르웨인 디카프리나 엘란트 휴"
+        return "이랑"
 
 default ph =Character(hogamm(pl), color="#d53366")

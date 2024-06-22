@@ -2,7 +2,7 @@ label mk:
     scene hu_room2
     $pl = 0
     play sound "hu_breakingthings.ogg"volume 0.1
-    "?"
+    pause 2.0
     menu:
         "무슨일이지?저쪽방에서 소리가 난건가?":
             scene hu_huntingmouse
@@ -50,13 +50,17 @@ label mk:
     with fade
     ph "마왕은 피에따라 계승되는것은 아니나\n강한자의 자식일수록 강한건 당연한것이라 "
     ph "짐이 다음 마왕을 물려받을 예정이었지."
+    ph "짐은 유체들중에도 가장 강한 개체에 속했어."
     scene hu_magye1
-    ph "허나 일순간 마계와 인간세계 사이에 균열이 생겼고,\n짐은 눈 깜빡하니 인간세계에 떨어져있었다."
+    ph "허나 일순간 마계와 인간세계 사이에 균열이 생겼고"
+    ph "짐은 눈 깜빡하니 인간세계에 떨어져있었다."
+    ph "처음엔 모두 죽여버릴까 했지만. 왜인지 인간세상에선 마력도 주술도 내 마음대로 되지 않더군."
     stop music
     scene hu_room2
     with dissolve 
     show hu_시무룩
-    ph "그때 짐은 태어난지 2년된 유체였다네.\n자네의 이름은 무엇인고?"
+    ph "그때 짐은 태어난지 2년된 유체였다네. 다시 차원문을 열어볼까했지만 그것또한 짐의 뜻대로 되지 않더구나.."
+    ph "그대는 이름이 무엇인고?"
     $pname=renpy.input("내 이름은 ")
     $pl=pl+30
     "[pl]"
@@ -67,7 +71,6 @@ label mk:
     pp "아니 세상을 멸망시키면 나는 어떻ㄱ..."
     "시야가 흔들린다."
     hide hu_handssithchest
-    hide hu_room2
     scene black
     with fade
     ph "흠. 이정도로 기절하다니 인간이라 그런지 확실히 나약하구나.\n 짐은 너그러운 마왕이니 다음부턴 마력을 조정해보겠느니라!"
