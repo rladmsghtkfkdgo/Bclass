@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/jiwooking.rpy", line 728: choice menuitem expects a non-empty block.
-    "과일주":
+File "game/jiwooking.rpy", line 889: choice menuitem expects a non-empty block.
+    "식물원":
           ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat Jun 22 13:25:47 2024
+Sun Jun 23 03:32:14 2024
