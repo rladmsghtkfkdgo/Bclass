@@ -8,6 +8,8 @@ define gfriend = Character('박승철', color="#c8fff9") # 주인공의 친구
 define gp = Character('???', color="#9c90a5")
 
 image gw_p = "character/main_w_top.png"
+#샤이 이미지 추가 
+image gw_shy = "character/main_w_top.png"
 
 image gdong =("background/d1_축제이미지.jpg")
 image gpark =("background/공원_길거리.jpg")
