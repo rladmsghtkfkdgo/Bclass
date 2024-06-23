@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/jiwooking.rpy", line 889: choice menuitem expects a non-empty block.
-    "식물원":
-          ^
+File "game/jiwooking.rpy", line 4: invalid syntax
+    default k =Character(hogamm(lo), color="#d06285")
+             ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Jun 23 03:32:14 2024
+Sun Jun 23 12:03:33 2024
