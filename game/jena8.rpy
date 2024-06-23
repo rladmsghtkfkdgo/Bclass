@@ -60,9 +60,9 @@ label j_mqw: #길
     elif ju >= 45:
         jump j_rtyu #연애
     elif ju >= 30:
-        jump j_tyui #친구
+        jump j_tyuiw #친구
     else:
-        jump j_yuio #배드엔딩
+        jump j_yuiow #배드엔딩
 
 label j_erty:
     "어, 서윤씨 전화네?"
@@ -99,10 +99,10 @@ label j_erty:
     "그리고 유튜브는.."
     menu:
         "계속 하기로 했다":
-            jump j_tyui
+            jump j_tyuir
         "그만두기로 했다":
             jump j_yuio
-    label j_tyui:
+    label j_tyuir:
         "달라진 것이 잇다면 나도 방송에 종종 나온다는 것이다."
         "유피아의 방송은 일상 위주의 방송이 되었고, \n 팬들은 그런 유피아를 응원해 주었다."
         "그리고 4월 1일에는 결혼 발표 영상을 올릴 예정이다."
@@ -116,9 +116,9 @@ label j_erty:
         #결혼식 사진
 label j_rtyu:
     "연애"
-label j_yui:
+label j_tyuiw:
     "친구"
-label j_yuio:
+label j_yuiow:
     "배드엔딩"
     
 
