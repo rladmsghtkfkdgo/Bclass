@@ -56,15 +56,15 @@ label j_mqww: #산
 
 label j_mqw: #길
     if ju >= 65:
-        jump erty #결혼
+        jump j_erty #결혼
     elif ju >= 45:
-        jump rtyu #연애
+        jump j_rtyu #연애
     elif ju >= 30:
-        jump tyui #친구
+        jump j_tyui #친구
     else:
-        jump yuio #배드엔딩
+        jump j_yuio #배드엔딩
 
-label erty:
+label j_erty:
     "어, 서윤씨 전화네?"
     "네, 여보세요?"
     "네, 여보세요"
@@ -99,22 +99,27 @@ label erty:
     "그리고 유튜브는.."
     menu:
         "계속 하기로 했다":
-            jump tyui
+            jump j_tyui
         "그만두기로 했다":
-            jump yuio
-    label tyui:
+            jump j_yuio
+    label j_tyui:
         "달라진 것이 잇다면 나도 방송에 종종 나온다는 것이다."
         "유피아의 방송은 일상 위주의 방송이 되었고, \n 팬들은 그런 유피아를 응원해 주었다."
         "그리고 4월 1일에는 결혼 발표 영상을 올릴 예정이다."
         "우리는 앞으로도 함께할 것이다."
         #결혼식 사진
 
-    label yuio:
+    label j_yuio:
         "서윤, 그러니까 유피아는 마지막 영상을 올리고 유튜브를 그만두었다."
         "서윤에게 아깝지는 않냐고 묻자 서윤은 지금이 더 좋다고 답했다"
         "우리는 앞으로도 함께할 것이다."
         #결혼식 사진
-label rtyu:
+label j_rtyu:
+    "연애"
+label j_yui:
+    "친구"
+label j_yuio:
+    "배드엔딩"
     
 
 
