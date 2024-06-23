@@ -114,7 +114,7 @@ label j_dfg: #길
                             hide j_su7
                             show j_su5 at right
                             jp "그쵸? 자주 해먹는데 간단하고 맛있더라구요."
-                            $u = -10
+                            $ju-=10
                             show j_su7 at right
                             js "아..네..."
                             js "밥 잘 먹었어요, 감사합니다"
@@ -148,7 +148,7 @@ label j_dfg: #길
                             hide j_su3
                             show j_su2 at right
                             jp "그쵸? 자주 해먹는데 간단하고 맛있더라구요."
-                            $u = +10
+                            $ju+=10
                             hide j_su2
                             show j_su3 at right
                             js"네, 좋았어요."
@@ -184,7 +184,7 @@ label j_dfg: #길
                         hide j_su3
                         show j_su2 at right
                         "서윤과 산책하며 이런저런 얘기를 나눴다."
-                        $u = +20
+                        $u+=20
                         show bg j_room_bo
                        
                         "산책이 끝난 후, 서윤을 배웅해주었다."
@@ -293,7 +293,7 @@ label j_gfd: #산
                 show j_su2 at right
                 jp "그럼 아까보다 기분도 나아졌겠다."
                 jp "뭐라도 먹을까요?"
-                $u = +10
+                $ju+=10
                 show j_su3 at right
                 js "좋아요"
                 jump j_lkj
@@ -342,7 +342,7 @@ label j_gfd: #산
                             hide j_su7
                             show j_su5 at right
                             jp "그쵸? 자주 해먹는데 간단하고 맛있더라구요."
-                            $u = -10
+                            $ju-=10
                             hide j_su5
                             show j_su7 at right
                             js "아..네..."
@@ -376,7 +376,7 @@ label j_gfd: #산
                             hide j_su7
                             show j_su5 at right
                             jp "그쵸? 자주 해먹는데 간단하고 맛있더라구요."
-                            $u = +10
+                            $ju+=10
                             hide j_su5
                             show j_su7 at right
                             js "네, 좋았어요."
@@ -399,6 +399,7 @@ label j_gfd: #산
                         "그 후, 서윤과 함께 점심을 먹었다."
                         js "덕분에 맛있는 곳 알게 된 것 같아요."
                         js "감사합니다"
+                        $ju+=10
                         hide j_su7
                         show j_su5 at right
                         jp "맛있었다니 다행이에요"
@@ -467,7 +468,7 @@ label j_gfd: #산
                             hide j_su7
                             show j_su5 at right
                             jp "그쵸? 자주 해먹는데 간단하고 맛있더라구요."
-                            $u = -10
+                            $ju-=10
                             show j_su7 at right
                             js "아..네..."
                             js "밥 잘 먹었어요, 감사합니다"
@@ -500,7 +501,7 @@ label j_gfd: #산
                             hide j_su3
                             show j_su2 at right
                             jp "그쵸? 자주 해먹는데 간단하고 맛있더라구요."
-                            $u = +10
+                            $ju+=10
                             hide j_su2
                             show j_su3 at right
                             js"네, 좋았어요."
@@ -533,7 +534,7 @@ label j_gfd: #산
                         hide bg j_room_sand
                         show bg j_room_sa
                         "서윤과 산책하며 이런저런 얘기를 나눴다."
-                        $u = +20
+                        $ju+=20
                         show bg j_room_bo
                         "산책이 끝난 후, 서윤을 배웅해주었다."
                         js "오늘 감사했어요"

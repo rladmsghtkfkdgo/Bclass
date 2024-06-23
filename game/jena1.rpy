@@ -73,7 +73,7 @@ label jn:
                 scene bg j_room1
                 hide su1
                 "놀라서 인사도 잊어버린 채 다시 들어왔다."
-                $u = -10
+                $ju-=10
     
                 jw "아..깜짝이야.."
                 jw "치킨이나 먹어야지.."
@@ -120,12 +120,12 @@ label jn:
             show j_su2 at right
             "(꾸벅)"
             "옆집 사람도 목례하며 집으로 들어간다."
-            $u = +10
+            $u+=10
             hide j_su2
             jump j_ry
         label j_by:
             "당황한 사이 옆집 사람이 들어가버렸다. "
-            $u = -10
+            $ju-=10
             hide j_su1
             jw"아.. 어쩔 수 없지"
             jump j_ry

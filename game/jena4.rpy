@@ -75,7 +75,7 @@ label j_cv:
                     "내가 좋아하는 노란 형광티":
                         jump j_tyu
                 label j_tyu:
-                    jp "좋아, 이거로 결정!"
+                    jp "혹시 모르니까 둘 다 사야겠다."
                     "마음에 드는 옷을 사, 기분 좋게 잠들었다."
                     scene black
                     with fade

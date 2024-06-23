@@ -50,7 +50,7 @@ label j_yui:
             hide j_su7
             show j_su5
             "그 후, 한참동안 서윤의 이야기를 들어주었다."
-            $u = +15
+            $ju+=15
             hide j_su5
             show j_su3 at right
             js "덕분에 많이 좋아진 것 같아요."
@@ -87,7 +87,7 @@ label j_yui:
             show j_su7 at right
             js "아.. 아니예요.."
             js "먼저 들어가볼게요, 다음에 또 봬요"
-            $u = -10
+            $ju-=10
             jp "네, 다음에 또 봬요!"
             hide j_su7
             jump j_fds

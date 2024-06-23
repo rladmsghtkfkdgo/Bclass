@@ -17,11 +17,12 @@ image bg j_room_co = "j_room_co.png" #편의점
 image bg j_room_co2 = "j_room_co2.png" #편의점 벤치
 image bg j_room_ca1 = "j_room_ca1.png" #고양이 담벼락
 image bg j_room_ca2 = "j_room_ca2.png" #고양이 담벼락 없이
+image bg j_room_caca = "j_room_caca.png" #고양이 카페
 image bg j_room_sa = "j_room_sa.png" #산책로
 image bg j_room_sand = "j_room_san.png" #산책로
 image bg j_zero = "j_zero.png"
 
-image bg j_trash = "j_trash.png"
+image bg j_trash = "j_trash.png" #쓰레기
 
 image j_food_pa = "j_food_pa.png" #파스타
 image j_food_so = "j_food_so.png" #스프
@@ -56,4 +57,4 @@ image j_hh_1 = "j_hh_1.png" #헬스 트레이너
 image j_co_1 = "j_co_1.png" #편의점 점원
 
 
-define u = 0 #호감도
+define ju = 0 #호감도

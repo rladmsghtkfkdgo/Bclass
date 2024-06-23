@@ -99,7 +99,7 @@ label j_ho:
                         jump j_pa
                 label j_op:
                     "츄르를 주머니에 넣고 지나갔다."
-                    $u = -20
+                    $ju-=20
                     jump j_sd
                 label j_pa:
                     jw"저.. 안녕하세요?"
@@ -132,7 +132,7 @@ label j_ho:
                     hide j_su2
                     show j_su3 at right
                     js "좋아요"
-                    $u = +20
+                    $ju+=20
                     
                     "그 후, 서윤을 배웅했다."
                     hide j_su3
