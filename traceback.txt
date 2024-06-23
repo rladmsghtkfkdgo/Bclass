@@ -1,26 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/d6_d7_d8_d9.rpy", line 59, in script
-    python:
-  File "game/d6_d7_d8_d9.rpy", line 60, in <module>
-    gchoice = food_list[0]
-NameError: name 'food_list' is not defined
+  File "game/d6_d7_d8_d9.rpy", line 53, in script
+    scene gchoice_place
+Exception: DynamicImage '[gspace]': could not find image. ('background/한강.png')
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/d6_d7_d8_d9.rpy", line 59, in script
-    python:
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/d6_d7_d8_d9.rpy", line 60, in <module>
-    gchoice = food_list[0]
-NameError: name 'food_list' is not defined
+  File "game/d6_d7_d8_d9.rpy", line 53, in script
+    scene gchoice_place
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 1247, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\exports.py", line 765, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\display\scenelists.py", line 463, in add
+    thing.set_transform_event("show")
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\display\transform.py", line 743, in set_transform_event
+    self.child.set_transform_event(event)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\display\image.py", line 501, in set_transform_event
+    return self.target.set_transform_event(event)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\display\image.py", line 760, in set_transform_event
+    self.find_target()
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\display\image.py", line 683, in find_target
+    raise Exception(error)
+Exception: DynamicImage '[gspace]': could not find image. ('background/한강.png')
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Sun Jun 23 01:09:31 2024
+Sun Jun 23 19:21:00 2024

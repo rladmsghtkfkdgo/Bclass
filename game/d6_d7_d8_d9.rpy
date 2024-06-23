@@ -1,44 +1,57 @@
 #d6
 label d6:
+    scene gblack
     scene park_biy
     gw "여태까지 갈고 닦은 실력을 봐보자."
     
-    # 자전거를 타는 이미지 보여줌. 
+    scene gm_ride_bike1
     
+    show gw_p
     gw "자네 자전거 타는 실력이 나쁘지 않는군. 좋은 스승에게 배웠나봐."
     
     menu:
         "훌륭하신 자연 선생님덕분에 많이 배웠습니다.":
-            gsys "호감도 +10"
+            ga "호감도 +10"
+            $hogam += 10
+
     
         "내가 원래 운동신경이 좋아요.":
-            gsys "호감도 -5"
+            ga "호감도 +0"
+            $hogam += 0
 
 #d7
 #동아리 정기 자전거 타는 날 
 label d7:
-    scene park_biy
-    # 자전거 타는 모습 
-    gp "어이어이 남주! 자전거 처음 아니었냐고 ! 이게 뭐야 ! 꽤나 하잖아 이녀석 !"
-    gp "제법인데."
+    scene black
+    ga "오늘은 동아리 정기 자전거 타는 날입니다. 그동안 연습한 실력을 보여줍시다."
+    
+    scene gm_ride_bike2
+    gp1 "어이어이 남주! 자전거 처음 아니었냐고 ! 이게 뭐야 ! 꽤나 하잖아 이녀석 !"
+    gp2 "제법인데."
 
-#흐믓한 표정을 짓는 여주 
+    show gw_p
     gm "지연 너의 특훈덕분에 칭찬 많이 들었어. 고마워! "
     gm "그.. 혹시 같이 주말에 자 전거 드라이브 안 갈래? 장소는.."
 
     init python:
         gspace = " "
+
     menu:
         "해안가 도로!" :
             gw "나쁘지 않은 선택이야."
-            gsys "호감도 +0"
+            ga "호감도 +10"
             python:
-                gspace = "beach"
+                gspace = "background/해안가.png"
+
         "한강 자전거길" :
-            gw "어! 한 번도 안 가봤어. 좋아!" 
+            ga "어! 한 번도 안 가봤어. 좋아!" 
             gsys "호감도 +10"
             python:
-                gspace = "hangang"
+                gspace = "background/한강.png"
+
+    image gchoice_place = "[gspace]"
+    scene gchoice_place
+
         
 
 #d8 --> 삭제
@@ -46,7 +59,7 @@ label d7:
 #d9
 #단 둘이 드라이브 
 
-scene space
+scene gchoice_place
 init python:
     gfood_list = ["김치 볶음밥", "김밥", "에그마요 토스트"]
     gchoice= " "
@@ -58,10 +71,12 @@ label d9:
             gm "역시 만들기 쉬운 김치 볶음밥"
             python:
                 gchoice = food_list[0]
+
         "오이 듬뿍 김밥":
             gm "김밥에는 오이가 듬뿍 들어가야 맛있지."
             python:
                 gchoice = food_list[1]
+                
         "에그마요 토스트":
             gm "역시 만들기 쉬운 에그마요."
             python:
