@@ -37,3 +37,7 @@ init python:
             return "르웨인 디카프리나 엘란트 휴"
 
 default ph =Character(hogamm(pl), color="#d53366")
+#chess
+define STARTING_FEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+$ fen = STARTING_FEN
+$ movetime =2000

@@ -5,12 +5,11 @@ label mk:
     pause 2.0
     menu:
         "무슨일이지?저쪽방에서 소리가 난건가?":
-            scene hu_huntingmouse
-            with fade
+            scene hu_huntingmouse with fade
             "쥐새낀줄알았는데, 넌 또 뭐야." 
         "뭐야 무섭게...밖으로 도망쳐야하나..?":
             "으아...근데 왠지 문으로 나가기도 좀 무서운데.."
-            with Pause(2.0)
+            pause(2.0)
             play sound "hu_dooropen.ogg"volume 1.0
             show hu_comein at right
             "너로구나 침입자가!"
@@ -24,7 +23,7 @@ label mk:
         "미친여자다":
             $pl=pl-10
             hide hu_intro1
-            show hu_crying
+            show hu_crying with move
             ph "마왕이라고!!"
             pp "어 응 네..." 
             hide hu_crying

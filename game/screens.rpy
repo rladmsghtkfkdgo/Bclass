@@ -210,7 +210,7 @@ screen choice(items):
         for i in items:
             textbutton i.caption action i.action
 
-
+define config.narrator_menu = True
 style choice_vbox is vbox
 style choice_button is button
 style choice_button_text is button_text
