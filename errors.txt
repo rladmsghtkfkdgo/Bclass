@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/d6_d7_d8_d9.rpy", line 52: expected '=' not found.
-    image gchoice_place
-                       ^
+File "game/d6_d7_d8_d9.rpy", line 151: expected 'label_name' not found.
+    jump
+        ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Jun 23 19:14:46 2024
+Mon Jun 24 04:56:57 2024

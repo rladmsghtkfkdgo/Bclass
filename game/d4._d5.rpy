@@ -3,33 +3,36 @@ label d4:
     scene gblack
     ga "당신은 다음날 저녁을 먹으러 왔습니다. "
 
-    scene street1
+    scene gstreet1
+    show gw_p
     gw "배부르다~"
     gm "든든하네."
     gm "후식이나 먹으러 가자! "
 
-    gsys "후식은?"
+    ga "후식은?"
     menu: 
         "탕후루":
             gw "..너 먹어.. 난 옆에서 구경할게. 단거 별로.. "
-            gsys "호감도 -10"
+            ga "호감도 -10"
             $hogam += -10
 
         "디카페인 아메리카노":
             gw "후식 고를줄 아는 친구일세 이거. "
-            gsys "호감도 +5"
+            ga "호감도 +5"
             $hogam += 5
 
         "망고 빙수":
             gw "오!!"
-            gsys "호감도 +15"
+            ga "호감도 +15"
             $hogam += 15
 
 
 #d5
 label d5:
-    scene classroom2
+    scene gblack
     ga "오늘은 동아리 정기 모임입니다."
+
+    scene gclassroom2
     gp1 "
     여러분! 첫 동아리 일정으로 어디를 갈 건지 정해야합니다. 
     각 조별로 회의해서 알려주세요.첫 공식 일정은 2주뒤로 하겠습니다. "
@@ -39,14 +42,16 @@ label d5:
     gp2 "좋은데! "
     gp1 "거기 작년에 가봤을 때 괜찮았지. 지금쯤이면 등나무도꽃도 많이 피었겠어. 거기로 가자!"
 
+    show gw_p
     gm "자연아 너넨 어디로 가? 우린 나즈막산."
     gw "어! 우리도! "
     gw "그래도 남주 너는 산악자전거가 처음이니까.. 같이 연습할래? 이번주 토요일 시간 비워."
     gm "어! 알았어! 고마워! "
 
     scene gblack
-    scene groom
     gm "오늘도 재밌는 하루였다. "
+
+    scene groom
     # 운동갈까요? 
     ga "[str_question]"
 
@@ -56,6 +61,5 @@ label d5:
 
         "가지 않는다":
             $hogam += 0
-
 
 jump d6
