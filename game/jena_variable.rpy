@@ -1,16 +1,25 @@
 # 게임에서 사용할 캐릭터를 정의합니다.
-define jw = Character('플레이어', color="#9fbaff")
+define jw = Character('플레이어', color="#344e90")
 define jd = Character('옆집사람', color="#cf9dcf")
 define js = Character('서서윤', color="#cf9dcf")
 define jq = Character()
-define jplayer_name = "플레이어이름"
+define jplayer_name = "플레이어"
 define jp = Character("jplayer_name",dynamic = True, color="#9fbaff")
 define jhh = Character('헬스 트레이너', color="#9fdfff")
-define jco = Character('편의점 점원', color="#ede8ab")
+define jco = Character('편의점 점원', color="#453709")
+define jg = Character('경찰', color="#1c1c4a")
+define jg1 = Character('경찰1', color="#22226e")
+define jg2 = Character('경찰2', color="#15152e")
 define fade = Fade(0.5,0.0,0.5)
 
 image bg j_room1 = "j_room1.jpg" #거실
+image bg j_room01 = "j_room01.png" #거실 어두운
+image bg j_room02 = "j_room02.png" #거실 더 어두운
+image bg j_room03 = "j_room03.png" #거실 까만
 image bg j_room_bo = "j_room_bo.png" #아파트 복도
+image bg j_room_bo1 = "j_room_bo1.png" #뿌얀 아파트 복도 
+image bg j_room_bo2 = "j_room_bo2.png" #폴리스 아파트 복도
+image bg j_room_bo3 = "j_room_bo3.png" #어두운 폴리스 아파트 복도
 image bg j_room_h = "j_room_h.png" #헬스장
 image bg j_room_k = "j_room_k.png" #부엌
 image bg j_room_co = "j_room_co.png" #편의점
@@ -23,6 +32,7 @@ image bg j_room_sand = "j_room_san.png" #산책로
 image bg j_zero = "j_zero.png"
 
 image bg j_trash = "j_trash.png" #쓰레기
+image j_pol = "j_pol.png" #경찰
 
 image j_food_pa = "j_food_pa.png" #파스타
 image j_food_so = "j_food_so.png" #스프
@@ -36,6 +46,8 @@ image j_labe_da = "j_labe_da.png" #다음날 아침
 image j_labe_ge = "j_labe_ge.png" #몇 개월 후
 image j_labe_zu = "j_labe_zu.png" #한가로운 주말 아침
 image j_labe_me = "j_labe_me.png" #며칠 뒤
+
+image j_mes = "j_mes.png" #메시지
 
 image j_hand = "j_hand1.png" #핸드폰&손
 image j_alm = "j_utb_1.png" #유튜브 알람

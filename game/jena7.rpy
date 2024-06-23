@@ -209,9 +209,12 @@ label j_nbvq: #산
         js "아.."
         js "그럼 다음에 같이 가요"
         jp "좋아요!"
+        hide j_su7
         "뚝"
         jp "흠.. 바쁘신가보네"
         jp "다음에 다시 연락해봐야겠다."
+        scene black
+        with fade
         jump j_mqww
 
     
