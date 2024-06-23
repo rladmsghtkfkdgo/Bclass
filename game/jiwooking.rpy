@@ -279,7 +279,7 @@ label jw:
             hide zabcho_smilet
             hide khome2
 
-            kl "2일차"
+            kl "다음날"
             scene kbedroom
             kl "너무 다사다난한 하루를 보내 잠을 설쳐서 늦잠잤다.."
 
