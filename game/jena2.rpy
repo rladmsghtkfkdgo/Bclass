@@ -158,6 +158,7 @@ label j_ho:
                             play sound "j_dodo.ogg"
                             jco "1500원입니다."
                             jco "감사합니다."
+                            hide j_co_1
                             jump j_hj
                         label j_fg:
                             jp "계산해 주세요."
@@ -166,6 +167,7 @@ label j_ho:
                             play sound "j_dodo.ogg"
                             jco "2300원입니다."
                             jco "감사합니다."
+                            hide j_co_1
                             jump j_hj
                         label j_gh:
                             jp "계산해 주세요."

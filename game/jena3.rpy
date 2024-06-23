@@ -18,7 +18,7 @@ label j_lz:
             "듣기로는 이사를 간 듯 싶다."
 
         label j_xc:
-            "꽤 자주 마주쳐 같이 움직일 떄도 있다."
+            "꽤 자주 마주쳐 같이 움직일 때도 있다."
             scene bg j_room_bo
             show j_su2 at right
             jp "아, 서윤씨! 안녕하세요!"
@@ -28,8 +28,8 @@ label j_lz:
             hide j_su3
             show j_su2 at right
             jp "어디가세요?"
-            "잠시 산책하러 가려구요"
-            "[jp]씨는요?"
+            js"잠시 산책하러 가려구요"
+            js"[jp]씨는요?"
             jp "앗, 저도 마침 산책 가려했는데 같이 가도 되나요?"
             js"그래주시면 저야 좋죠"
             show bg j_room_sa
@@ -51,6 +51,7 @@ label j_lz:
             show j_su3 at right
             js"저도요, 조심히 들어가세요"
             jp"네!"
+            hide j_su3
             show bg j_room1
             "그 후, 집에 돌아와서 한동안 서윤에 대해 생각했다."
             jump j_cv

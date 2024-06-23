@@ -77,6 +77,10 @@ label j_cv:
                 label j_tyu:
                     jp "좋아, 이거로 결정!"
                     "마음에 드는 옷을 사, 기분 좋게 잠들었다."
+                    scene black
+                    with fade
+                    scene bg j_room1
+                    with fade
                     jump j_yui
 
 

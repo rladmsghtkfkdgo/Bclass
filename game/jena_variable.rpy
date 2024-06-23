@@ -18,10 +18,15 @@ image bg j_room_co2 = "j_room_co2.png" #편의점 벤치
 image bg j_room_ca1 = "j_room_ca1.png" #고양이 담벼락
 image bg j_room_ca2 = "j_room_ca2.png" #고양이 담벼락 없이
 image bg j_room_sa = "j_room_sa.png" #산책로
+image bg j_room_sand = "j_room_san.png" #산책로
 image bg j_zero = "j_zero.png"
+
+image bg j_trash = "j_trash.png"
 
 image j_food_pa = "j_food_pa.png" #파스타
 image j_food_so = "j_food_so.png" #스프
+image j_food_dak = "j_food_dak.png" #닭가슴살
+image j_food_papa = "j_food_papa.png" #파스타2
 
 image j_labe_2 = "j_labe_2.png" #2시간 후
 image j_labe_3 = "j_labe_3.png" #3시간 후
@@ -29,6 +34,7 @@ image j_labe_za = "j_labe_za.png" #잠시 후
 image j_labe_da = "j_labe_da.png" #다음날 아침
 image j_labe_ge = "j_labe_ge.png" #몇 개월 후
 image j_labe_zu = "j_labe_zu.png" #한가로운 주말 아침
+image j_labe_me = "j_labe_me.png" #며칠 뒤
 
 image j_hand = "j_hand1.png" #핸드폰&손
 image j_alm = "j_utb_1.png" #유튜브 알람
@@ -38,6 +44,13 @@ image j_su1 = "j_su1.png" #무표정
 image j_su2 = "j_su2.png" #미소
 image j_su3 = "j_su3.png" #웃음
 image j_su4 = "j_su4.png" #놀람
+image j_su5 = "j_su7.png" #곤란
+image j_su6 = "j_su8.png" #곤란&빗금
+image j_su7 = "j_su5.png" #곤란 입
+image j_su8 = "j_su6.png" #곤란&빗금 입
+
+image j_dream_su = "j_dream_su.png" #서윤 꿈
+image j_dream_ca = "j_dream_ca.png" #고양이 꿈
 
 image j_hh_1 = "j_hh_1.png" #헬스 트레이너
 image j_co_1 = "j_co_1.png" #편의점 점원
