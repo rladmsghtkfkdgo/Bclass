@@ -148,5 +148,5 @@ label d9:
             gw "뭐야~ 잘 먹을게 고마워."
             ga "호감도 +10"
 
-jump d11
+    jump d11
 
