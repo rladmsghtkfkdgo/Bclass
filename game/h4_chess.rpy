@@ -6,15 +6,15 @@ label pchess:
     $ fen =STARTING_FEN
     $ movetime =2000 
     menu:
-        "Please select a difficulty lev
+        "Please select a difficulty level"
         "Easy":
             $ depth 
         "Medium":
             $ depth 
         "Hard":
-            $ depth =
+            $ depth
     menu:
-        "Please select Player col
+        "Please select Player color"
         "White":
             $ player_color = WHITE # this constant is defined in chess_displayable.r
         "Black":
