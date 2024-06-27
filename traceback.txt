@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/d13.rpy", line 47, in script
-    if $hogam>=100:
-SyntaxError: invalid syntax (game/d13.rpy, line 47)
+  File "game/d13_d14.rpy", line 66, in script
+    jump d14
+ScriptError: could not find label 'd15'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/d13.rpy", line 47, in script
-    if $hogam>=100:
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\python.py", line 1207, in py_eval
-    code = py_compile(code, 'eval')
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\python.py", line 1144, in py_compile
-    raise e
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\python.py", line 1081, in py_compile
-    raise orig_e
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/d13.rpy, line 47)
+  File "game/d13_d14.rpy", line 66, in script
+    jump d14
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
+    rv = renpy.game.script.lookup(target)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'd15'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Mon Jun 24 13:55:17 2024
+Mon Jun 24 17:25:11 2024

@@ -2,39 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/d14.rpy", line 2: Line with id d14_24d7b118 appears twice. The other line is game/d13_d14.rpy:70
+The label d13 is defined twice, at File "game/d13.rpyc", line 1:
 
-File "game/d14.rpy", line 5: Line with id d14_65b6944a appears twice. The other line is game/d13_d14.rpy:73
+and File "game/d13_d14.rpy", line 1:
+label d13:
 
-File "game/d14.rpy", line 8: Line with id d14_41bdda5a appears twice. The other line is game/d13_d14.rpy:76
-
-File "game/d14.rpy", line 11: Line with id d14_eccb1b58 appears twice. The other line is game/d13_d14.rpy:79
-
-File "game/d14.rpy", line 12: Line with id d14_b9210962 appears twice. The other line is game/d13_d14.rpy:80
-
-File "game/d14.rpy", line 13: Line with id d14_e718c9f0 appears twice. The other line is game/d13_d14.rpy:81
-
-File "game/d14.rpy", line 14: Line with id d14_3568e64e appears twice. The other line is game/d13_d14.rpy:82
-
-File "game/d14.rpy", line 16: Line with id d14_48ecc6bd appears twice. The other line is game/d13_d14.rpy:84
-
-File "game/d14.rpy", line 17: Line with id d14_22b65c5f appears twice. The other line is game/d13_d14.rpy:85
-
-File "game/d14.rpy", line 19: Line with id d14_3ba11f38 appears twice. The other line is game/d13_d14.rpy:87
-
-File "game/d14.rpy", line 20: Line with id d14_93f99f8e appears twice. The other line is game/d13_d14.rpy:88
-
-File "game/d14.rpy", line 21: Line with id d14_8f7c3db5 appears twice. The other line is game/d13_d14.rpy:89
-
-File "game/d14.rpy", line 22: Line with id d14_4a5079d7 appears twice. The other line is game/d13_d14.rpy:90
-
-File "game/d14.rpy", line 23: Line with id d14_0054cdc7 appears twice. The other line is game/d13_d14.rpy:91
-
-File "game/d14.rpy", line 24: Line with id d14_09c248b9 appears twice. The other line is game/d13_d14.rpy:92
-
-File "game/d14.rpy", line 25: Line with id d14_1dfe32da appears twice. The other line is game/d13_d14.rpy:93
-
-File "game/d14.rpy", line 27: Line with id d14_1250abd2 appears twice. The other line is game/d13_d14.rpy:95
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jun 24 17:18:28 2024
+Mon Jun 24 17:22:49 2024
