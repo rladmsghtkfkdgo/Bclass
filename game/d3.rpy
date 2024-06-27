@@ -1,4 +1,5 @@
 label d3: 
+    $gday_count += 1
     scene black
     ga "오늘은 학교가는 날 입니다."
 

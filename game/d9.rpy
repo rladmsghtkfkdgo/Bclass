@@ -1,12 +1,5 @@
-#d10 --> 삭제
-#label d10: 
-
-
-
-
-
-#d11
-label d11: 
+label d9: 
+    $gday_count += 1
     # 팝업창 --> 알람
     #편의점 음료 진열대 사진 
     init python:
@@ -56,14 +49,14 @@ label d11:
             ga "호감도 + 0 "
             $hogam += 0
         
-            jump d11_1
+            jump d10_1
 
         "타타닥 달려가서 인사한다. ":
             gw "어? 승철아~ 반가워. "
             ga "호감도 + 0 "
             $hogam += 0
 
-            jump d11_2
+            jump d10_2
 
         "지금 위치에서 우렁차게 \"이난희!\"하고 부른다. ":
             gm "이!!!!!!난!!!!!!!!!!!!희!!!!!!!!!"
@@ -74,54 +67,5 @@ label d11:
             gm "어어 어디가!! 같이 가!"
             $hogam += -10
 
-            jump d11_3
+            jump d10_3
 
-
-# 캐릭터 시트 보고 반응 추가하기 
-#단백질 
-label d11_1 : 
-    show gw_p
-    gm "난희야 이거 선물이야. "
-    gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
-    ga "[gd_choice]! 고마워 잘 마실게!"
-    $hogam += 20
-
-    jump d12
-    
-#오렌지
-label d11_2 : 
-    show gw_p
-    gm "난희야 이거 선물이야. "
-    gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
-    ga "[gd_choice] 고마워."
-    $hogam += -5
-
-    jump d12
-
-#고카페인
-label d11_3 : 
-    show gw_p
-    gm "난희야 이거 선물이야. "
-    gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
-    ga "[gd_choice] 고마워 잘 마실게."
-    $hogam += 5
-
-    jump d12
-
-#신상 망고 샤인
-label d11_4 : 
-    show gw_p
-    gm "난희야 이거 선물이야. "
-    gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
-    ga "[gd_choice]! 고마워...."
-    $hogam += -20
-
-    jump d12
-
-label d12:
-    scene black
-    ga "몇 주후 방학이 되었습니다."
-    
-    gf ""
-
-    jump d13

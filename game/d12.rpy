@@ -1,4 +1,5 @@
-label d13:
+label d12:
+    $gday_count += 1
     # 몇 달 후 같은거 넣기
     # 교실 이미지 
     scene gblack
@@ -62,10 +63,3 @@ label d13:
             gm "오늘은 쉴래."
 
     #둘이 함께 런닝하는 뒷모습.
-
-
-    #label d14
-
-    
-
-

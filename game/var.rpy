@@ -44,5 +44,6 @@ image gm_ride_bike2 = im.FactorScale("background/자전거타는남주2.png", 2.
 
 init python:
     hogam = 0;     #호감
+    gday_count = 0;
 
     str_question ="오늘 운동을 갈까요?"

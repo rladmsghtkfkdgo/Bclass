@@ -3,6 +3,7 @@
 # shiht o --> 콘솔창
 
 label d1_1:
+    $gday_count += 1
     scene gd1_festival
     gf "야! [gm] 어디 가입할거야!"
     gf "난 농구부 가입할랜다. 역시 남자는 농구지. "

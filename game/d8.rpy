@@ -1,74 +1,5 @@
-#d6
-label d6:
-    scene gblack
-    ga "화창한 어느날 공원에 왔다. "
-
-    show gw_p
-    gw "여태까지 갈고 닦은 실력을 봐보자."
-    hide gw_p
-
-    scene gm_ride_bike1
-    
-    show gw_p
-    gw "자네 자전거 타는 실력이 나쁘지 않는군. 좋은 스승에게 배웠나봐."
-    
-    menu:
-        "훌륭하신 자연 선생님덕분에 많이 배웠습니다.":
-            ga "호감도 +10"
-            $hogam += 10
-
-    
-        "내가 원래 운동신경이 좋아요.":
-            ga "호감도 +0"
-            $hogam += 0
-
-#d7
-#동아리 정기 자전거 타는 날 
-label d7:
-    scene black
-    ga "오늘은 동아리 정기 자전거 타는 날입니다. 그동안 연습한 실력을 보여줍시다."
-    
-    scene gm_ride_bike2
-    gp1 "어이어이 남주! 자전거 처음 아니었냐고 ! 이게 뭐야 ! 꽤나 하잖아 이녀석 !"
-    gp2 "제법인데."
-
-    show gw_p
-    gm "지연 너의 특훈덕분에 칭찬 많이 들었어. 고마워! "
-    gm "그.. 혹시 같이 주말에 자 전거 드라이브 안 갈래? 장소는.."
-
-    init python:
-        gspace = " "
-
-    menu:
-        "해안가 도로!" :
-            gw "나쁘지 않은 선택이야."
-            ga "호감도 +10"
-            python:
-                gspace = "해안가"
-
-        "한강 자전거길" :
-            ga "어! 한 번도 안 가봤어. 좋아!" 
-            ga "호감도 +10"
-            python:
-                gspace = "한강"
-
-    image gchoice_place = "background/[gspace].png"
-
-    ga "test"
-
-        
-
-#d8 --> 삭제
-
-#d9
-#단 둘이 드라이브 
-init python:
-    # - 호감도 음식 추가하기
-    gfood_list = ["김치 볶음밥", "김밥", "에그마요 토스트"]
-    gchoice= " "
-    
-
-label d9:
+label d8:
+    $gday_count += 1
     scene gblack
     ga "당신은 도시락을 싸려고 합니다. 뭘 만들까요?"
     menu:
@@ -148,5 +79,4 @@ label d9:
             gw "뭐야~ 잘 먹을게 고마워."
             ga "호감도 +10"
 
-    jump d11
-
+    jump d9
