@@ -34,34 +34,6 @@ label yj:
     #==========================================================
     # Day 1
     jump d1_1
-    jump d1
-
-    # Day 2
-    jump d2_만나기_전
-    jump d2_공원
-    jump d2_저녁
-    jump d2_집
-
-    # Day 3
-    jump d3_학교
-
-    # Day 4
-    jump d4_1_밥_약속의_날
-
-    # Day 5
-    jump d5_동아리_정기_모임
-
-    # Day 6
-    jump d6
     
-    # Day 7
-    jump d7
-
-    # Day 8
-    #jump d8
-
-    # Day 9
-    jump d9
-return
 
     

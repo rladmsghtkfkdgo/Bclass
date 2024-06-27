@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label d13 is defined twice, at File "game/d13.rpyc", line 1:
-
-and File "game/d13_d14.rpy", line 1:
-label d13:
-
+File "game/d2.rpy", line 3: end of line expected.
+    scene color="#000000"
+               ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jun 24 17:22:49 2024
+Thu Jun 27 14:09:50 2024

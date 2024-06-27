@@ -2,7 +2,7 @@
 #단백질 
 label d10_1 : 
     $gday_count += 1
-    show gw_p
+    show gw_main_top
     gm "난희야 이거 선물이야. "
     gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
     ga "[gd_choice]! 고마워 잘 마실게!"
@@ -13,7 +13,7 @@ label d10_1 :
 #오렌지
 label d10_2 : 
     $gday_count += 1
-    show gw_p
+    show gw_main_top
     gm "난희야 이거 선물이야. "
     gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
     ga "[gd_choice] 고마워."
@@ -24,7 +24,7 @@ label d10_2 :
 #고카페인
 label d10_3 : 
     $gday_count += 1
-    show gw_p
+    show gw_main_top
     gm "난희야 이거 선물이야. "
     gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
     ga "[gd_choice] 고마워 잘 마실게."
@@ -35,7 +35,7 @@ label d10_3 :
 #신상 망고 샤인
 label d10_4 : 
     $gday_count += 1
-    show gw_p
+    show gw_main_top
     gm "난희야 이거 선물이야. "
     gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
     ga "[gd_choice]! 고마워...."

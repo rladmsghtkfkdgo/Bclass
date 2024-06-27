@@ -11,7 +11,7 @@ label d13:
     if hogam>= 100 :
         show gw_shy
     else :
-        show gw_p
+        show gw_main_top
 
 
     gw "뭐래는거야."

@@ -1,7 +1,7 @@
 #캐릭터
-define ga = Character('알람', color="#e70000")
-#define gsys = Character('시스템', color="#273fdc")
+define ga = Character('알람', color="#e70000")  #시스템
 
+#인물
 define gm = Character('박승철(당신)', color="#000c92") #주인공
 define  gw = Character('이난희', color="#cc4dcc", image='w_p')
 define gf = Character('이진', color="#62234a") # 주인공의 친구 
@@ -10,12 +10,24 @@ define gp2 = Character('찬우(동아리 부원)', color="#9c90a5")
 define gn= Character('이름 모르는 사람', color="#9c90a5")
 
 
-image gw_p = "character/main_w_top.png"
-#샤이 이미지 추가 
-#image gw_shy = "character/main_w_top.png"
+#인물 이미지
+image gw_main_top = "character/main_w_top.png"
+#image gw_main_shy = ""  #shy 이미지 
+#image gn = ""
+#image gf = ""
+#image gp1 = ""
+#image gp2 = ""
+
+
+#음식 
+image gdiner_jju = ""   #쭈꾸미
+image gdiner_hawai = "" # 하와이안 피자
+image gdiner_mara = ""  # 마라
+image gdiner_ttok = ""  # 떡볶이 
 
 
 # 배경 이미지
+#image test = color="#000000"
 image gdong =("background/d1_축제이미지.jpg")
 image gpark =("background/공원_길거리.jpg")
 image gclassroom1 ="background/교실1.jpg"

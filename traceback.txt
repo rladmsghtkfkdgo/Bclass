@@ -1,22 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/d13_d14.rpy", line 66, in script
-    jump d14
-ScriptError: could not find label 'd15'.
+  File "game/var.rpy", line 15, in script
+    image gw_main_shy = ""  #shy 이미지
+Exception: An empty string cannot be used as a displayable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/d13_d14.rpy", line 66, in script
-    jump d14
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'd15'.
+  File "game/var.rpy", line 15, in script
+    image gw_main_shy = ""  #shy 이미지
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 926, in execute
+    renpy.exports.image(self.imgname, img)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\exports.py", line 341, in image
+    d = renpy.easy.displayable(d)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\easy.py", line 117, in displayable
+    raise Exception("An empty string cannot be used as a displayable.")
+Exception: An empty string cannot be used as a displayable.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Mon Jun 24 17:25:11 2024
+Thu Jun 27 14:05:04 2024

@@ -1,6 +1,6 @@
 label d3: 
     $gday_count += 1
-    scene black
+    scene gblack
     ga "오늘은 학교가는 날 입니다."
 
     scene gclassroom2
@@ -17,7 +17,7 @@ label d3:
             ga "호감도 +0"
             $hogam += 0
 
-        "춤추면서 달려간다.":
+        "춤추면서 달려간 후 인사한다.":
             gw "누구세요?"
             ga "호감도 -10"
             $hogam += -10
@@ -30,26 +30,41 @@ label d3:
     gm "아 ! [gw] ! 내일 저녁 알지? 내가 저녁 사기로 한 날! "
 
     gw "알지알지 기억하지."
+    ga "저녁은 뭘 먹자고 할까?"
+
+
+    # 저녁 메뉴에 따라 다르게 보여주기.
+    init python:
+        gdiner = ["쭈꾸미 볶음", "하와이안 피자", "마라탕", "떡볶이"]
+    
     menu :
-        "쭈꾸미 볶음":
+        "[gdiner[0]]":
+            gm "[gdiner[0]]으로 먹자"
             gw "좋은데! "
             ga "호감도 +10"
             $hogam += 10
+            jump d4_1
 
 
-        "고구마 피자":
+        "[gdiner[1]]":
+            gm "[gdiner[1]]로 먹자"
             gw "나쁘지 않네"
-            ga "호감도 +5"
-            $hogam += 5
+            ga "호감도 +0"
+            $hogam += 0
+            jump d4_2
 
-        "마라탕":
+        "[gdiner[2]]":
+            gm "[gdiner[2]]으로 먹자"
             gw ".........음"
             ga "호감도 +0"
             $hogam += 0
+            jump d4_3
 
-        "떡볶이":
+        "[gdiner[3]]":
+            gm "[gdiner[3]]으로 먹자"
             gw ".........음...........음...........이게 최선이야?"
             ga "호감도 -20"
             $hogam += -20
+            jump d4_4
 
-    jump d4
+    

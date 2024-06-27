@@ -12,10 +12,10 @@ label d12:
     gp2 "어 !!! 승철~! "
     gm "어!! [gp2]!"
 
-    show gw_p
+    show gw_main_top
     gm "난희~ 아침에도 봤지만 하이하이 ~ "
     gw "하하하 안녕"
-    hide gw_p
+    hide gw_main_top
 
     gp1 "여러분 2학기 동아리 OT를 시작하겠습니다. 새로 들어오신 분도 있으니 소개를 하자면,  .  .(생략). . . "
     gp1 "아무튼 이제 조 추첨식을 진행하겠습니다."
@@ -23,19 +23,19 @@ label d12:
     ga "몇 번을 뽑을까요?"
     menu:
         "1조" :
-            show gw_p
+            show gw_main_top
             gm "난희야 몇 조야?"
             gw "나는 1조"
             gm "어!!! 같은 조다! 오예 ~ ! 이번학기 동아리 활동 너무 재밋겠다!"
 
         "2조" :
-            show gw_p
+            show gw_main_top
             gm "난희야 몇 조야?"
             gw "나는 1조"
             gm "어!!! 같은 조다! 오예 ~ ! 이번학기 동아리 활동 너무 재밋겠다!"
 
         "3조" :
-            show gw_p
+            show gw_main_top
             gm "난희야 몇 조야?"
             gw "나는 1조"
             gm "어!!! 같은 조다! 오예 ~ ! 이번학기 동아리 활동 너무 재밋겠다!"
@@ -46,9 +46,9 @@ label d12:
     
     # 호감도가 일정수준 이상이면 난희가 샤이 하는 이미지 보여주기. 아니라면 그냥 난희다. 
     if hogam>=100:
-        show gw_p # 샤이 버전
+        show gw_main_top # 샤이 버전
     else :
-        show gw_p
+        show gw_main_top
 
     scene gblack
     ga "저녁이 되었습니다. "
