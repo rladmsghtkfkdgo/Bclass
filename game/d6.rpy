@@ -43,7 +43,7 @@ label d6:
             ga "호감도 - 20"
             $hogam += -20
 
-    
+    jump d7
 
 
 

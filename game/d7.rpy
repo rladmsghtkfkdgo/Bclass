@@ -31,5 +31,7 @@ label d7:
 
     image gchoice_place = "background/[gspace].png"
 
-    gw "주말에 그럼 늘 보던 그고셍서 만나자. 시간은 10시 어때?"
+    gw "주말에 그럼 늘 보던 그 곳에서 만나자. 시간은 10시 어때?"
     gm "오케이 ~ "
+
+    jump d8
