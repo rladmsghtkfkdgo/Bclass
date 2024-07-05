@@ -74,10 +74,8 @@ label j_mqw: #길
         jump j_erty #결혼
     elif ju >= 45:
         jump j_rtyu #연애
-    elif ju >= 30:
-        jump j_tyuiw #친구
     else:
-        jump j_yuiow #배드엔딩
+        jump j_tyuiw #친구
 
 label j_erty:
     jp "어, 서윤씨 전화네?"
