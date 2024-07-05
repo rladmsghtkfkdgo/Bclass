@@ -13,12 +13,13 @@ label j_dfg: #길
         jp"할게 산더미네.."
         "그 후, 한참동안 청소했다."
         show j_trash
+        " "
         jp"쓰레기도 엄청 나왔네.."
         jp"버리고 와야겠다."
         jp"겸사겸사 밥도 먹고 와야지"
         hide j_trash
-        "집을 나선다"
         show bg j_room_bo
+        "집을 나선다"
         show bg j_room_ca2
         jump j_hjk
 
@@ -79,7 +80,7 @@ label j_dfg: #길
                         show j_su3 at right
                         js "앗, 네..!"
                         hide j_su3
-                        show j_su2
+                        show j_su2 at right
                         show bg j_room1
                         "서윤과 같이 집으로 돌아왔다."
                         show bg j_room_k
@@ -101,14 +102,14 @@ label j_dfg: #길
                             hide j_labe_za
                             jp "다 됐어요"
                             show j_food_dak
+                            hide j_su2
                             jp "간단하게 닭가슴살해봤는데 어때요?"
                             jp "드시기 편하게 조금 잘라놨어요."
-                            hide j_su2
-                            show j_su7 at right
                             js "아.."
                             js "잘 먹겠습니다.."
                             "그 후, 어두워진 서윤의 낯빛을 눈치채지 못하고 즐겁게 식사를 마쳤다."
                             hide j_food_dak
+                            show j_su7 at right
                             js "잘 먹었습니다.."
                             js "맛있었어요.."
                             hide j_su7
@@ -125,10 +126,14 @@ label j_dfg: #길
                             hide j_su5
                             show j_su7 at right
                             js "네"
+                            hide j_su7
                             show bg j_room_bo
                             hide j_su7
+                            show j_su5 at right
                             "그 후, 서윤을 배웅했다"
                             show bg j_room1
+                            " "
+                            hide j_su5
                             jump j_vbn
 
                         label j_cvb:
@@ -220,6 +225,7 @@ label j_gfd: #산
     label j_hgf:
         jp "할게 산더미네.."
         "그 후, 한참동안 청소했다."
+        " "
         show j_trash
         jp "쓰레기도 엄청 나왔네.."
         jp "버리고 와야겠다."

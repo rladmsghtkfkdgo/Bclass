@@ -33,9 +33,14 @@ label j_yui:
         jp "어?"
         "익숙한 모습이 보인다."
         jp "안녕하세요!"
+        hide j_su5
+        show j_su7 at right
         js "아.. 안녕하세요"
+        hide j_su7
+        show j_su5 at right
         "서윤의 안색이 나빠보인다."
         jp "혹시 무슨 일 있으세요?"
+        hide j_su5
         show j_su7 at right
         js "아.. 그게.."
         hide j_su7
@@ -48,9 +53,9 @@ label j_yui:
             show j_su7 at right 
             js "사실 요즘 좀 힘들어서요.."
             hide j_su7
-            show j_su5
+            show j_su5 at right
             "그 후, 한참동안 서윤의 이야기를 들어주었다."
-            $ju+=15
+            $ju+=50
             hide j_su5
             show j_su3 at right
             js "덕분에 많이 좋아진 것 같아요."

@@ -83,7 +83,10 @@ label j_vbn: #길
         show j_su3 at right
         js "네!"
         hide bg j_room_bo
-        show bg j_room_caca
+        scene black
+        with fade
+        scene bg j_room_caca
+        with fade
         hide j_su3
         show j_su3 at right
         js "와, 고양이가 엄청 많네요!"
@@ -91,17 +94,25 @@ label j_vbn: #길
         show j_su2 at right
         "그 후, 한참동안 고양이와 놀았다."
         hide j_su2
+        scene bg j_room_bo
+        with fade
         show j_su3 at right
         js "오늘 정말 즐거웠어요"
         js "감사했습니다!"
+        hide j_su3
+        show j_su2 at right
         $u = +20
         jp "저도 오늘 즐거웠어요."
         jp "조심히 들어가세요!"
+        hide j_su2
+        show j_su3 at right
         js "네!"
-        hide bg j_room_caca
-        " "
+        "그 후, 서윤을 배웅했다."
         hide j_su3
-        " "
+        scene black
+        with fade
+        scene bg j_room1
+        with fade
         jump j_mqw
 
 
@@ -145,17 +156,25 @@ label j_vbn: #길
         show j_su2 at right
         "그 후, 한참동안 고양이와 놀았다."
         hide j_su2
+        scene bg j_room_bo
+        with fade
         show j_su3 at right
         js "오늘 정말 즐거웠어요"
         js "감사했습니다!"
+        hide j_su3
+        show j_su2 at right
         $u = +10
         jp "저도 오늘 즐거웠어요."
         jp "조심히 들어가세요!"
+        hide j_su2
+        show j_su3 at right
         js "네!"
-        hide bg j_room_caca
-        " "
+        "그 후, 서윤을 배웅했다."
         hide j_su3
-        " "
+        scene black
+        with fade
+        scene bg j_room1
+        with fade
         jump j_mqw
        
 
@@ -215,6 +234,8 @@ label j_nbvq: #산
         jp "다음에 다시 연락해봐야겠다."
         scene black
         with fade
+        scene j_room1
+        with fade
         jump j_mqww
 
     
@@ -224,7 +245,7 @@ label j_nbvq: #산
         js "음, 그럼.."
         jp "언제가 편하세요?"
         js "그러면 조금 뒤에 복도에서 만날까요?"
-        jp "네, 좀 이따 봬요!"
+        jp "네, 좀 이따 봬요"
         js "네."
         jump j_ertw
 
@@ -244,10 +265,10 @@ label j_ertw:
         show j_labe_za
         " "
         hide j_labe_za
-        show j_su2 at right
+        show j_su5 at right
         "서윤이 나왔다."
         jp "오셨어요?"
-        hide j_su2
+        hide j_su5
         show j_su4 at right
 
         js "앗, 많이 기다리셨나요?"
@@ -256,13 +277,17 @@ label j_ertw:
         show j_su3 at right
         js "다행이에요."
         hide j_su3
-        show j_su2 at right
+        show j_su5 at right
         jp "그럼 갈까요?"
-        hide j_su2
+        hide j_su5
         show j_su3 at right
         js "네!"
         hide bg j_room_bo
-        show bg j_room_caca
+        scene black
+        with fade
+        scene bg j_room_caca
+        with fade
+        
         hide j_su3
         show j_su3 at right
         js "와, 고양이가 엄청 많네요!"
@@ -270,17 +295,26 @@ label j_ertw:
         show j_su2 at right
         "그 후, 한참동안 고양이와 놀았다."
         hide j_su2
+        scene bg j_room_bo
+        with fade
         show j_su3 at right
         js "오늘 정말 즐거웠어요"
         js "감사했습니다!"
-        $ju+=20
+        hide j_su3
+        show j_su2 at right
+        $u = +20
         jp "저도 오늘 즐거웠어요."
         jp "조심히 들어가세요!"
+        hide j_su2
+        show j_su3 at right
         js "네!"
-        hide bg j_room_caca
-        " "
+        "그 후, 서윤을 배웅했다."
         hide j_su3
-        " "
+        scene black
+        with fade
+        scene bg j_room1
+        with fade
+
         jump j_mqw
 
 
@@ -316,7 +350,10 @@ label j_ertw:
         show j_su5 at right
         js "네.."
         hide bg j_room_bo
-        show bg j_room_caca
+        scene black
+        with fade
+        scene bg j_room_caca
+        with fade
         hide j_su5
         show j_su3 at right
         js "와, 고양이가 엄청 많네요"
@@ -324,15 +361,23 @@ label j_ertw:
         show j_su2 at right
         "그 후, 한참동안 고양이와 놀았다."
         hide j_su2
+        scene bg j_room_bo
+        with fade
         show j_su3 at right
         js "오늘 정말 즐거웠어요"
         js "감사했습니다!"
-        $u = +10
+        hide j_su3
+        show j_su2 at right
+        $u = +20
         jp "저도 오늘 즐거웠어요."
         jp "조심히 들어가세요!"
+        hide j_su2
+        show j_su3 at right
         js "네!"
-        hide bg j_room_caca
-        " "
+        "그 후, 서윤을 배웅했다."
         hide j_su3
-        " "
+        scene black
+        with fade
+        scene bg j_room1
+        with fade
         jump j_mqw

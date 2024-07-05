@@ -13,23 +13,29 @@ label jn:
     show j_hand
     show j_alm
     " "
-    hide j_alm
-    show j_utb
     jw"아, 유튜브 알람이네"
-    jw"이왕 들어온거 유튜브나 볼까"
-    hide j_utb
+    jw"유튜브나 볼까"
+    hide j_alm
+    show j_hand_u
+    " "
+    hide j_hand_u
     "뭐 볼까?"
 
     menu:
         "영상 보자":
-            "(유피아의 영상이 뜬다)"
+            show j_hand_d
             jump j_fir
         "숏츠 보자":
-            show j_upi_1
+            show j_hand_s
             jump j_fir
     label j_fir:
         jw "요즘 이 사람 많이 보이네"
-        hide j_upi_1
+        scene black
+        with fade
+        hide j_hand_d
+        hide j_hand_s
+        scene bg j_room1
+        with fade
         show j_labe_2
         " "
         hide j_hand
@@ -82,14 +88,26 @@ label jn:
 
 
         label j_na:
-            "(냉장고를 연다)/n
-            냉장고에 뭐가 있더라"
+            show bg j_room_k
+            "냉장고에 뭐가 있더라"
+            hide bg j_room_k
+            show bg j_room_na
             jw "흠.. 뭐가 없네, 마트 다녀와야겠다."
+            scene black
+            with fade
+            scene bg j_room_bo
+            with fade
+            "(집을 나선다)"
             jump j_vip
     label j_muc:
         jw "흠...오랜만에 운동이나 할까?"
         jw "무슨 운동하지.."
         jw "오랜만의 운동인데 헬스장 가야겠다."
+        scene black
+        with fade
+        scene bg j_room_bo
+        with fade
+        "(집을 나선다)"
         jump j_vip
 
     label j_utb:
@@ -104,9 +122,6 @@ label jn:
         jump j_two
 
     label j_vip:
-        scene bg j_room_bo
-        "집을 나선다"
-        
         show j_su1 at right
         "어, 옆집사람이네.."
         "어쩌지?"
@@ -141,12 +156,19 @@ label jn:
             label j_ma:
                 jw"아 그랬었지"
                 jw"장 보러 가자"
-                show bg j_room_k
+                scene black
+                with fade
+
+                scene bg j_room_k
+                with fade
                 "그 후, 장 봐온 것들로 음식을 만들어 먹었다."
+                hide bg j_room_k
                 show j_food_pa
                 jw"음, 맛있네~"
                 jw"요리.. 꽤 재능 있을지도?"
                 hide j_food_pa
+                show bg j_room_k
+                show bg j_ser
                 jw"아.. 근데 설거지.."
                 jw"일단 자고 일어나서 할까.."
                 "그 후, 피곤해서 금방 잠들었다."

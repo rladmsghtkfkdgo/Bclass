@@ -1,4 +1,8 @@
 label j_cv:
+    scene black
+    with fade
+    scene bg j_room1
+    with fade
     show j_labe_zu
     " "
     hide j_labe_zu
@@ -39,7 +43,7 @@ label j_cv:
             "과자를 들고 즐거운 발걸음으로 집에 돌아갔다."
             hide bg j_room_co
             show bg j_room1
-            "(과자를 뜯으며) \n 유튜브나 볼까"
+            "유튜브나 볼까"
             jump j_qwe
 
     label j_qwe:

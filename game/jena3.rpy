@@ -1,6 +1,10 @@
 label j_lz:
+    scene black
+    with fade
+    scene bg j_room1
+    with fade
     
-    if u <= 19:
+    if ju <= 19:
         "옆집 사람과는 동선이 꽤 겹치는 것 같다."
         jump j_zx
     else:
@@ -11,11 +15,16 @@ label j_lz:
             "..."
             "어색한데.."
             "좀 피해다녀야지.."
+            scene black
+            with fade
+            scene bg j_room1
+            with fade
             show j_labe_ge
             " "
             hide j_labe_ge
             "그 후로 옆집 사람을 보지 못했다."
             "듣기로는 이사를 간 듯 싶다."
+            return
 
         label j_xc:
             "꽤 자주 마주쳐 같이 움직일 때도 있다."

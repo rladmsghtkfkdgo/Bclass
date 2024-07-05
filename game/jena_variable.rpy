@@ -22,17 +22,19 @@ image bg j_room_bo2 = "j_room_bo2.png" #폴리스 아파트 복도
 image bg j_room_bo3 = "j_room_bo3.png" #어두운 폴리스 아파트 복도
 image bg j_room_h = "j_room_h.png" #헬스장
 image bg j_room_k = "j_room_k.png" #부엌
+image bg j_room_na = "j_room_na.png" #냉장고
 image bg j_room_co = "j_room_co.png" #편의점
 image bg j_room_co2 = "j_room_co2.png" #편의점 벤치
 image bg j_room_ca1 = "j_room_ca1.png" #고양이 담벼락
 image bg j_room_ca2 = "j_room_ca2.png" #고양이 담벼락 없이
 image bg j_room_caca = "j_room_caca.png" #고양이 카페
 image bg j_room_sa = "j_room_sa.png" #산책로
-image bg j_room_sand = "j_room_san.png" #산책로
+image bg j_room_sand = "j_room_san.png" #샌드위치 가게
+image bg j_room_we = "j_room_we.png" #웨딩 드레스
 image bg j_zero = "j_zero.png"
 
 image bg j_trash = "j_trash.png" #쓰레기
-image j_pol = "j_pol.png" #경찰
+image bg j_ser = "j_ser.png" #설거지 그릇
 
 image j_food_pa = "j_food_pa.png" #파스타
 image j_food_so = "j_food_so.png" #스프
@@ -49,9 +51,10 @@ image j_labe_me = "j_labe_me.png" #며칠 뒤
 
 image j_mes = "j_mes.png" #메시지
 
-image j_hand = "j_hand1.png" #핸드폰&손
+image j_hand = "j_hand_b.png" #핸드폰 검은 화면
+image j_hand_t = "j_hand.png" #핸드폰 빈 화면
+image j_hand_u = "j_hand_u.png" #유튜브 시작 화면
 image j_alm = "j_utb_1.png" #유튜브 알람
-image j_utb = "j_utb_2.png" #유튜브 시작화면
 image j_upi_1 = "j_upi_1.png" #유피아 쇼츠
 image j_su1 = "j_su1.png" #무표정
 image j_su2 = "j_su2.png" #미소
@@ -67,6 +70,7 @@ image j_dream_ca = "j_dream_ca.png" #고양이 꿈
 
 image j_hh_1 = "j_hh_1.png" #헬스 트레이너
 image j_co_1 = "j_co_1.png" #편의점 점원
+image j_pol = "j_pol.png" #경찰
 
 
 define ju = 0 #호감도

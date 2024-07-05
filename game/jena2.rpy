@@ -1,5 +1,10 @@
 label j_ho:
-    show bg j_room1
+    scene black
+    with fade
+
+    scene bg j_room1
+    with fade
+
     show j_labe_da
     " "
     hide j_labe_da
@@ -100,6 +105,7 @@ label j_ho:
                 label j_op:
                     "츄르를 주머니에 넣고 지나갔다."
                     $ju-=20
+                    hide j_su1
                     jump j_sd
                 label j_pa:
                     jw"저.. 안녕하세요?"
@@ -132,7 +138,7 @@ label j_ho:
                     hide j_su2
                     show j_su3 at right
                     js "좋아요"
-                    $ju+=20
+                    $ju+=30
                     
                     "그 후, 서윤을 배웅했다."
                     hide j_su3
