@@ -545,7 +545,7 @@ label j_gfd: #산
                             show bg j_room_bo
                             "그 후, 서윤을 배웅했다"
                             show bg j_room1
-                            jump j_nbv
+                            jump j_vbn
 
                     label j_cxz:
                         js "좋아요"
