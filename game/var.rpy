@@ -1,3 +1,7 @@
+# 8일차 부터
+
+
+
 #캐릭터
 define ga = Character('알람', color="#e70000")  #시스템
 
@@ -10,6 +14,10 @@ define gp2 = Character('찬우(동아리 부원)', color="#9c90a5")
 define gn= Character('이름 모르는 사람', color="#9c90a5")
 
 
+image side gm = "images/character/main_w_top.png"
+#image side gf main= "character/main_w_top.png"
+ 
+
 #인물 이미지
 image gw_main_top = "character/main_w_top.png"
 #image gw_main_shy = ""  #shy 이미지 
@@ -20,23 +28,23 @@ image gw_main_top = "character/main_w_top.png"
 
 
 #음식 
-image gdiner_jju = ""   #쭈꾸미
-image gdiner_hawai = "" # 하와이안 피자
-image gdiner_mara = ""  # 마라
-image gdiner_ttok = ""  # 떡볶이 
+#image gdiner_jju = "food/쭈꾸미.png"   #쭈꾸미
+#image gdiner_hawai = "food/하와이안 피자.png" # 하와이안 피자
+#image gdiner_mara = "food/"  # 마라
+#image gdiner_ttok = "food/떡볶이.png"  # 떡볶이 
 
 
 # 배경 이미지
 #image test = color="#000000"
-image gdong =("background/d1_축제이미지.jpg")
-image gpark =("background/공원_길거리.jpg")
+image gdong =("background/대중.jpg")
+image gpark =("background/공원.png")
 image gclassroom1 ="background/교실1.jpg"
-image gclassroom2 ="background/교실2.jpg"
-image gstreet1 ="background/길거리1.jpg"
+image gclassroom2 =im.FactorScale("background/교실2.jpg", 0.4)
+image gstreet1 =im.FactorScale("background/고등학생들2.png", 0.75)
 image gstreet2 ="background/길거리2.jpg"
 image grice ="background/김치볶음밥.jpg"
 image gcrownd ="background/대중.jpg"
-image groom ="background/방 사진.jpg"
+image groom ="background/방1.png"
 image gsandwitch ="background/샌드위치.jpg"
 image gkimbab ="background/오이김밥.jfif"
 image gpark_biy ="background/자전거와 공원.jpg"
@@ -45,11 +53,11 @@ image gdark_park ="background/자전거와 공원2_어두워.jpg"
 image ghangang ="background/한강자전거길.jpg"
 image gbeach ="background/해변자전거길.jpg"
 image gd1_festival ="background/d1_축제이미지.jpg"
-image gblack = im.FactorScale("background/검정.png", 15.0)   #화면 전환시 사용
+image gblack = "background/검정.png"   #화면 전환시 사용
 image gride_bike = "background/자전거배우기.png"
 image gm_ride_bike1 = im.FactorScale("background/자전거타는남주1.png", 10.0)
 image gm_ride_bike2 = im.FactorScale("background/자전거타는남주2.png", 2.0) #height=1920, width=1020
-#image g = "background/"
+image gschool_morning = im.FactorScale("background/등교.png", 0.75)
 #image g = "background/"
 #image g = "background/"
 
@@ -59,3 +67,15 @@ init python:
     gday_count = 0;
 
     str_question ="오늘 운동을 갈까요?"
+
+
+   
+screen hello_world():
+    tag example
+    zorder 1
+    modal False
+    text "Hello, World."
+
+
+#문법
+#$ renpy.notify('test') --> 왼쪽 상단에 작게 알림 띄우기

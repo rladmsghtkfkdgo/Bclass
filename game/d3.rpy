@@ -1,9 +1,10 @@
 label d3: 
     $gday_count += 1
     scene gblack
+    $ renpy.notify('다음날')
     ga "오늘은 학교가는 날 입니다."
 
-    scene gclassroom2
+    scene gschool_morning
     gm "어 ! [gw]이다! 인사할까?"
     
     menu:

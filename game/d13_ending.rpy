@@ -4,7 +4,7 @@ label d13:
     #단풍진 산.
     gw "와 경치 진짜 너무 끝내준다. "
     gm "그니까 ! 시야가 탁 트이는 느낌이야. "
-    gm "난희야 너도 오늘 이쁜데?"
+    gm "경치도 이쁘고..난희야 너도 오늘 이쁜데?"
 
 
 
@@ -26,7 +26,7 @@ label d13:
     menu:
         "니가 좋다 이난희":
             if hogam>=200:
-                gw "나도 좋아"
+                gw "나도 좋아. 너 내 남자친구해라. "
                 jump ending_love
 
             else : 
@@ -45,8 +45,12 @@ label d13:
         
 
 label ending_love:
-
+    scene black
+    ga "당신은 이난희와 연인이 되었습니다. "
+    scene 러브
 
 label ending_friend:
-
+    scene black
+    ga "당신은 이난희와 우정을 기약했습니다. "
+    scene 친구
     

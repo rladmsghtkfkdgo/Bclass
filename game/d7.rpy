@@ -2,6 +2,7 @@
 #동아리 정기 자전거 타는 날 
 label d7:
     $gday_count += 1
+    $ renpy.notify('동아리 정기 활동일')
     scene black
     ga "오늘은 동아리 정기 자전거 타는 날입니다. 그동안 연습한 실력을 보여줍시다."
     

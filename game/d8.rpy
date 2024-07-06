@@ -1,10 +1,10 @@
 label d8:
     $gday_count += 1
-
+    $ renpy.notify('어느날 아침')
     init python:
     # - 호감도 음식 추가하기
-    gfood_lunch = ["김치 볶음밥", "김밥", "에그마요 토스트", "불향 가득 짬뽕밥"]
-    gchoice= " "
+        gfood_lunch = ["김치 볶음밥", "김밥", "에그마요 토스트", "불향 가득 짬뽕밥"]
+        gchoice= " "
 
     scene gblack
     ga "당신은 점심 도시락을 싸려고 합니다. 뭘 만들까요?"
@@ -37,6 +37,7 @@ label d8:
 
         #image gfood_choice = "food/[gchoice].png"
 
+    $ renpy.notify('약속 장소')
     scene gchoice_place
     gm "자연아 ! 여기야! 출발할까? "
     
@@ -68,28 +69,28 @@ label d8:
     
     if gchoice == gfood_lunch[0] :
         scene gfood_choice
-            gw "맛있겠다."
-            ga "호감도 +5"
-            $hogam += 5
+        gw "맛있겠다."
+        ga "호감도 +5"
+        $hogam += 5
         
     elif gchoice == gfood_lunch[1] :
         scene gfood_choice
-            gw "와 오이 듬뿍?? 진짜 진짜 맛있겠다!!!" 
-            ga "호감도 +20"
-            $hogam += 20
+        gw "와 오이 듬뿍?? 진짜 진짜 맛있겠다!!!" 
+        ga "호감도 +20"
+        $hogam += 20
 
         
     elif gchoice == gfood_lunch[2] :
         scene gfood_choice
-            gw "와 에그마요?? 나쁘지 않은데!" 
-            ga "호감도 +5"
-            $hogam += 5
+        gw "와 에그마요?? 나쁘지 않은데!" 
+        ga "호감도 +5"
+        $hogam += 5
         
     elif gchoice == gfood_lunch[3] :
         scene gfood_choice
-            gw "[gfood_lunch[3]]?? 음.. 잘먹을게.." 
-            ga "호감도 - 20"
-            $hogam += -20
+        gw "[gfood_lunch[3]]?? 음.. 잘먹을게.." 
+        ga "호감도 - 20"
+        $hogam += -20
         
 
     gw "만드느라 고생했겠다. 고마워 잘 먹을게."

@@ -1,6 +1,7 @@
 #gdiner = ["쭈꾸미 볶음", "하와이안 피자", "마라탕", "떡볶이"]
 label d4_1:
     #호감 +10
+    $renpy.notify('저녁')
     $gday_count += 1
     scene gblack
     ga "당신은 저녁으로 [gdiner[0]] 먹으러 왔습니다. "
@@ -13,43 +14,46 @@ label d4_1:
 
 label d4_2:
     #호감 +0
+    $renpy.notify('저녁')
     $gday_count += 1
     scene gblack
     ga "당신은 저녁으로 [gdiner[1]] 먹으러 왔습니다. "
     
     scene gdiner_hwai
     gm "맛있게 먹어!"
-    ga "응 ~ 너도~"
+    gw "응 ~ 너도~"
 
     jump d4_main
 
 label d4_3:
     #호감 +0
+    $renpy.notify('저녁')
     $gday_count += 1
     scene gblack
     ga "당신은 저녁으로 [gdiner[2]] 먹으러 왔습니다. "
     
     scene gdiner_mara
     gm "맛있게 먹어!"
-    ga "응 ~ 너도~"
+    gw "응 ~ 너도~"
 
     jump d4_main
 
 label d4_4:
     #호감 - 20 
+    $renpy.notify('저녁')
     $gday_count += 1
     scene gblack
     ga "당신은 저녁으로 [gdiner[3]] 먹으러 왔습니다. "
     
     scene gdiner_ttok
     gm "맛있게 먹어!"
-    ga "응.. 너도~.."
+    gw "응.. 너도~.."
 
     jump d4_main
 
 
 label d4_main:
-
+    $renpy.notify('다 먹은 후..')
     scene gstreet1
     show gw_main_top
     gw "배부르다~"
@@ -82,6 +86,7 @@ label d4_main:
 
 label d4_fin:
     scene groom
+    $renpy.notify('집')
     gm "오늘도 즐거웠다.  "
     ga "[str_question]"
 

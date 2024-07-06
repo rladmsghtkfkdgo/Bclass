@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/d2.rpy", line 3: end of line expected.
-    scene color="#000000"
-               ^
+File "game/d4.rpy", line 4: expected statement.
+    renpy.notify('저녁')
+                      ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Jun 27 14:09:50 2024
+Sun Jul  7 02:14:01 2024

@@ -1,24 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/var.rpy", line 15, in script
-    image gw_main_shy = ""  #shy 이미지
-Exception: An empty string cannot be used as a displayable.
+  File "game/d5.rpy", line 19, in script
+    gm main "자연아 너넨 어디로 가? 우린 나즈막산."
+Exception: Say has image attributes ('main',), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/var.rpy", line 15, in script
-    image gw_main_shy = ""  #shy 이미지
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 926, in execute
-    renpy.exports.image(self.imgname, img)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\exports.py", line 341, in image
-    d = renpy.easy.displayable(d)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\easy.py", line 117, in displayable
-    raise Exception("An empty string cannot be used as a displayable.")
-Exception: An empty string cannot be used as a displayable.
+  File "game/d5.rpy", line 19, in script
+    gm main "자연아 너넨 어디로 가? 우린 나즈막산."
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\character.py", line 1332, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\character.py", line 1151, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "A:\Renpy\renpy-8.2.1-sdk\renpy\character.py", line 1077, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes ('main',), but there's no image tag associated with the speaking character.
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Thu Jun 27 14:05:04 2024
+Sun Jul  7 02:30:07 2024

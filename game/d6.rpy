@@ -1,5 +1,6 @@
 #d6
 label d6:
+    $ renpy.notify('주말')
     $gday_count += 1
     scene gblack
     ga "화창한 어느날 공원. "
@@ -7,6 +8,7 @@ label d6:
     show gw_main_top
     gw "여태까지 갈고 닦은 실력을 보여줄래?"
     hide gw_main_top
+
 
     scene gm_ride_bike
 
@@ -28,17 +30,17 @@ label d6:
     gm "당연하지."
 
     menu:
-        gm "먼저 집에가. 나는 좀만 더 연습하다가 갈게":
+        "먼저 집에가. 나는 좀만 더 연습하다가 갈게":
             gw "너무 무리하지는 마라!"
             ga "호감도 + 10"
             $hogam += 10
 
-        gm "빨리 집에 가자. 피곤하다. 내일 학교 가려면 쉬어야지. ":
+        "빨리 집에 가자. 피곤하다. 내일 학교 가려면 쉬어야지. ":
             gw "그래"
             ga "호감도 + 0"
             $hogam += 0
         
-        gm "나는 저녁 약속이 있어서 먼저 가~":
+        "나는 저녁 약속이 있어서 먼저 가~":
             gw "그래 내일 보자."
             ga "호감도 - 20"
             $hogam += -20

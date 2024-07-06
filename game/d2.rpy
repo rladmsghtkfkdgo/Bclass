@@ -62,11 +62,14 @@ label d2_공원:
     gm "후... 떨린다."
     gw "나 이제 손 놓을게. 자 타보자! "
 
-    scene gride_bike
+    scene gblack
     gm "제발 안돼 ! 나 아직 무서워 ! "
     gw "사실 한참 전부터 놨었어. 만재야 성공이야! "
     gm "뭐라고?!!!!!!!!!!!"
+    scene gride_bike
     # 자전거를 성공적으로 타서 기쁜 둘 
+
+    ga "당신은 자전거를 배웠습니다."
 
 label d2_저녁:
     scene gdark_park

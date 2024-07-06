@@ -9,27 +9,24 @@
 # 여기에서부터 게임이 시작합니다.
 # 프롤로그 
 label yj:
-    scene groom
-    ga "지금 우리 동네에 핫한 동호회!
-            이런 동호회는 어때요?"
-
-    gm "운동 동호회? 이번에는 좀 괜찮은 곳일까? "
-    gm "매번 어떻게 가입하는 곳마다 사건이 터지냐..  "
-
-    menu: 
-        "동호회에 가입한다":
-            gm "그래, 가입만 해보자"
-
-        "동호회에 가입하지 않는다.":
-            gm "가입만 하는건데 뭐 어때.. 가입해보자!"
-    
-
+   
     label alert:
-        ga "박승철님이 메세지를 보냈습니다. "
+        $ renpy.notify('test')
+        ga "[gf]님이 메세지를 보냈습니다. "
         #show image = "카톡 이미지.png"
 
         gm "아 맞다! 내일 동아리 어디 가입하지?"
         gm ".. 내일 구경해보고 결정하자 ~ "
+
+
+        #$ renpy.call_screen("popup", str="이봐 친구!!! 동아리 어디 가입할거야!!!")
+        screen hello_world():
+            tag example
+            zorder 1
+            modal False
+            text "Hello, World."
+
+        #$ renpy.call_screen("hello_world")
 
     #==========================================================
     # Day 1
