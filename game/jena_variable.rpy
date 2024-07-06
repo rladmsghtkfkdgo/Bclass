@@ -50,17 +50,8 @@ image j_labe_ge = "j_labe_ge.png" #몇 개월 후
 image j_labe_zu = "j_labe_zu.png" #한가로운 주말 아침
 image j_labe_me = "j_labe_me.png" #며칠 뒤
 
-image j_mes = "j_mes.png" #메시지
-image j_mes_y = "j_mes_y.png" #메시지 Yes
 image j_mes_1 = "j_mes_1.png" #메시지
 image j_mes_2 = "j_mes_2.png" #메시지 Yes
-image j_mes_3 = "j_mes_3.png" #메시지
-image j_mes_4 = "j_mes_4.png" #메시지
-image j_mes_5 = "j_mes_5.png" #메시지
-image j_mes_6 = "j_mes_6.png" #메시지
-image j_mes_7 = "j_mes_7.png" #메시지
-image j_mes_8 = "j_mes_8.png" #메시지
-image j_mes_9 = "j_mes_9.png" #메시지
 image j_mes_ti = "j_mes_ti.png" #메시지 띠링
 
 image j_hand = "j_hand_b.png" #핸드폰 검은 화면

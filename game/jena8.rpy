@@ -73,14 +73,15 @@ label j_mqww: #산
     show j_mes_ti
     " "
     hide j_mes_ti
-    show j_mes_8
+    show j_mes_1
     " "
     jp "어..?"
     jp "돌아갈 수.. 있어..?"
     jp "그럼..."
     jp "이번엔.."
-    hide j_mes_8
-    show j_mes_9
+    jp "..."
+    hide j_mes_1
+    show j_mes_2
     $ renpy.music.stop(channel="music", fadeout=5.0)
     scene bg j_white
     with fade
