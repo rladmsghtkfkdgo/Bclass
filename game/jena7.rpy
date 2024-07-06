@@ -3,10 +3,7 @@ label j_vbn: #길
     with fade
     scene bg j_room1
     with fade
-    show j_labe_da
-    " "
-    hide j_labe_da
-    "[u]"
+    "[ju]"
     show j_labe_me
     " "
     hide j_labe_me

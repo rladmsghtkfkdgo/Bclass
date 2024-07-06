@@ -15,11 +15,10 @@ label j_cv:
             jump j_qwe
     label j_vb:
         jp "나가는 김에 과자도 사올까?"
-        jp "고양이.. 있으려나?"
-        jp "츄르... 가져갈까?"
-        jp "음.. 가져가자."
+        jp "아, 고양이.."
+        jp "혹시 모르니까 츄르 가져가야겠다."
         show bg j_room_ca2
-        jp "어, 없나?"
+        jp "아.. 없나?"
         show bg j_room_ca1
         jp "아, 있다!"
         jp "거기 있었구나"
@@ -48,8 +47,9 @@ label j_cv:
 
     label j_qwe:
         show j_hand
-        "유튜브를 본다"
-        "유피아의 영상에 심한 악플이 달린 것을 보게 된다."
+        " "
+        show j_hand_df
+        "유피아의 영상에 심한 악플이 달려있다."
         jp "뭐지..?"
         jp "음.."
         menu:
@@ -58,21 +58,24 @@ label j_cv:
             "뭐.., 욕 먹을 만한 짓을 했겠지. \n 다른 영상이나 보자.":
                 jump j_ert
         label j_wer:
+            " "
+            show j_hand_da
             "잠시 멈칫 했지만 금방 다른 영상으로 넘어갔다."
             jump j_rty
         label j_ert:
+            show j_hand_da
             "금방 다른 영상으로 넘어갔다."
             jump j_rty
 
             label j_rty:
-                #show labe 한참뒤
+                show j_labe_ha
                 " "
-
+                hide j_labe_ha
                 jp "슬슬 다른 거 할까?"
                 jp "이제 뭐하지?"
                 jp "옷 안 산지 꽤 된 것 같은데.."
-                jp "옷 살까?"
-                jp "뭐가 좋을까?"
+                jp "옷 살까"
+                jp "뭐 사지?"
                 menu:
                     "무난하게 깔끔한 티":
                         jump j_tyu

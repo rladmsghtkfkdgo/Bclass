@@ -97,6 +97,7 @@ label j_erty:
     show j_su2 at right
     jp "네, 그때 봬요!"
     hide j_su2
+    show bg j_room_en
     show j_labe_za
     ""
     hide j_labe_za
@@ -141,6 +142,10 @@ label j_erty:
     jp "좋아요!"
     hide j_su2
     show j_su3 at right
+    scene black
+    with fade
+    scene bg j_room1
+    with fade
     "그 후, 우리는 연인이 되었다."
     "그리고 유튜브는.."
     menu:
@@ -149,31 +154,36 @@ label j_erty:
         "그만두기로 했다":
             jump j_yuio
     label j_tyuir:
+        "계속 하기로 했다"
         "달라진 것이 있다면 나도 방송에 종종 나온다는 것이다."
         "유피아의 방송은 일상 위주의 방송이 되었고, \n 팬들은 그런 유피아를 응원해 주었다."
         "그리고 4월 1일에는 결혼 발표 영상을 올릴 예정이다."
-        "우리는 앞으로도 함께할 것이다."
         scene black
         with fade
         scene bg j_room_we
         with fade
+        "우리는 앞으로도 함께할 것이다."
+        " "
+        " "
         return
 
     label j_yuio:
+        "그만두기로 했다"
         "서윤, 그러니까 유피아는 마지막 영상을 올리고 유튜브를 그만두었다."
         "서윤에게 아깝지는 않냐고 묻자 서윤은 지금이 더 좋다고 답했다"
-        "우리는 앞으로도 함께할 것이다."
         scene black
         with fade
         scene bg j_room_we
         with fade
+        "우리는 앞으로도 함께할 것이다."
+        " "
+        " "
         return
+    
 label j_rtyu:
     "연애"
 label j_tyuiw:
     "친구"
-label j_yuiow:
-    "배드엔딩"
     
 
 

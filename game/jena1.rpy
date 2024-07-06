@@ -8,7 +8,7 @@
 label jn:
     scene bg j_room1
 
-    play sound "j_dodo.ogg"
+    play music "j_dodo.ogg"
     "유튜브에서 알람이 왔다"
     show j_hand
     show j_alm
@@ -168,7 +168,7 @@ label jn:
                 jw"요리.. 꽤 재능 있을지도?"
                 hide j_food_pa
                 show bg j_room_k
-                show bg j_ser
+                show bg j_room_ser
                 jw"아.. 근데 설거지.."
                 jw"일단 자고 일어나서 할까.."
                 "그 후, 피곤해서 금방 잠들었다."

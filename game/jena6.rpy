@@ -189,7 +189,7 @@ label j_dfg: #길
                         hide j_su3
                         show j_su2 at right
                         "서윤과 산책하며 이런저런 얘기를 나눴다."
-                        $u+=20
+                        $ju+=20
                         show bg j_room_bo
                        
                         "산책이 끝난 후, 서윤을 배웅해주었다."

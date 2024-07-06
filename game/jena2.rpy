@@ -43,6 +43,10 @@ label j_ho:
             jw"여유로운 아침이네"
             jw"좀 더 이대로 있을까.."
             "포근한 날씨에 잠에 들었다."
+            scene black
+            with fade
+            scene bg j_room1
+            with fade
             jw"으음...얼마나 잔거지..?"
             jw"벌써 4시네"
             jw"일찍 일어난 보람이 없네"
@@ -52,6 +56,10 @@ label j_ho:
             jump j_yu
     label j_we:
         jw "좀만 더 자자"
+        scene black
+        with fade
+        scene bg j_room1
+        with fade
         "한참을 자고나니 저절로 눈이 뜨였다."
         jw "으음... 몇시지?"
         jw "벌써 3시네.."
@@ -60,7 +68,7 @@ label j_ho:
         jw "뭐라도 먹을까?"
         jump j_yu
         label j_yu:
-            jw"집에서 먹을까, 밖에서 먹을까 고민되네"
+            jw"집에서 먹을까, 밖에서 먹을까?"
             menu:
                 "집에서 먹자":
                     jump j_io
@@ -83,7 +91,6 @@ label j_ho:
                 jw "계산해 주세요."
                 play sound "j_Beep.ogg"
                 jco "(삑)"
-                play sound "j_dodo.ogg"
                 jco "3800원입니다."
                 jco "감사합니다, 또 오세요"
                 jw "안녕히 계세요~"
@@ -105,7 +112,6 @@ label j_ho:
                 label j_op:
                     "츄르를 주머니에 넣고 지나갔다."
                     $ju-=20
-                    hide j_su1
                     jump j_sd
                 label j_pa:
                     jw"저.. 안녕하세요?"
@@ -141,6 +147,7 @@ label j_ho:
                     $ju+=30
                     
                     "그 후, 서윤을 배웅했다."
+                    hide j_su1
                     hide j_su3
                     jump j_sd
                     label j_sd:
@@ -189,13 +196,17 @@ label j_ho:
                             "적당히 먹어 기분이 좋다"
                             jump j_kl
                         label j_jk:
+                            show bg j_room_co2
                             "과식했더니 속이 더부룩하다."
                             jp "앞으로는 적당히 먹어야지.."
                             jump j_kl
                         label j_kl:
                             jp "밥도 먹었겠다, 집으로 돌아가자"
                             hide bg j_room_co2
-                            show bg j_room1
+                            scene black
+                            with fade
+                            scene bg j_room1
+                            with fade
                             "그 후, 침대에 누워 오늘 일을 떠올리며 이른 잠에 들었다."
                             jump j_lz
             label j_io:

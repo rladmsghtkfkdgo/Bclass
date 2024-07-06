@@ -5,7 +5,7 @@ define js = Character('서서윤', color="#cf9dcf")
 define jq = Character()
 define jplayer_name = "플레이어"
 define jp = Character("jplayer_name",dynamic = True, color="#9fbaff")
-define jhh = Character('헬스 트레이너', color="#9fdfff")
+define jhh = Character('헬스 트레이너', color="#0f4d6d")
 define jco = Character('편의점 점원', color="#453709")
 define jg = Character('경찰', color="#1c1c4a")
 define jg1 = Character('경찰1', color="#22226e")
@@ -31,10 +31,11 @@ image bg j_room_caca = "j_room_caca.png" #고양이 카페
 image bg j_room_sa = "j_room_sa.png" #산책로
 image bg j_room_sand = "j_room_san.png" #샌드위치 가게
 image bg j_room_we = "j_room_we.png" #웨딩 드레스
+image bg j_room_ser = "j_room_ser.png" #설거지 그릇
+image bg j_room_en = "j_room_en.png" #엔딩 카페
 image bg j_zero = "j_zero.png"
 
 image bg j_trash = "j_trash.png" #쓰레기
-image bg j_ser = "j_ser.png" #설거지 그릇
 
 image j_food_pa = "j_food_pa.png" #파스타
 image j_food_so = "j_food_so.png" #스프
@@ -54,6 +55,8 @@ image j_mes = "j_mes.png" #메시지
 image j_hand = "j_hand_b.png" #핸드폰 검은 화면
 image j_hand_t = "j_hand.png" #핸드폰 빈 화면
 image j_hand_u = "j_hand_u.png" #유튜브 시작 화면
+image j_hand_sf = "j_hand_sf.png" #유튜브 쇼츠 욕 화면
+image j_hand_df = "j_hand_df.png" #유튜브 영상 욕 화면
 image j_alm = "j_utb_1.png" #유튜브 알람
 image j_upi_1 = "j_upi_1.png" #유피아 쇼츠
 image j_su1 = "j_su1.png" #무표정
