@@ -12,7 +12,7 @@ label j_mqww: #산
     jp "누구세요?"
     show bg j_room_bo1
     show j_pol
-    $ renpy.music.stop(channel="music", fadeout=15.0)
+    $ renpy.music.stop(channel="music", fadeout=20.0)
     jg "경찰입니다."
     jg "잠시 협조 부탁드립니다."
     jp "아..네."
@@ -64,23 +64,30 @@ label j_mqww: #산
     with fade
     "..."
     " "
-    " "
+    scene black
+    with fade
+    "diEngn_00.후회"
+    scene bg j_room03
+    with fade
     " "
     show j_mes_ti
-    "띠링"
+    " "
     hide j_mes_ti
     show j_mes
+    " "
     jp "어..?"
     jp "돌아갈 수.. 있어..?"
-    jp "그럼 이번엔..."
-    jp "네가 죽지 않게끔.."
+    jp "그럼..."
+    jp "이번엔.."
     hide j_mes
     show j_mes_y
     $ renpy.music.stop(channel="music", fadeout=5.0)
-    scene j_zero
+    scene bg j_white
     with fade
     " "
     " "
+    scene bg j_room1
+    with fade
     jump jn
     #게임 처음 화면으로
     #"띠링"
@@ -148,7 +155,7 @@ label j_erty:
     show j_su3 at right
     #볼이 상기된 서윤
     js "아니에요, 저한텐 정말 큰 도움이었어요."
-    js "혹시 00씨만 괜찮으시다면 저와 사귀어 주실래요?"
+    js "혹시 [jp]씨만 괜찮으시다면 저와 사귀어 주실래요?"
     hide j_su3
     show j_su2 at right
     jp "...!"
@@ -178,6 +185,7 @@ label j_erty:
         "우리는 앞으로도 함께할 것이다."
         " "
         " "
+        "Ending_01 만우절의 결혼"
         return
 
     label j_yuio:
@@ -191,12 +199,90 @@ label j_erty:
         "우리는 앞으로도 함께할 것이다."
         " "
         " "
+        "Ending_02.행복한 결혼"
         return
 
 label j_rtyu:
     "연애"
-label j_tyuiw:
-    "친구"
+    "그 후, 우리는 연인이 되었다."
+    "서윤은 계속해서 유튜브를 하고있다."
+    "시간이 지나며 악플도 사그라들었다."
+    "같이 힘든 시기를 이겨내며 우리 사이는 더 가까워졌다."
+    "요즘은 집에서 데이트를 하며 시간을 보낸다."
+    "Ending_03.혼자가 아닌 집"
+
+
+
+label j_tyuiw: #친구
+    jp "어, 서윤씨 전화네?"
+    jp "네, 여보세요?"
+    show j_su3 at right
+    js "네, 여보세요"
+    js "혹시 오늘 시간 괜찮으세요?"
+    hide j_su3
+    show j_su2 at right
+    jp "네, 괜찮아요!"
+    hide j_su2
+    show j_su3 at right
+    js "그러면 라온카페에서 3시에 봬요."
+    hide j_su3
+    show j_su2 at right
+    jp "네, 그때 봬요!"
+    hide j_su2
+    show bg j_room_en
+    show j_labe_za
+    ""
+    hide j_labe_za
+    show j_su3 at right
+    js "앗 여기에요!"
+    hide j_su3
+    show j_su2 at right
+    jp "안녕하세요"
+    jp "조금 더 일찍 나올 걸 그랬네요"
+    hide j_su2
+    show j_su3 at right
+    js "아니에요"
+    js "저도 조금전에 도착했어요."
+    js "어디 앉으실래요?"
+    hide j_su3
+    show j_su2 at right
+    jp "음.. 저기 앉죠"
+    hide j_su2
+    show j_su3 at right
+    js "좋아요"
+    hide j_su3
+    show j_su2 at right
+    jp "혹시 오늘 부르신 이유가.."
+    hide j_su2
+    show j_su3 at right
+    js "그게.."
+    js "사실 저는 '유피아'라는 이름으로 활동중인 유튜버예요."
+    js "요즘 많이 힘들었는데 [jp]씨 덕분에 잘 이겨낼 수 있었어요"
+    js "그래서 감사하다고 말하고 싶었어요"
+    hide j_su3
+    show j_su2 at right
+    jp "아, 아니에요"
+    jp "크게 해드린 것도 없는 걸요"
+    hide j_su2
+    show j_su3 at right
+    js "아니에요, 저한텐 정말 큰 도움이었어요."
+    js "혹시 [jp]씨만 괜찮으시다면 저와 더 친하게 지내주실래요?"
+    hide j_su3
+    show j_su2 at right
+    jp "좋아요!"
+    hide j_su2
+    show j_su3 at right
+    scene black
+    with fade
+    scene bg j_room1
+    with fade
+    "그 후, 우리는 친구가 되었다."
+    "서윤은 악플을 잘 이겨내고 유튜브를 이어나가고 있다."
+    "종종 서윤의 유튜브를 보며 연락을 주고받곤 한다"
+    "그러다가 가끔 마주치면 함께 고양이를 놀아주기도한다."
+    "Ending_04.가끔 연락하는 애"
+    
+
     
 
 

@@ -33,7 +33,7 @@ image bg j_room_sand = "j_room_san.png" #샌드위치 가게
 image bg j_room_we = "j_room_we.png" #웨딩 드레스
 image bg j_room_ser = "j_room_ser.png" #설거지 그릇
 image bg j_room_en = "j_room_en.png" #엔딩 카페
-image bg j_zero = "j_zero.png"
+image bg j_white = "j_white.png"
 
 image bg j_trash = "j_trash.png" #쓰레기
 

@@ -30,7 +30,11 @@ label j_lz:
             hide j_labe_ge
             "그 후로 옆집 사람을 보지 못했다."
             "듣기로는 이사를 간 듯 싶다."
-            
+            scene black
+            "Ending_04 어색한 옆집사람"
+            "diEngn_00.후회"
+            "ngndiE_00.후회"       
+
             return
 
         label j_xc:
