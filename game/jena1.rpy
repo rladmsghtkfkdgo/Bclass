@@ -69,6 +69,7 @@ label jn:
                 show j_labe_za
                 " "
                 hide j_labe_za
+                play sound "j_door.ogg"
                 "(띵동)"
                 jw"오 왔다!"
                 scene bg j_room_bo

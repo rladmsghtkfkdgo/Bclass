@@ -51,6 +51,8 @@ image j_labe_zu = "j_labe_zu.png" #한가로운 주말 아침
 image j_labe_me = "j_labe_me.png" #며칠 뒤
 
 image j_mes = "j_mes.png" #메시지
+image j_mes_y = "j_mes_y.png" #메시지 Yes
+image j_mes_ti = "j_mes_ti.png" #메시지 띠링
 
 image j_hand = "j_hand_b.png" #핸드폰 검은 화면
 image j_hand_t = "j_hand.png" #핸드폰 빈 화면

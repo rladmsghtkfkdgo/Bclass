@@ -5,9 +5,15 @@ label j_lz:
     with fade
     
     if ju <= 19:
+        show j_labe_me
+        " "
+        hide j_labe_me
         "옆집 사람과는 동선이 꽤 겹치는 것 같다.."
         jump j_zx
     else:
+        show j_labe_me
+        " "
+        hide j_labe_me
         "옆집 사람과 대화하며 지낸지 며칠이 지났다."
         jump j_xc
 
@@ -38,14 +44,23 @@ label j_lz:
             hide j_su3
             show j_su2 at right
             jp "어디가세요?"
+            hide j_su2
+            show j_su3 at right
             js"잠시 산책하러 가려구요"
             js"[jp]씨는요?"
+            hide j_su3
+            show j_su2 at right
             jp "앗, 저도 마침 산책 가려했는데 같이 가도 되나요?"
+            hide j_su2
+            show j_su3 at right
             js"그래주시면 저야 좋죠"
+            hide j_su3
+            show j_su2 at right
             scene black
             with fade
             scene bg j_room_sa
             with fade
+            show j_su2 at right
             "그 후, 같이 산책하며 이런저런 이야기를 나눴다."
             show j_labe_sa
             " "
@@ -55,9 +70,9 @@ label j_lz:
             hide j_su2
             show j_su3 at right
             js"좋아요"
+            js"휴대폰 주세요"
             hide j_su3
             show j_su2 at right
-            js"휴대폰 주세요"
             jp"감사합니다!"
             jp"아 맞다"
             jp"오늘 같이 산책해서 좋았어요"

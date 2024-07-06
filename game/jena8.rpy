@@ -5,12 +5,14 @@ label j_mqww: #산
     with fade
     "그러고보니 서윤을 못본지 꽤 된 것 같다."
     jp "음.. 연락해볼까?"
+    play sound "j_door.ogg"
     "띵동"
     jp "누구지?"
     jp "올 사람이 없는데"
     jp "누구세요?"
     show bg j_room_bo1
     show j_pol
+    $ renpy.music.stop(channel="music", fadeout=15.0)
     jg "경찰입니다."
     jg "잠시 협조 부탁드립니다."
     jp "아..네."
@@ -29,6 +31,7 @@ label j_mqww: #산
     show bg j_room1
     jp "뭐지..? 옆집 사람한테 무슨 일이 있나..?"
     "경찰이 아직 복도에 있는지 희미하게 말소리가 들린다."
+    play music "j_die.ogg"
     jg1 "젊은 나이에 참 안됐어."
     jg2 "그러게 말이야"
     jg1 "심지어 유튜버였다며?"
@@ -60,14 +63,24 @@ label j_mqww: #산
     scene bg j_room03
     with fade
     "..."
-    show j_mes
+    " "
+    " "
+    " "
+    show j_mes_ti
     "띠링"
+    hide j_mes_ti
+    show j_mes
     jp "어..?"
     jp "돌아갈 수.. 있어..?"
     jp "그럼 이번엔..."
     jp "네가 죽지 않게끔.."
-    scene white
+    hide j_mes
+    show j_mes_y
+    $ renpy.music.stop(channel="music", fadeout=5.0)
+    scene j_zero
     with fade
+    " "
+    " "
     jump jn
     #게임 처음 화면으로
     #"띠링"
@@ -179,7 +192,7 @@ label j_erty:
         " "
         " "
         return
-    
+
 label j_rtyu:
     "연애"
 label j_tyuiw:

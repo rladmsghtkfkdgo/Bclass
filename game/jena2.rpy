@@ -168,7 +168,6 @@ label j_ho:
                             jp "계산해 주세요."
                             play sound "j_Beep.ogg"
                             jco "(삑)"
-                            play sound "j_dodo.ogg"
                             jco "1500원입니다."
                             jco "감사합니다."
                             hide j_co_1
@@ -177,7 +176,6 @@ label j_ho:
                             jp "계산해 주세요."
                             play sound "j_Beep.ogg"
                             jco "(삑)"
-                            play sound "j_dodo.ogg"
                             jco "2300원입니다."
                             jco "감사합니다."
                             hide j_co_1
@@ -186,7 +184,6 @@ label j_ho:
                             jp "계산해 주세요."
                             play sound "j_Beep.ogg"
                             jco "(삑)"
-                            play sound "j_dodo.ogg"
                             jco "3800원입니다."
                             jco "감사합니다."
                             hide j_co_1
@@ -202,7 +199,6 @@ label j_ho:
                             jump j_kl
                         label j_kl:
                             jp "밥도 먹었겠다, 집으로 돌아가자"
-                            hide bg j_room_co2
                             scene black
                             with fade
                             scene bg j_room1

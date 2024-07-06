@@ -236,7 +236,7 @@ label j_gfd: #산
         jump j_kjh
 
     label j_jhg:
-        "밥이나 먹을까?"
+        jp"밥이나 먹을까?"
         show bg j_room_ca2
         "집을 나선다"
         jump j_kjh
@@ -306,23 +306,37 @@ label j_gfd: #산
             
             label j_vcxq: #산
                 js "네.."
+                hide j_su7
+                show j_su5 at right
                 jp "그래도 밥은 중요하니까요."
                 jp "뭐라도 먹어야죠."
                 jp "밀 나온 김에 같이 먹어요."
                 label j_zlkq:
+                    hide j_su5
+                    show j_su7 at right
                     js "음.. 그럼 간단한 거로.."
+                    hide j_su7
+                    show j_su5 at right
                     menu:
                         "그럼 제가 만들어드릴까요?":
                             jump j_xzlq
                         "그럼 샌드위치 어때요?":
                             jump j_cxzq
                     label j_xzlq:
+                        hide j_su5
+                        show j_su7 at right
                         js "앗, 네.."
+                        hide j_su7
+                        show j_su5 at right
                         show bg j_room1
                         "서윤과 같이 집으로 돌아왔다."
                         show bg j_room_k
                         jp "혹시 싫어하는거 있으세요?"
+                        hide j_su5
+                        show j_su7 at right
                         js "음.. 아무거나 좋아요."
+                        hide j_su7
+                        show j_su5 at right
                         jp "그러면.."
                         menu:
                             "간단한 닭가슴살":
@@ -334,21 +348,21 @@ label j_gfd: #산
                             " "
                             hide j_labe_za
                             jp "다 됐어요"
+                            hide j_su5
                             show j_food_dak
                             jp "간단하게 닭가슴살해봤는데 어때요?"
                             jp "드시기 편하게 조금 잘라놨어요."
-                            hide j_su2
-                            show j_su7 at right
                             js "아.."
                             js "잘 먹겠습니다.."
                             "그 후, 어두워진 서윤의 낯빛을 눈치채지 못하고 즐겁게 식사를 마쳤다."
                             hide j_food_dak
+                            show j_su7 at right
                             js "잘 먹었습니다.."
                             js "맛있었어요.."
                             hide j_su7
                             show j_su5 at right
                             jp "그쵸? 자주 해먹는데 간단하고 맛있더라구요."
-                            $ju-=10
+                            $ju-=15
                             hide j_su5
                             show j_su7 at right
                             js "아..네..."
@@ -360,10 +374,14 @@ label j_gfd: #산
                             hide j_su5
                             show j_su7 at right
                             js "네.."
-                            show bg j_room_bo
                             hide j_su7
+                            show j_su5 at right
+                            show bg j_room_bo
                             "그 후, 서윤을 배웅했다"
+                            hide j_su5
+                            " "
                             show bg j_room1
+
                             jump j_nbvq
 
                         label j_bvcq:
@@ -372,11 +390,12 @@ label j_gfd: #산
                             hide j_labe_za
                             jp "다 됐어요"
                             show j_food_papa
+                            hide j_su5
                             jp "간단하게 파스타해봤는데 어때요?"
-                            show j_su7 at right
                             js "아, 잘 먹겠습니다.."
                             "그 후, 즐겁게 식사를 마쳤다."
                             hide j_food_papa
+                            show j_su7 at right
                             js "잘 먹었습니다"
                             js "맛있었어요"
                             hide j_su7
@@ -388,11 +407,18 @@ label j_gfd: #산
                             js "네, 좋았어요."
                             js "밥 잘 먹었어요, 감사합니다"
                             js "이만 들어가볼게요."
-                            jp "네, 안녕히 가세요!"
-                            js "네"
-                            show bg j_room_bo
                             hide j_su7
+                            show j_su5 at right
+                            jp "네, 안녕히 가세요!"
+                            hide j_su5
+                            show j_su7 at right
+                            js "네"
+                            hide j_su7
+                            show j_su5 at right
+                            show bg j_room_bo
                             "그 후, 서윤을 배웅했다"
+                            hide j_su5
+                            " "
                             show bg j_room1
                             jump j_nbvq
 

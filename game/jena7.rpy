@@ -212,8 +212,14 @@ label j_nbvq: #산
     hide j_su5
     show j_su7 at right
     js "아하"
+    hide j_su7
+    show j_su5 at right
     jp "아, 혹시 고양이카페 좋아하세요?"
-    "좋아하긴 한데.."
+    hide j_su5
+    show j_su7 at right
+    js "좋아하긴 한데.."
+    hide j_su7
+    show j_su5 at right
     menu:
         "같이 가요":
             jump j_qweaw
@@ -222,10 +228,14 @@ label j_nbvq: #산
    
     
     label j_qwezw: #산 산
+        hide j_su5
+        show j_su7 at right
         js "아.."
         js "그럼 다음에 같이 가요"
-        jp "좋아요!"
         hide j_su7
+        show j_su5 at right
+        jp "좋아요!"
+        hide j_su5
         "뚝"
         jp "흠.. 바쁘신가보네"
         jp "다음에 다시 연락해봐야겠다."
