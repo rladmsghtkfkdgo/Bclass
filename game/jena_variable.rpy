@@ -4,7 +4,7 @@ define jd = Character('옆집사람', color="#cf9dcf")
 define js = Character('서서윤', color="#cf9dcf")
 define jq = Character()
 define jplayer_name = "플레이어"
-define jp = Character("jplayer_name",dynamic = True, color="#9fbaff")
+define jp = Character("jplayer_name",dynamic = True, color="#344e90")
 define jhh = Character('헬스 트레이너', color="#0f4d6d")
 define jco = Character('편의점 점원', color="#453709")
 define jg = Character('경찰', color="#1c1c4a")
