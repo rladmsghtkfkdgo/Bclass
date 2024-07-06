@@ -299,7 +299,7 @@ label j_gfd: #산
                 show j_su2 at right
                 jp "그럼 아까보다 기분도 나아졌겠다."
                 jp "뭐라도 먹을까요?"
-                $ju+=10
+                $ju+=20
                 show j_su3 at right
                 js "좋아요"
                 jump j_lkj

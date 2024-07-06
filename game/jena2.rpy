@@ -147,10 +147,10 @@ label j_ho:
                     $ju+=30
                     
                     "그 후, 서윤을 배웅했다."
-                    hide j_su1
                     hide j_su3
                     jump j_sd
                     label j_sd:
+                        hide j_su1
                         jp "이제 편의점 가야지."
                         show bg j_room_co
                         show j_co_1 at left
