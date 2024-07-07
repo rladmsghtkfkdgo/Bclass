@@ -74,7 +74,7 @@ image kstreet = "zabcho_street.png"
 image kbedroom = "zabcho_bedroom.png"
 image kdrive = "zabcho_drive.jpg"
 image kswim = "zabcho_swim.jpg"
-image kswim_CS = "zabcho_swim_CS.jpg"
+image kswim_CS = "zabcho_swim_CS.png"
 image kwinebar = "zabcho_winebar.jpg"
 image khotel = "zabcho_hotel.jpg"
 image khotel_R = "zabcho_hotel_room.jpg"
@@ -116,9 +116,11 @@ image zabcho_sick_CS = "zabcho_sick_CS.png"
 # 여기에서부터 게임이 시작합니다.
 label jw:
 
-    kl "-거리-"
-    play sound "zabcho_bg.wav" 
+    scene kdark
+    $ renpy.notify('거리')
+    play music "zabcho_bg.wav" 
     scene kstreet
+
     ke "이세계의 거리.. 기대했는데 별거없잖아...?"
 
     ke "응? 이게뭐지"
@@ -146,9 +148,8 @@ label jw:
 
     label k_11:
            
-        hide kstreet
-        kl "-며칠 후-"
-
+        scene kdark
+        $ renpy.notify('며칠 후')
         scene khome    
 
         ke "벌써 이렇게 많이 자랐네! 무럭무럭 자라라~"
@@ -156,16 +157,15 @@ label jw:
         kl "(유난히 오늘따라 잡초에 윤기가 난다.)"
 
         ke "오늘은 어제보다 더 윤기가 나네 뭔가 점점 반질거리는 것 같은데..?"
-        #음악끄기   
-        #다음일차로 넘어가는 1~2초 정도의 BGM
-        kl "다음 날 저녁"
-        #음악끄기
 
-        hide khome
+        ke "기분탓인가..?"
+        scene kdark
+        $ renpy.notify('다음날')      
         scene khome2
+
         ke "잡초에 물 주러 가야지"
-        #음악끄기
-        ke "...??? 엥? 어디갔지? 잡초가 사라졌다??? 뭐야 어디갔어ㅓㅓ"
+    
+        ke "...??? 엥? 어디갔지? 잡초가 사라졌다??? 뭐야 어디갔어"
 
         ke "(두리번 두리번)"
 
@@ -183,16 +183,17 @@ label jw:
             jump k_10
 
 
-        kl "거실 구석을 살펴보니 처음보는 여자가 나를 쳐다보고 있다."
-        hide khome2
+        kl "거실 구석에 처음보는 여자가 나를 쳐다보고 있다."
+        
         scene kCS with fade
         pause 2.0
         hide image_name with dissolve
 
         ke "!!"
-        hide kCS
+        #hide kCS
         scene khome2
         show zabcho_mung at right
+
         ke "?!?!?!?!! 으악!!"
         hide zabcho_mung
 
@@ -200,19 +201,23 @@ label jw:
 
         ke "누..누구냐 넌?"
         show zabcho_mung at right
+
         kz "아.. 나는"
 
         ke "누군데 남의 집에 들어와 있는거야? 아니 애초에 어떻게 들어온거야?"
         hide zabcho_mung
         show zabcho_sadt at right
+
         kz "나는 너가 키워주던 잡초야!"
         hide zabcho_sadt
         show zabcho_mung at right
+
         ke "???(이상한 여자다!)" 
 
         ke "뭔 개소...아 아니 뭔 말도 안되는 소리야?"
         hide zabcho_mung
         show zabcho_sadt at right
+
         kz "잠깐만 내 얘기 좀 들어줘. 내가 다 설명할 수 있어!"
 
         ke "(어떡하지?)"
@@ -236,14 +241,17 @@ label jw:
             ke "그래 일단 얘기는 해봐"
             hide zabcho_sadt
             show zabcho_smilet
+
             kz "고마워. 일단 본론만 말하자면 나는 네가 키워준 잡초가 맞아. 그 증거로 너는 항상 나에게 물을 주러 오면서 말을 흥얼 거렸지."
 
             kz "그리고 항상 나에게 무럭무럭 자라라며 얘기해 줬어."
             hide zabcho_smilet
             show zabcho_smile
+
             kz "마지막으로 난 너의 비밀을 알아. 넌 다른 세계에서 왔어."
             hide zabcho_smile
             show zabcho_mung
+
             kz "이정도면 믿어 줄래?"
 
             ke "흠... 확실히 다른건 몰라도 내가 다른 세계에서 왔다는 건 누구에게도 말 안했지.."
@@ -251,6 +259,7 @@ label jw:
             ke "그럼 네가 진짜 그 잡초라고?"
             hide zabcho_mung
             show zabcho_smilet
+
             kz "응!! 이제야 믿어주는 구나!"
     
             ke "그렇다면 너는 갑자기 왜 인간으로 변한거야?"
@@ -270,6 +279,7 @@ label jw:
             ke "아무튼 그럼 이제 나가줄래?"
             hide zabcho_smilet
             show zabcho_sadt
+
             kz "어...?"
 
             ke "???"
@@ -280,10 +290,12 @@ label jw:
 
             kz "안돼?...?"
             hide zabcho_sadt
+
             ke "흠... (하긴 잡초였으면 집이고 뭐고 없을테니까..)"
 
             ke "좋아. 허락할게 일단은 내가 키우던 잡초니까(?)"
             show zabcho_smilet
+
             kz "고마워 진짜!!"
 
             kl "그렇게 나와 잡초의 생활이 시작 됐다."
@@ -291,6 +303,7 @@ label jw:
             ke "그러고 보니 너를 뭐라고 부르면 좋을까?"
             hide zabcho_smilet
             show zabcho_mung
+
             kz "응?"
 
             ke "잡초라고 부르긴 너무 삭막하잖아. 지금은 사람모습인데.."
@@ -300,6 +313,7 @@ label jw:
             ke "내가?"
             hide zabcho_mung
             show zabcho_smilet
+
             kz "응! 너가 지어주면 좋을 것 같아. 너가 나를 주워왔으니까."
 
             ke "흠... 그래 그럼 어디보자 네 이름은.."
@@ -312,6 +326,7 @@ label jw:
             kp "헤헷.."
             hide zabcho_smilet
             show zabcho_mung
+
             kp "(빠안-히)"
 
             ke "왜?"
@@ -330,29 +345,33 @@ label jw:
             kp "[man_name](이)구나 앞으로 잘부탁해!"
             hide zabcho_mung
             show zabcho_smilet
+
             km "그래 잘 부탁해."
 
-            km "음.. 오늘은 일단 시간이 늦었으니 저쪽방에서 자면 될 거 같아."
+            km "음.. 다행히 이 집은 방이 많으니까"
 
-            km "(이 집 방이 많아서 다행이야..)"
+            km "너는 저쪽방을 써."
 
-            kp "알겠어. 내일보자"
+            kp "알겠어."
             hide zabcho_smilet
-            hide khome2
+            #hide khome2
+            scene kdark with fade
+            $ renpy.notify('다음날')
 
-            kl "다음날"
             scene kbedroom
+
             kl "너무 다사다난한 하루를 보내 잠을 설쳐서 늦잠잤다.."
 
             km "흐아.. 몇시야.."
 
-            kl "(치지직 부스럭부스럭)"
+            play sound "zabcho_recyclebin.mp3"
 
             km "뭔 소리지?"
-            hide kbedroom
-            kl "<거실>"
+            #hide kbedroom
+            $ renpy.notify('거실')
             scene khome2
             show zabcho_smilet at right
+
             kp "난나나"
 
             km "(왜 쓰레기를 모으고 있지?)"
@@ -362,31 +381,38 @@ label jw:
             kp "앗! 좋은 아침이야 아침밥을 차리고 있었어!"
             hide zabcho_smilet
             show zabcho_smile at right
+
             km "??? 이게 아침이라고?"
             hide zabcho_smile
             show zabcho_smilet at right
+
             kp "응! 인간들은 항상 나한테 이런걸 주던데!"
 
             kp "아침밥이야!"
             hide zabcho_smilet
             show zabcho_smile at right
+            
             km "음.. (가르쳐야할게 많다..)"
 
             km "이건 밥이 아니야.. "
             hide zabcho_smile
             show zabcho_sadt at right
+
             kp "아니라고?!!!"
 
             kp "그럼 인간들은 이걸 왜 준거지...?"
             hide zabcho_sadt
             show zabcho_sad at right
+
             km "(인간이 미안해...)"
 
             km "아침은 내가 만들게."
             hide zabcho_sad
+
             km "(식물이니까 채소는 빼야겠지?)"
-            hide khome2
+            #hide khome2
             scene kkitchen
+
             kl "채소가 안들어간 오므라이스를 만들었다."
 
             km "어때?"
@@ -395,9 +421,11 @@ label jw:
                 "음식이 맛있다.":
                     $b_taste = True
                     $kh +=15
+                    kl "호감도 +15"
                 "음식이 맛없다.":
                     $b_taste = False
                     $kh -=15
+                    kl "호감도 -15"
 
             if b_taste:
                 kp "너무 맛있다. 이런 건 처음이야!"
@@ -407,16 +435,20 @@ label jw:
                 kp "음... ^^"
                 show zabcho_sad at right
                 
-
             km "아 그러고보니 냉장고에 먹을게 별로 안남았던데 이따가 장보러 가야겠어."
             show zabcho_smilet at right
+
             kp "나도 갈래!!"
 
             km "그래 너를 혼자 두기도 불안하니까."
-            hide kkitchen
+            #hide kkitchen
             hide kzabcho_smilet
-            kl "<마트>"
+            scene kdark with fade
+            $ renpy.notify('마트')
+            pause 1.0
+            play music "zabcho_mart.wav"
             scene kmarket
+
             km "음.. 어디보자 뭘 먼저 살까~"
 
             kp "우와!! 저거 뭐야!"
@@ -427,7 +459,7 @@ label jw:
 
             km "[zabcho_name] 같이가..."
 
-            kl "-잠시 후-"
+            $ renpy.notify('잠시후')
 
             km "...계란이랑, 우유.. 음! 다 골랐다."
 
@@ -438,8 +470,9 @@ label jw:
             kp "웅 앙았엉 암냠"
 
             km "(좀.. 귀엽네..)"
-            hide kmarket
+            #hide kmarket
             show kmarket_sail
+            play sound "j_Beep.ogg"
             kl "삑"
             show ksailer at left
             kj "115,000원 입니다."
@@ -456,7 +489,9 @@ label jw:
             km "어 정말요? 해봐야겠다."
 
             kl "추첨통에 영수증을 넣고 마트에서 나왔다."
-            hide kmarket_sail
+            $ renpy.music.stop(channel="music", fadeout=2.0)
+            #hide kmarket_sail
+            play music "zabcho_bg.wav"
             scene kstreet
             show zabcho_smilet at right
             kp "저거 당첨되면 좋은거야?"
@@ -477,25 +512,17 @@ label jw:
 
             kp "아무튼 그렇구나...."
 
-            kl "[zabcho_name]은 무언가 결심한 듯 보인다."
-            hide zabcho_mung
-            hide kstreet
-            kl "-저녁-"
-            scene khome2
-            km "그럼 잘자~"
-            show zabcho_smilet
-            kp "응 너두~~"
-
-            kp "좋아 한번 해보는 거야"
-
-            kp "으랴ㅏㅏㅏㅏ"
-            hide khome2
+            kp "되면 좋겠다!"
+            
+            #hide khome2
             hide zabcho_smilet
-            kl "-며칠 후-"
+            scene kdark with fade
+            $ renpy.notify('며칠 후')
+            pause 1.0
             scene khome2
             play sound "zabcho_Pling-Sound.ogg" 
             kl "띠링~"
-            play music "zabcho_bg.wav"
+
             km "뭐지"
             show kphone
             hide kphone
@@ -523,32 +550,12 @@ label jw:
             show zabcho_smile at right
 
             km "그런가...?"
+            
+            km "아무튼 가서 재밌게 놀고오자."
             hide zabcho_smile
             show zabcho_smilet at right
-            kp "아무튼 좋겠네~ 잘 갔다와"
-            hide zabcho_smilet
-            show zabcho_smile at right
-            km "으응? 무슨소리야"
-            hide zabcho_smile
-            show zabcho_smilet at right
-            kp "잘갔다오라고 호텔!"
-            hide zabcho_smilet
-            show zabcho_smile at right
 
-            km "너도 같이 가야지!"
-            hide zabcho_smile
-            show zabcho_smilet at right
-            kp " 어! 정말 나도 가도돼?"
-            hide zabcho_smilet
-            show zabcho_smile at right
-            km "당연하지. 널 두고 내가 어딜가?"
-
-            km "게다가 숙박권 2인용인데 나는 이 세계에 아는 사람이 너뿐이잖아."
-
-            km "가서 재밌게 놀고오자."
-            hide zabcho_smile
-            show zabcho_smilet at right
-            kp "좋아ㅏㅏㅏ"
+            kp "좋아! 기대된다"
 
             kp "호텔은 어떻게 생겼어?"
             hide zabcho_smilet
@@ -564,6 +571,7 @@ label jw:
 
             kp "기분 지존이다!!!"
             $kh +=10
+            kl "호감도 +10"
             hide zabcho_smilet
             show zabcho_smile at right
 
@@ -582,22 +590,22 @@ label jw:
             kp "응! 알겠어"
 
             hide zabcho_smilet
-            kl "-다음날-"
+            scene kdark
+            $ renpy.notify('다음날')
             scene kzibab
             km "좋아 이제 가면 될 것 같아"
             "준비됐어?"
 
             kp "준비됐어 가자!!"
-            hide kzibab
+            #hide kzibab
             scene kdrive
             km "가는데 좀 걸리니까 자고 있어."
 
             kp "안잘거야! 너 심심하잖아."
-            hide kdrive
+            #hide kdrive
             scene kdark
-
-            kl "-잠시 후-"
-            hide kdark
+            $ renpy.notify('잠시후')
+            #hide kdark
             scene kdrive
 
             kp "zzzz"
@@ -613,11 +621,11 @@ label jw:
             km "[zabcho_name], 일어나~ 다왔어"
 
             kp "흠냐.. 다왔어!!"
-            hide kdrive
-            scene khotel
-            km "우와 호텔은 이렇게 생겼구나 신기해"
+            #hide kdrive
+            scene khotel 
+            kp "우와 호텔은 이렇게 생겼구나 신기해"
 
-            km "저기서 체크이나면 될거 같아"
+            km "저기서 체크인하면 될거 같아"
             show kFJ
             kj3 "안녕하세요. Green hotel입니다. 무엇을 도와드릴까요?"
             hide kFJ
@@ -656,37 +664,69 @@ label jw:
 
             kp "으응.."
             hide zabcho_sadt
-            hide khotel 
-            scene kdark
-            kl "-잠시후-"
-            hide kdark
-            km "여기인가봐..."
+            #hide khotel 
+            scene kdark with fade
+            $ renpy.notify('잠시후')
+            pause 1.0   
+            
+            #hide kdark            
             scene kecho_hotel
+
+            km "여기인가봐..."
 
             kp "와...여기도 괜찮다...!"
             $kh -=5
+            kl "호감도 -5"
 
             km "(어쩐지 마트에서 너무 좋은걸 준다 했어...)"
 
             km "일단 들어가자"
-            hide kecho_hotel
+            #hide kecho_hotel
             scene kecho_hotel_in
             show kjicwon
             kj1 "어서오세요. 친환경 Green hotel입니다~"
             hide kjicwon
-            km "[man_name](으)로 예약했는데요"
+
+            km "어.. (누굴 닮은것 같은데?)"
             show kjicwon
+
+            kj1 "고객님?"
+            hide kjicwon
+
+            km "(아! 마트직원!)"
+
+            km " 저.. 혹시 쌍둥이세요?"
+            show kjicwon
+
+            kj1 "네? 아닌데요..."
+            hide kjicwon
+
+            km "아.. 죄송합니다. 전에 봤던 사람이랑 너무 비슷하게 생기셔서 그만.."
+            show kjicwon
+
+            kj1 "아.. 저는 외동입니다!"
+            hide kjicwon
+
+            km "그렇군요..."
+            show kjicwon
+
+            kj1 "네 그렇습니다~ 고객님 저희 호텔 예약 하셨을까요?"
+            hide kjicwon
+
+            km "아.. [man_name](으)로 예약했는데요"
+            show kjicwon
+
             kj1 "아 예~ 201번방 가시면 됩니다~"
             hide kjicwon
+
             km "네 감사합니다."
 
             km "201번이면.. 2층으로 가자"
             scene kdark
-            kl " "
-            #삐걱삐걱 계단 올라가는 소리
+            
             
             km "여기다"
-            hide kdark
+            #hide kdark
             scene kroom
             km "안은 생각보다 깨끗하네."
             show zabcho_smilet at right
@@ -701,15 +741,17 @@ label jw:
 
             kp "웅!"
             hide zabcho_happy
-            hide kroom
-            scene kdark
+            #hide kroom
+            scene kdark with fade
+            $ renpy.notify('잠시후')
+            pause 2.0
 
-            kl "-잠시후-"
-            hide kdark
+            
+            #hide kdark
             scene kroom
 
             km "정리 다했다. [zabcho_name]은(는) 뭐하지?"
-            hide kroom
+            #hide kroom
             scene kecho_hotel
             show zabcho_happy at right
 
@@ -769,54 +811,50 @@ label jw:
                     show zabcho_happy at right
                     kp "카페 꼭 한번 가보고 싶었어"
                     $kh +=5
+                    kl "호감도 +5"
                     jump k_1
                 "술이 들깨 해장국":
                     show zabcho_smilet at right
                     kp "마침 배고팠는데 잘됐다!"
                     "[zabcho_name]은(는) 뼈해장국을 좋아합니다."
                     $kh +=10
+                    kl "호감도 +10"
                     jump k_2
                 "쿵떡쿵떡(떡볶이)":
                     show zabcho_sadt at right
                     kp "떡볶이..? 흠.. 우리 다른거 먹자..."
                     $kh -=8
+                    kl "호감도 -8"
                     "[zabcho_name]은(는) 떡볶이를 그다지 좋아하지 않습니다."
                     
                     kl "떡볶이를 대충 먹었다."
-                    hide kecho_hotel
+                    #hide kecho_hotel
                     scene kdark
                     jump k_3
 
             label k_1:
                 hide zabcho_happy
-                hide kecho_hotel
+                #hide kecho_hotel
                 scene kbrunch
-                km "나는 오므라이스 먹을래 너는?"
-                hide zabcho_happy
-                show zabcho_smilet at right
-
-                kp "나도 오므라이스!"
-                hide zabcho_smilet
-                show zabcho_smile at right
-
-                km "나 잠깐 화장실 좀 다녀올게."
+                
+                km "나 잠깐 화장실 좀 다녀올게. 먹고싶은거 시키고 있어."
                 hide zabcho_smile
                 show zabcho_smilet at right
 
                 kp "엉~"
                 hide zabcho_smilet
-                hide kbrunch
-                scene kdark
-
-                kl "-잠시후-"
-                hide kdark
-                show kbrunch
+                #hide kbrunch
+                scene kdark with fade
+                pause 1.0
+                $ renpy.notify('잠시후')
+                #hide kdark
+                scene kbrunch
 
                 km "후.. 시원하다!"
 
                 km "응?"
                 show zabcho_soulless at right
-                show zabcho_huntingt at left
+                show zabcho_huntingt
 
                 kj4 "저.. 너무 제 이상형이셔서 그런데 번호좀 주실 수 있을까요?"
 
@@ -824,13 +862,13 @@ label jw:
                 hide zabcho_soulless
                 hide zabcho_huntingt
                 show zabcho_soullesst at right
-                show zabcho_hunting at left
+                show zabcho_hunting
 
                 kp "아니요. 저 남자친구 있어요."
                 hide zabcho_soullesst
                 hide zabcho_hunting
                 show zabcho_soulless at right
-                show zabcho_huntingt
+                show zabcho_huntingt at left
 
                 kj4 "아...넵"
                 hide zabcho_huntingt
@@ -845,28 +883,29 @@ label jw:
 
                 kl "[zabcho_name]은(는) 당신과 있어 행복합니다"
                 $kh +=10
+                kl "호감도 +10"
 
                 km "으응!!"
                 hide zabcho_smilet
-                hide kbrunch
+                #hide kbrunch
                 scene kdark
                 jump k_3
 
             label k_2:
-                hide kecho_hotel
+                #hide kecho_hotel
                 scene zabcho_haejang_in
                 
                 kp "역시! 떡볶이 같은거 먹을바엔 든든하고 맛있는 해장국이지!"
                 hide zabcho_smilet
 
                 km "(... 집가면 위튜브를 끊어야겠다..)"
-                hide zabcho_haejang_in
+                #hide zabcho_haejang_in
                 scene kdark
                 jump k_3
 
             label k_3:
                 kl "배를 채운 후 근처에 유명한 벽화마을을 구경했다."
-                hide kdark
+                #hide kdark
                 scene knstreet
                 show zabcho_smilet at right
 
@@ -886,7 +925,7 @@ label jw:
 
                 kp "어! 잠깐만 저기는 뭐하는 곳이야?"
                 hide zabcho_smilet
-                hide knstreet
+                #hide knstreet
                 scene kwinebar_out
                 pause 2.0
                 hide image_name with dissolve
@@ -917,8 +956,9 @@ label jw:
 
                 km "그럼 가보자(내가 있으니까 괜찮겠지...)"
                 hide zabcho_smile
-                hide knstreet
+                #hide knstreet
                 scene kwinebar
+                play music "zabcho_winebar.wav"
                 km "(무슨 주점이 이렇게 빤짝거리지..)"
 
                 km "뭘 시킬까?"
@@ -935,7 +975,7 @@ label jw:
                     show alchole1 at left
                     kj1 "네 여기 있습니다."
                     hide alchole1
-                    #술따르는 효과음
+                   
 
                     km "한번 마셔봐"
 
@@ -946,8 +986,9 @@ label jw:
 
                     kl "[zabcho_name]은(는) 쓴맛을 좋아합니다."
                     $kh +=5
+                    kl "호감도 +5"
                     hide zabcho_smilet
-                    hide kwinebar
+                    #hide kwinebar
                     scene kdark
                     jump k_6
 
@@ -956,8 +997,7 @@ label jw:
                     show alchole2 at left
                     kj1 "네 여기 있습니다."
                     hide alchole2
-                    #술따르는 효과음
-
+                   
                     km "한번 마셔봐"
 
                     kp "(꼴깍)"
@@ -967,14 +1007,15 @@ label jw:
 
                     kl "[zabcho_name]은(는) 단맛을 싫어합니다."
                     $kh -=10
+                    kl "호감도 -10"
 
                     km "그래? 그럼.."
                     hide zabcho_sadt
                     jump k_4
 
                 label k_6:
-                    kl "-잠시후-"
-                    hide kdark
+                    $ renpy.notify('잠시후')
+                    #hide kdark
                     scene kwinebar
 
                     km "으아.."
@@ -990,7 +1031,7 @@ label jw:
 
                     kp "안되겠다. 얼른 숙소로 돌아가자."
                     hide zabcho_sadt
-                    hide kwinebar
+                    #hide kwinebar
                     scene kwinebar_out
 
                     km "나 쥐짜 갠찬다니까!"
@@ -1008,12 +1049,14 @@ label jw:
                     hide zabcho_sad
 
                     kp "어엉??"
-                    hide kwinebar_out
-                    scene kdark
-
-                    kl "잠시후"
-                    hide kdark
+                    #hide kwinebar_out
+                    scene kdark with fade
+                    pause 1.0
+                    $ renpy.music.stop(channel="music", fadeout=3.0)
+                    $ renpy.notify('별이 머무는 언덕')
+                    #hide kdark
                     scene kstar
+                    play music "zabcho_star.wav"
 
                     km "언덕 도차악!"
 
@@ -1068,17 +1111,20 @@ label jw:
 
                     kp "으응?"
                     hide zabcho_shy
+                    $ renpy.music.stop(channel="music", fadeout=15.0)
 
                     km "zzzzz"
-                    show zabcho_shy at right
+                    show zabcho_shy at right                   
 
                     kp "뭐라고? [man_name]!!"
                     hide zabcho_shy
-                    hide kstar
-                    scene kdark
-
-                    kl "-다음날-"
-                    hide kdark
+                    #hide kstar
+                    scene kdark with fade
+                    pause 1.0
+                    stop music
+                    $ renpy.notify('다음날')
+                    play music "zabcho_bg.wav"
+                    #hide kdark
                     scene kroom
                     km "으윽 숙취..."
                     show zabcho_smilet at right
@@ -1129,7 +1175,7 @@ label jw:
 
                     kl "[zabcho_name]은(는) 끝내 알려주지 않았다"
                     hide zabcho_smilet
-                    hide kroom
+                    #hide kroom
 
                     scene khaejangin
 
@@ -1165,14 +1211,14 @@ label jw:
 
                         kl "[zabcho_name]은(는) 동족을 볼 기회에 기뻐합니다."
                         $kh +=5
+                        kl "호감도 +5"
                         hide zabcho_happy
 
                         km "그래 알겠어"
-                        hide khaejangin
-                        scene kdark
-                        
-                        kl "-식물원-"
-                        hide kdark
+                        #hide khaejangin
+                        scene kdark                       
+                        $ renpy.notify('식물원')
+                        #hide kdark
                         scene kplanthouse
                         show zabcho_smilet at right
 
@@ -1281,7 +1327,7 @@ label jw:
                         hide zabcho_smilet
 
                         km "...그래"
-                        hide kplanthouse
+                        #hide kplanthouse
                         scene kdark
                         jump k_12
 
@@ -1291,18 +1337,19 @@ label jw:
 
                         kl "[zabcho_name]은(는) 처음가보는 수영장에대한 기대감이 생깁니다"
                         $kh +=3
+                        kl "호감도 +3"
                         hide zabcho_smilet
-                        hide khaejang
+                        #hide khaejang
                         scene kdark
                         
-                        kl "-실내 수영장-"
-                        hide kdark
+                        $ renpy.notify('실내 수영장')
+                        #hide kdark
                         scene kswim
                         show zabcho_smilet at right
 
                         kp "우와 수영장 넓다!"
                         hide zabcho_smilet
-                        hide kswim
+                        #hide kswim
                         scene kswim_CS
                         pause 2.0
                         hide image_name with dissolve
@@ -1321,7 +1368,7 @@ label jw:
 
                         kp "음..."
 
-                        #물뿌리는 철벅 효과음
+                        play sound "zabcho_water-splash.mp3"
                         hide zabcho_smilet
                         show zabcho_happy at right
 
@@ -1335,12 +1382,11 @@ label jw:
                         km "이런 너 일로와!!"
                         show zabcho_happy at right
 
-                        kp "하하할"
+                        kp "하하핳"
                         hide zabcho_happy
-                        hide zabcho_swim
+                        #hide zabcho_swim
                         scene kdark
-
-                        kl "-잠시후-"
+                        $ renpy.notify('잠시후')
                         scene zabcho_swim
 
                         km "후.. 잘 놀았다 이제 그만 갈까?"
@@ -1361,7 +1407,7 @@ label jw:
 
                         km "조심해!!"
 
-                        kl "[man_name]이(가) [zabcho_name]을(를) 붙잡았다!"
+                        kl "[man_name](이)가 [zabcho_name]을(를) 붙잡았다!"
 
                         km "괜찮아? 안 다쳤어?"
                         show zabcho_shy at right
@@ -1398,7 +1444,7 @@ label jw:
                         hide zabcho_smilet
 
                         km "으음.."
-                        hide kswim
+                        #hide kswim
                         scene kdark
                         jump k_7
 
@@ -1411,6 +1457,7 @@ label jw:
 
                         kl "[zabcho_name]은(는) 특별한게 하고 싶다."
                         $kh -=8
+                        kl "호감도 -8"
                         hide zabcho_sadt
 
                         km "그래? 그럼.. 식물원 가볼까?"
@@ -1418,13 +1465,13 @@ label jw:
 
                         kp "응! 너무 좋은데!"
                         hide zabcho_smilet
-                        hide khaejangin
+                        #hide khaejangin
                         scene kdark
                         jump k_7
 
                         
                 label k_12:
-                    kl "-숙소-"
+                    $ renpy.notify('숙소')
                     hide kdark
                     scene kroom
 
@@ -1445,7 +1492,7 @@ label jw:
                     hide zabcho_sadt
 
                     km "으음.."
-                    hide kroom
+                    #hide kroom
                     scene kecho_hotel_in
 
                     km "체크아웃하러 왔는데요"
@@ -1459,11 +1506,11 @@ label jw:
 
                     kj1 "즐거운시간 보내셨다니 다행입니다. 체크아웃 되셨습니다. 다음에 또 방문해 주세요."
                     hide kjicwon
-                    hide kecho_hotel_in
+                    #hide kecho_hotel_in
                     scene kdark
 
-                    kz "미야옹"
-                    hide kdark
+                    play sound "zabcho_kitty-meow.mp3"
+                    #hide kdark
                     scene kdamjang
 
                     km "응? 무슨소리지?"
@@ -1471,16 +1518,18 @@ label jw:
                     kl "담장위에 검은색 털과 오드아이 눈을 가진 고양이가 쳐다보고 있다"
 
                     km "엇 고양이네 여기선 처음보는 고양이인데?"
-                    hide kdamjang
+                    #hide kdamjang
                     scene ndamjang
                     kl "고양이가 담장을 내려와 [man_name]의 다리에 머리를 부빈다"
                     show kcat at left
+                    play sound "zabcho_kitty-meow.mp3"
                     kk "애옹"
                     hide kcat
                     km "간택 강했다.."
 
                     km "목줄이 없는거 보니까 주인 없는 고양이 같은데.. 너 나를 간택한거니?"
                     show kcat at left
+                    play sound "zabcho_kitty-meow.mp3"
                     kk "애애애옹"
                     hide kcat
                     km "그렇구나! [zabcho_name], 우리 이 고양이 데려가자"
@@ -1511,38 +1560,40 @@ label jw:
                     kp "잘부탁해~"
                     show kcat
 
+                    play sound "zabcho_kitty-meow.mp3"
                     kc "애옹~"
                     hide zabcho_smilet
                     hide kcat
-                    hide ndamjang
+                    #hide ndamjang
                     scene kdark
 
                     kl "그렇게 우리의 짧은 여행은 뜻밖의 동료와 함께 끝났다"
+                    $ renpy.music.stop(channel="music", fadeout=3.0)
 
-                    kl "-한달후-"
-                    hide kdark
-                    scene kbright
+                    $ renpy.notify('한달후')
+                    #hide kdark
+                    scene kbright with fade
 
                     km "음.. 여긴 어디지? 아 꿈속이구나"
 
                     km "무슨 꿈이지 아무것도 없네.."
 
-                    kz "....ㅇ이를 ㄷ와즈..."
+                    kz "....ㅇ이를 ㄷ와..."
 
                     km "음? 어디서 소리가 들리는데?"
-                    hide kbright
+                    #hide kbright
                     scene kblindgod
 
-                    kz "그 아ㅇ를 ..잡ㅊ를 도ㅇㅈ..."
+                    kz "그 아ㅇ를 도ㅇㅡㅏ..."
 
                     km "누구세요?"
 
                     kz "ㅈ초를!!!"
-                    hide kblindgod
+                    #hide kblindgod
                     scene kdark
 
                     km "헉!"
-                    hide kdark
+                    #hide kdark
                     scene kbedroom
 
                     km "하...하..."
@@ -1586,7 +1637,8 @@ label jw:
                     km "한달전부터 묘하게 다운된것 같기도 하니까"
                     
                     km "밥이나 먹으러 가자"
-                    hide kbedroom
+                    play music "zabcho_bg.wav"
+                    #hide kbedroom
                     scene kkitchen
                     show zabcho_smilet at right
 
@@ -1607,12 +1659,12 @@ label jw:
                     show zabcho_smilet at right
 
                     kp "맛있지!"
-                    hide kkitchen
+                    #hide kkitchen
                     hide zabcho_smilet
-                    scene kdark
-                    
-                    kl "잠시후"
-                    hide kdark
+                    scene kdark with fade
+                    pause 1.0                
+                    $ renpy.notify('잠시후')
+                    #hide kdark
                     scene kkitchen
                     show zabcho_smilet at right
 
@@ -1654,6 +1706,7 @@ label jw:
 
                         kl "[zabcho_name]은(는) 공포물을 좋아한다."
                         $kh +=10
+                        kl "호감도 +10"
                         hide zabcho_smilet
                         jump k_17
 
@@ -1663,6 +1716,7 @@ label jw:
                     
                         kl "[zabcho_name]은(는) 주인공과의 망상에 빠졌다."
                         $kh +=15
+                        kl "호감도 +15"
                         hide zabcho_smilet
                         jump k_17
 
@@ -1672,6 +1726,7 @@ label jw:
 
                         kl "[zabcho_name]은(는) 판타지가 지루한 것 같다"
                         $kh -=10
+                        kl "호감도 -10"
                         hide zabcho_sadt
                         jump k_17
 
@@ -1681,6 +1736,7 @@ label jw:
 
                         kl "[zabcho_name]은(는) 개그에 흥미가 없다."
                         $kh -=15
+                        kl "호감도 -15"
                         hide zabcho_sadt
                         jump k_17
 
@@ -1691,11 +1747,10 @@ label jw:
 
                         kp "웅"
                         hide zabcho_smilet
-                        hide kkitchen
+                        #hide kkitchen
                         scene kdark
-
-                        kl "-영화관-"
-                        hide kdark
+                        $ renpy.notify('영화관')
+                        #hide kdark
                         scene ktheater
 
                         km "표는 여기있고 영화관 왔으니까 팝콘 먹어야지. 저기가서 사올게"
@@ -1719,6 +1774,7 @@ label jw:
 
                             kp "음~ 고소해 맛있다 너무 달지 않아서 좋아"
                             $kh +=5
+                            kl "호감도 +5"
                             kl "[zabcho_name]은(는) 고소한 맛이 마음에 든다."
                             hide zabcho_popcorn
                             hide zabcho_smilet
@@ -1732,6 +1788,7 @@ label jw:
 
                             kp "음.. 너무 달아.."
                             $kh -=5
+                            kl "호감도 -5"
                             kl "[zabcho_name]은(는) 단맛을 싫어한다."
                             hide zabcho_popcorn
                             hide zabcho_sadt
@@ -1744,8 +1801,8 @@ label jw:
                             kp "응"
                             hide zabcho_mung
 
-                            hide zabcho_theater
-                            scene zabcho_theater_loading
+                            #hide zabcho_theater
+                            scene zabcho_theater_loading with fade
                             pause 2.0
                             hide image_name with dissolve
                             scene zabcho_theater
@@ -1764,11 +1821,11 @@ label jw:
 
                             kp "그랭"
                             hide zabcho_smilet
-                            hide zabcho_theater
+                            #hide zabcho_theater
                             scene kdark
-
-                            kl "-인프론트 스테이크 하우스-"
-                            hide kdark
+                            $ renpy.notify('인프론트 스테이크 하우스')
+                            #hide kdark
+                            play music "zabcho_restaurant.wav"
                             scene krestaurant
 
                             km "뭐로 먹지? 음.. 일단 기본 2인세트로 시키자"
@@ -1796,13 +1853,13 @@ label jw:
                             kj1 "2인세트 나왔습니다."
 
                             km "가운데에 놔주세요"
-                            hide krestaurant
+                            #hide krestaurant
                             scene ksteak
 
                             kp "와 스테이크 영롱해 얼른 먹자"
 
                             km "맛있게 먹어"
-                            hide ksteak
+                            #hide ksteak
                             scene krestaurant
 
                             kj1 "손님" 
@@ -1822,7 +1879,7 @@ label jw:
 
                             kj1 "네 찍겠습니다. 웃으세요~ 하나, 둘, 셋"
                             show zabcho_smile at right
-                            #찰칵소리
+                            play sound "zabcho_camera.mp3"
 
                             kl "찰칵"
                             hide zabcho_smile
@@ -1831,7 +1888,7 @@ label jw:
 
                             km "감사합니다~"
 
-                            kl "-잠시후-"
+                            $ renpy.notify('잠시후')
 
                             km "배부르다 맛있었어"
 
@@ -1846,16 +1903,21 @@ label jw:
 
                             km "안되겠다... 얼른 집에가자"
                             hide zabcho_sad 
-                            hide krestaurant
+                            #hide krestaurant
                             scene kdark
+                            stop music
 
-                            kl "-집-"
-                            hide kdark
-                            #털썩하는 효과음
+                            $ renpy.notify('집')
+                            #hide kdark
+                            stop music
+                            play sound "zabcho_thump.mp3"
+                            scene kdark with fade
+                            pause 1.0
 
-                            scene zabcho_sick_CS
+                            scene zabcho_sick_CS with fade
                             pause 2.0
                             hide image_name with dissolve
+                            
 
                             km "!!! [zabcho_name]!!"
                             scene khome2
@@ -1868,7 +1930,7 @@ label jw:
                             show zabcho_f at right
 
                             km "그게 갑자기 무슨소리야.... 왜.. 아니 얼른 119를.."
-                            hide khome2
+                            #hide khome2
                             scene khand
                             pause 2.0
                             hide image_name with dissolve
@@ -1887,6 +1949,7 @@ label jw:
                             km "아니야.. 말하지마 더이상.... 아니... 이렇게는 못헤어져"
 
                             km "분명 방법이 있을거야.. 방법이..."
+                            play music "zabcho_missing.mp3"
 
                             kp "너랑 함께했던 시간 더 없이 벅차고 좋았어.."
                             hide zabcho_f
@@ -1917,6 +1980,7 @@ label jw:
                             pause 1.5
                             hide image_name with dissolve
                             scene khome2
+                            show tumyeong at right
 
                             kp "울지마..."
 
@@ -1925,7 +1989,7 @@ label jw:
                             km "나도 사실 널..."
                             hide tumyeong
                             scene kbright
-                            pause 2.0
+                            pause 1.0
                             hide image_name with dissolve
                             scene khome2
                             show weed at right
@@ -1939,6 +2003,7 @@ label jw:
 
                         label kjin_ending:
                             km "아.. 안돼.."
+                            $ renpy.music.stop(channel="music", fadeout=5.0)
 
                             km "........."
                             hide weed
@@ -1950,10 +2015,10 @@ label jw:
                             scene kgodCS
 
                             kz "본좌는 너에게 잡초를 보내준 풀의 여신 데메르이니라."
-                            hide kgodCS
-                            scene kbright
-
+                            #hide kgodCS
+                            
                             km "...예?"
+                            scene kbright
                             show zabcho_godt
 
                             kg "본 모습을 보이기 위해 잠시 임의의 공간으로 바꿨다."
@@ -1977,8 +2042,10 @@ label jw:
                             kg "그 아이의 염원을 보고 싶었어"
 
                             kg "그래서 들어주었지 그아이의 소원을"
+                            show zabcho_cat at left
 
-                            kg "그리고 본좌는 저 고양이의 몸을빌려 그대와 내 아이를 지켜보고 있었다."
+                            kg "그리고 본좌는 이 고양이의 몸을빌려 그대와 내 아이를 지켜보고 있었다."
+                            hide zabcho_cat
 
                             kg "이것이 그대에게 내 아이가 간 이유이다."
                             hide zabcho_godt
@@ -2009,6 +2076,7 @@ label jw:
                             hide image_name with dissolve
                             show zabcho_smilet at right
                             scene khome2
+                            play music "zabcho_Ending1.wav"
 
                             kp "음.. 안녕?"
                             hide zabcho_smilet
@@ -2059,7 +2127,7 @@ label jw:
                             hide zabcho_smilet
                             hide zabcho_god
                             show zabcho_smilet at right
-                            hide kbright
+                            #hide kbright
                             scene khome2
 
                             kp "울보야 울지말고 나를봐"
@@ -2082,27 +2150,33 @@ label jw:
                             show zabcho_shy_smile 
 
                             kp "나도 좋아해 너를"
+                            $ renpy.music.stop(channel="music", fadeout=4.0)
                             hide zabcho_shy_smile
-                            scene zabcho_poraloid
+                            scene zabcho_poraloid with fade                            
+                            pause 2.0
+                            
 
                             return
                         
                         label kbad_ending:
                             hide weed
+                            play music "zabcho_Ending2.wav"
                             km "아.. 안돼.. 좋아한다는 말을 못해줬는데.."
+                            $ renpy.music.stop(channel="music", fadeout=5.0)
 
                             km "이럴수는 없어.."
 
                             km "아...아......"
-                            hide khome2
-                            scene kdark         
-
-                            kl "며칠후"
-                            hide kdark
-                            scene kmiss
+                            #hide khome2
+                            scene kdark with fade
+                            pause 2.0
+                            $ renpy.notify('며칠후')
+                            #hide kdark
+                            scene kmiss with fade
 
                             km "보고싶어.."
-                            hide kmiss
+                            $ renpy.music.stop(channel="music", fadeout=4.0)
+                            #hide kmiss
                             scene kgoodby
                             pause 2.0
                             hide image_name with dissolve
@@ -2112,9 +2186,10 @@ label jw:
                         label khospital_ending:
                             km "아..안돼 가지마.."
                             hide weed
+                            $ renpy.music.stop(channel="music", fadeout=5.0)
 
                             km "흐흑...."
-                            hide khome2
+                            #hide khome2
                             scene kdark
 
                             kl "............."
@@ -2124,10 +2199,11 @@ label jw:
                             km "[zabcho_name](이)야? 너 어딨어? 네가 안보여"
 
                             kn "환자분!!!"
-                            hide kdark
+                            #hide kdark
                             scene zabcho_hospital
 
                             km "헉"
+                            play music "zabcho_Ending3.wav"
                             show zabcho_nurse at left
 
                             kn "환자분 정신이 드세요?"
@@ -2149,12 +2225,12 @@ label jw:
                             kn "정신이 드셔서 다행이에요. 그럼 저는 의사 선생님 불러올게요."
 
                             kn "아 그리고 아끼시던 잡초화분은 저기 선반위에 올려두었어요."
-                            hide zabcho_hospital
+                            #hide zabcho_hospital
                             hide zabcho_nurse
                             scene zabcho_origin
 
                             km "아...네...."
-                            hide zabcho_origin
+                            #hide zabcho_origin
                             scene zabcho_hospital
                             show zabcho_nurse
 
@@ -2170,6 +2246,14 @@ label jw:
                             km "아.. 돌아왔구나..."
 
                             km "현실..."
+
+                            km "하하.. 이제와서 현실이라고...."
+                            scene kreality with fade                            
+                            pause 2.0
+
+                            km "....."
+                            $ renpy.music.stop(channel="music", fadeout=4.0)
+                            
                             scene kzabcho
                             with fade
                             pause 2.0

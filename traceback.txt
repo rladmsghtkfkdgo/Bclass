@@ -1,32 +1,53 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/jiwooking.rpy", line 1780, in script
-    show zabcho_smile at rightw
-  File "game/jiwooking.rpy", line 1780, in <module>
-    show zabcho_smile at rightw
-NameError: name 'rightw' is not defined
+  File "game/jiwooking.rpy", line 2038, in script
+    kp "음.. 안녕?"
+  File "renpy/common/000window.rpy", line 122, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 70, in _window_show
+    renpy.with_statement(trans)
+OSError: Couldn't find file 'zabcho_Ending1.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/jiwooking.rpy", line 1780, in script
-    show zabcho_smile at rightw
-  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1072, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1072, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/jiwooking.rpy", line 1780, in <module>
-    show zabcho_smile at rightw
-NameError: name 'rightw' is not defined
+  File "game/jiwooking.rpy", line 2038, in script
+    kp "음.. 안녕?"
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 583, in execute
+    statement_name(stmt_name)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 52, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 122, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 70, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 3022, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "C:\Users\PC\Desktop\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'zabcho_Ending1.mp3'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Sat Jul  6 10:47:22 2024
+Mon Jul  8 03:02:20 2024
