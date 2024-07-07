@@ -11,7 +11,7 @@
 label yj:
    
     label alert:
-        $ renpy.notify('test')
+        $ renpy.notify('시작입니다! \n즐거운 시간되세요.')
         ga "[gf]님이 메세지를 보냈습니다. "
         #show image = "카톡 이미지.png"
 

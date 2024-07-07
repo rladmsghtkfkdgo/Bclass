@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/var.rpy", line 12: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-    define gf = Character('이진', color="#62234a", image='gf, window_left_padding = 200) # 주인공의 친구 
+File "game/d10.rpy", line 5: expected 'image_name_component' not found.
+    show '[gd_choice]'.png
+         ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Jul  7 16:13:44 2024
+Mon Jul  8 04:27:09 2024

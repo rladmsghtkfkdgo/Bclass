@@ -4,7 +4,7 @@ label d3:
     $ renpy.notify('다음날')
     ga "오늘은 학교가는 날 입니다."
 
-    scene gschool_morning
+    scene gschool_morning   #  등교길 이미지 수정
     gm "어 ! [gw]이다! 인사할까?"
     
     menu:
@@ -23,6 +23,7 @@ label d3:
             ga "호감도 -10"
             $hogam += -10
 
+    
     gm "[gw] 수업가?"
     gw "응. 이동 수업 가려고."
     gm "이동수업? 혹시 다음교시 영어야?"

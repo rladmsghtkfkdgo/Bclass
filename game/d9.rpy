@@ -1,14 +1,13 @@
 label d9: 
     $gday_count += 1
-    # 팝업창 --> 알람
-    #편의점 음료 진열대 사진 
+    $ renpy.notify('    등굣길      ')
     init python:
         gdrink = ['단백질 쉐이크', '오렌지 주스', '달달한 커피', '신상 망고샤인 음료']
         gd_choice = " "
     scene black
     ga "학교가는 날입니다.편의점에 들려서 마실 것을 삽시다."
 
-    #편의점 음료 진열대 이미지
+    scene gmarket
     gm "오늘은 어떤 마실거를 살까.."
 
     ga "어떤 음료수를 살까요?"
@@ -16,26 +15,26 @@ label d9:
         "단백질 쉐이크":
             python:
                 gd_choice = gdrink[0]
-                # 호감도 + ?
+            image drink_gift = "[gd_choice].png" 
             gm "근손실 오면 안돼. 마침 1+1이니 난희 줘야겠다."
 
         "오렌지 주스" :
             python:
                 gd_choice = gdrink[1]
-                # 호감도 + ?
+            image drink_gift = "[gd_choice].png" 
             gm "아침엔 상쾌하게 오렌지 충전이지.마침 1+1이니 난희 줘야겠다."
 
         "달달한 커피":
             python:
                 gd_choice = gdrink[2]
-                # 호감도 + ?
+            image drink_gift = "[gd_choice].png" 
             gm "현대인의 필수 영양소! 카페인 채우자. 마침 1+1이니 난희 줘야겠다."
 
         "신상 망고샤인머스켓 주스":
             python:
                 gd_choice = gdrink[3]
-                # 호감도 + ?
-            gm "현대인의 필수 영양소! 마침 1+1이니 난희 줘야겠다."
+            image drink_gift = "[gd_choice].png" 
+            gm "이거 새로 나온거잖아! 마침 1+1이니 난희 줘야겠다."
 
 
     #학교 등교하는 이미지 

@@ -1,5 +1,6 @@
 label d2_만나기_전: 
     $gday_count += 1
+    $ renpy.notify('  어느 주말 아침  ')
     scene gblack
     ga "오늘은 주말입니다. 당신은 [gw]의 자전거 스터디 강습을 나가야합니다. 당신은 늦잠을 잤습니다. "
     
@@ -33,7 +34,7 @@ label d2_만나기_전:
 
 label d2_공원: 
     scene gpark
-    show main_w_top
+    show tmp    # 짜증난 표정의 여주 
     gm "미안 늦어서! 오늘 저녁에 시간 돼? 내가 밥 살게."
     
     ga "메뉴는 ?"
@@ -66,14 +67,13 @@ label d2_공원:
     gm "제발 안돼 ! 나 아직 무서워 ! "
     gw "사실 한참 전부터 놨었어. 만재야 성공이야! "
     gm "뭐라고?!!!!!!!!!!!"
-    scene gride_bike
-    # 자전거를 성공적으로 타서 기쁜 둘 
+    scene gride_bike    # 자전거 타는 그림 수정 
 
     ga "당신은 자전거를 배웠습니다."
 
 label d2_저녁:
     scene gpark
-    show main_w_top
+    show gw_main_all
     gm "그.. 자전거 알려줘서 고마워. 너 혹시 영화 좋아하니? 시간 괜찮으면 영화보러 가자. "
     ga "어떤 영화를 보자고 할까?"
     
@@ -100,6 +100,7 @@ label d2_저녁:
 
 label d2_집:
     scene groom
+    $ renpy.notify('  집  ')
     gm "오늘  많은 일이 있었지.. "
     ga "[str_question]"
 

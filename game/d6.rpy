@@ -1,18 +1,18 @@
 #d6
 label d6:
-    $ renpy.notify('주말')
+    $ renpy.notify('    주말    ')
     $gday_count += 1
     scene gblack
     ga "화창한 어느날 공원. "
 
     show gw_main_top
+    show tmp
     gw "여태까지 갈고 닦은 실력을 보여줄래?"
-    hide gw_main_top
+    #hide gw_main_top
 
 
     scene gm_ride_bike2
 
-    show gw_main_top
     gw "자네 자전거 타는 실력이 나쁘지 않군. 좋은 스승에게 배웠나봐?"
     
     menu:
@@ -21,7 +21,7 @@ label d6:
             $hogam += 10
 
     
-        "내가 원래 운동신경이 훌륭하오.":
+        "내가 원래 운동신경이 좀 좋아 ~.":
             ga "호감도 +0"
             $hogam += 0
 

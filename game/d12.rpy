@@ -3,6 +3,7 @@ label d12:
     # 몇 달 후 같은거 넣기
     # 교실 이미지 
     scene gblack
+    $ renpy.notify('    새로운 학기     ')
     ga "새로운 학기가 시작되었습니다."
     ga "당신은 산악자전거 동아리에 남기로 하였습니다."
 
@@ -45,12 +46,13 @@ label d12:
 
     
     # 호감도가 일정수준 이상이면 난희가 샤이 하는 이미지 보여주기. 아니라면 그냥 난희다. 
-    if hogam>=100:
+    if hogam>=0:
         gw shy "..." # 샤이 버전
     else :
         gw ".."
 
     scene gblack
+    $ renpy.notify('    저녁    ')
     ga "저녁이 되었습니다. "
 
     # 카톡화면 

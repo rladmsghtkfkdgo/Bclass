@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.FactorScale object at 0x0000000004cdc640>:
-  File "game/d1.rpy", line 14, in script
-    gm "산악회 재밌겠는데? 저기로 결정했다."
-OSError: Couldn't find file 'character/gm1.png'.
+While loading <renpy.display.im.FactorScale object at 0x00000000057ae850>:
+  File "game/d12.rpy", line 49, in script
+    gw shy "..." # 샤이 버전
+OSError: Couldn't find file 'character/gw/gw_shy.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/d1.rpy", line 14, in script
-    gm "산악회 재밌겠는데? 저기로 결정했다."
+  File "game/d12.rpy", line 49, in script
+    gw shy "..." # 샤이 버전
   File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
@@ -77,9 +77,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "A:\Renpy\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'character/gm1.png'.
+OSError: Couldn't find file 'character/gw/gw_shy.png'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Sun Jul  7 18:02:00 2024
+Mon Jul  8 04:31:58 2024

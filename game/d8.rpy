@@ -3,7 +3,7 @@ label d8:
     $ renpy.notify('어느날 아침')
     init python:
     # - 호감도 음식 추가하기
-        gfood_lunch = ["김치 볶음밥", "김밥", "에그마요 토스트", "불향 가득 짬뽕밥"]
+        gfood_lunch = ["김치 볶음밥", "김밥", "샌드위치", "불향 가득 짬뽕밥"]
         gchoice= " "
 
     scene gblack
@@ -24,8 +24,7 @@ label d8:
                 gchoice = gfood_lunch[1]
                 
         "[gfood_lunch[2]]":
-            # 토스트 이미지 
-            gm "역시 만들기 쉬운 에그마요."
+            gm "역시 만들기 쉬운 샌드위치."
             python:
                 gchoice = gfood_lunch[2]
 
@@ -41,7 +40,7 @@ label d8:
     scene gchoice_place
     gm "자연아 ! 여기야! 출발할까? "
     
-    show gw_main_top
+    show gw_main_all 
     gw "자 안전하게 탑시다. "
     hide gw_main_top
 
@@ -70,7 +69,7 @@ label d8:
     if gchoice == gfood_lunch[0] :
         scene gfood_choice
         gw "맛있겠다."
-        ga "호감도 +5"
+        ga "호감RR도 +5"
         $hogam += 5
         
     elif gchoice == gfood_lunch[1] :
@@ -81,8 +80,9 @@ label d8:
 
         
     elif gchoice == gfood_lunch[2] :
-        scene gfood_choice
-        gw "와 에그마요?? 나쁘지 않은데!" 
+        scene tmp_back
+        show gsandwitch
+        gw "와 샌드위치?? 나쁘지 않은데!" 
         ga "호감도 +5"
         $hogam += 5
         

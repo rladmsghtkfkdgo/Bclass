@@ -19,7 +19,7 @@ label d4_2:
     scene gblack
     ga "당신은 저녁으로 [gdiner[1]] 먹으러 왔습니다. "
     
-    scene gdiner_hwai
+    scene gdiner_hawai
     gm "맛있게 먹어!"
     gw "응 ~ 너도~"
 
@@ -54,8 +54,10 @@ label d4_4:
 
 label d4_main:
     $renpy.notify('다 먹은 후..')
-    scene gstreet1
-    show gw_main_top
+    #scene gstreet1
+    scene tmp_back
+    #show gw_main_top
+    show tmp
     gw "배부르다~"
     gm "든든하네."
     gm "후식이나 먹으러 가자! "
@@ -77,7 +79,8 @@ label d4_main:
             ga "호감도 +15"
             $hogam += 15
 
-    show gw_main_top
+    #show gw_main_top
+    show tmp_back
     gw "오늘 저녁 잘먹었어 ~"
     gm "나도 재밌었어."
     gm "조심히 들어가! "

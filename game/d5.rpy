@@ -1,6 +1,6 @@
 #d5
 label d5:
-    $ renpy.notify('동아리 정기 모임날')
+    $ renpy.notify('    동아리 정기 모임날  ')
 
     $gday_count += 1
     scene gblack
@@ -16,7 +16,8 @@ label d5:
     gp1 "거기 작년에 가봤을 때 괜찮았지. 지금쯤이면 등나무도꽃도 많이 피었겠어. 거기로 가자!"
 
     show gw_main_top
-    gm "자연아 너넨 어디로 가? 우린 나즈막산."
+    show tmp
+    gm "난~~~~~~희! 너넨 어디로 가? 우린 나즈막산."
     gw "어! 우리도! "
     gw "그래도 남주 너는 산악자전거가 처음이니까.. 같이 연습할래? 이번주 토요일 시간 비워."
     
@@ -40,7 +41,7 @@ label d5:
             $hogam += -10
 
     scene gblack
-    $ renpy.notify('집')
+    $ renpy.notify('    집  ')
     gm "오늘도 재밌는 하루였다. "
 
     #scene groom

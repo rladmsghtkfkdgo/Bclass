@@ -1,6 +1,7 @@
 
 label d13:
     $gday_count += 1
+    $ renpy.notify('    ???하는 날   ')
     #단풍진 산.
     gw "와 경치 진짜 너무 끝내준다. "
     gm "그니까 ! 시야가 탁 트이는 느낌이야. "
@@ -11,7 +12,7 @@ label d13:
     if hogam>= 100 :
         show gw_shy
     else :
-        show gw_main_top
+        show gw_main_all
 
 
     gw "뭐래는거야."
