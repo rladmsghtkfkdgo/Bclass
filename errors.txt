@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/d4.rpy", line 4: expected statement.
-    renpy.notify('저녁')
-                      ^
+File "game/var.rpy", line 12: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+    define gf = Character('이진', color="#62234a", image='gf, window_left_padding = 200) # 주인공의 친구 
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Jul  7 02:14:01 2024
+Sun Jul  7 16:13:44 2024

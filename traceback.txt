@@ -1,30 +1,25 @@
-﻿I'm sorry, but an uncaught exception occurred.
+﻿#선언
+define gm = Character('박승철(당신)', color="#000c92", window_left_padding = 200, image='gm') #주인공
 
-While running game code:
-  File "game/d5.rpy", line 19, in script
-    gm main "자연아 너넨 어디로 가? 우린 나즈막산."
-Exception: Say has image attributes ('main',), but there's no image tag associated with the speaking character.
+[설명]
+window_left_padding --> 대사창 왼쪽 여백 크기. 사진이 들어갈 부분이라고 생각하면 됨. 
+ image='gm' --> gm이라는 태그로 묶음. 
 
--- Full Traceback ------------------------------------------------------------
 
-Full traceback:
-  File "game/d5.rpy", line 19, in script
-    gm main "자연아 너넨 어디로 가? 우린 나즈막산."
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\character.py", line 1332, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\character.py", line 1151, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "A:\Renpy\renpy-8.2.1-sdk\renpy\character.py", line 1077, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('main',), but there's no image tag associated with the speaking character.
 
-Windows-10-10.0.22621 AMD64
-Ren'Py 8.2.1.24030407
-casanoba project 1.0
-Sun Jul  7 02:30:07 2024
+# 이미지 선언2
+image side gm = im.FactorScale("character/gm.png", 0.4, 0.4) 
+image side gm sad = im.FactorScale("character/gm_sad.png", 0.4, 0.4) 
+
+
+[설명]
+image side --> 한 묶음
+gm --> 정의한 이름.  image='gm' 에서 태그한 이름 부분이랑 동일해야함. 
+im.FactorScale() --> 이미지 크기 조절
+im.FactorScale("사용할 이미지경로", 이미지 비율)
+
+
+#이미지 사용 
+gm "아 배고프다"
+gm sa "진짜 배고프다"
+--> 이렇게 하면 알아서 왼쪽에 뜸.

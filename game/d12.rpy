@@ -46,9 +46,9 @@ label d12:
     
     # 호감도가 일정수준 이상이면 난희가 샤이 하는 이미지 보여주기. 아니라면 그냥 난희다. 
     if hogam>=100:
-        show gw_main_top # 샤이 버전
+        gw shy "..." # 샤이 버전
     else :
-        show gw_main_top
+        gw ".."
 
     scene gblack
     ga "저녁이 되었습니다. "

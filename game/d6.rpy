@@ -10,7 +10,7 @@ label d6:
     hide gw_main_top
 
 
-    scene gm_ride_bike
+    scene gm_ride_bike2
 
     show gw_main_top
     gw "자네 자전거 타는 실력이 나쁘지 않군. 좋은 스승에게 배웠나봐?"

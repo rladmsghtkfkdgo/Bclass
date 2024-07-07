@@ -72,7 +72,7 @@ label d2_공원:
     ga "당신은 자전거를 배웠습니다."
 
 label d2_저녁:
-    scene gdark_park
+    scene gpark
     show main_w_top
     gm "그.. 자전거 알려줘서 고마워. 너 혹시 영화 좋아하니? 시간 괜찮으면 영화보러 가자. "
     ga "어떤 영화를 보자고 할까?"
