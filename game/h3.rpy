@@ -76,7 +76,6 @@ label mk2:
                     pp "아니 밥먹는데 털날리잖"
                     show hu_magic
                     ph "להחליף חתול"
-                    #play voice "hu_chcat"아흘리f 아둘
                     "[pp]는 고양이로 변했다"
                     hide hu_magic
                     show hu_ang at left
