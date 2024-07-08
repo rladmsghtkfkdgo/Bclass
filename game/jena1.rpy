@@ -98,17 +98,17 @@ label jn:
             with fade
             scene bg j_room_bo
             with fade
-            "(집을 나선다)"
+            "집을 나선다"
             jump j_vip
     label j_muc:
         jw "흠...오랜만에 운동이나 할까?"
         jw "무슨 운동하지.."
-        jw "오랜만의 운동인데 헬스장 가야겠다."
+        jw "그래도 오랜만의 운동인데 헬스장 가야겠다."
         scene black
         with fade
         scene bg j_room_bo
         with fade
-        "(집을 나선다)"
+        "집을 나선다"
         jump j_vip
 
     label j_utb:
@@ -178,7 +178,10 @@ label jn:
             label j_ka:
                 jw"아, 그랬었지"
                 jw"운동하러 가자"
+                scene black
+                with fade
                 scene bg j_room_h
+                with fade
                 show j_hh_1 at left
                 jhh"오랜만에 오셨네요."
                 jw"네, 오랜만에 운동하려 왔어요"
@@ -189,7 +192,10 @@ label jn:
                 "그 후, 열심히 운동했다"
                 jw"너무 무리했나?"
                 jw"집가서 쉬어야겠다."
+                scene black
+                with fade
                 scene bg j_room1
+                with fade
                 "너무 무리해서인지 집에 돌아오자마자 뻗어서 잤다"
                 jump j_ho
 

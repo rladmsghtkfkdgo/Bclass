@@ -249,6 +249,8 @@ label j_nbvq: #산
 
     label j_qweaw: #산 길
         jp "기분 전환이 될거에요"
+        hide j_su2
+        show j_su3 at right
         js "음, 그럼.."
         jp "언제가 편하세요?"
         js "그러면 조금 뒤에 복도에서 만날까요?"

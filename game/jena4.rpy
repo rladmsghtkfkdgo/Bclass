@@ -59,12 +59,14 @@ label j_cv:
                 jump j_ert
         label j_wer:
             " "
-            show j_hand_da
             "잠시 멈칫 했지만 금방 다른 영상으로 넘어갔다."
+            show j_hand_da
+            " "
             jump j_rty
         label j_ert:
-            show j_hand_da
             "금방 다른 영상으로 넘어갔다."
+            show j_hand_da
+            " "
             jump j_rty
 
             label j_rty:
