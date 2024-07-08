@@ -23,7 +23,7 @@ label mk:
         "미친여자다":
             $pl=pl-10
             hide hu_intro1
-            show hu_crying with move
+            show hu_crying at left
             ph "마왕이라고!!"
             pp "어 응 네..." 
             hide hu_crying
@@ -68,7 +68,7 @@ label mk:
     show hu_handswithchest
     ph "그래 [pp]! 짐에게 인간세상을 알려다오!\n 짐이 화려하게 이 세상을 명망시켜보도록하겠다!"
     pp "아니 세상을 멸망시키면 나는 어떻ㄱ..."
-    "시야가 흔들린다."
+    "시야가 흔들린다." with hpunch
     hide hu_handssithchest
     scene black
     with fade

@@ -21,4 +21,4 @@ label h4_ocean:
     hide hu_아련
     show hu_crying
     ph "물이 싫다!!! "
-    
+    jump mk4

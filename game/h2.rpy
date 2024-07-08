@@ -1,4 +1,6 @@
 label mk1:
+    $ renpy.notify('다음날')
+    pause 2.0   
     play sound "hu_birdsound.ogg"
     ph "일어나라 인간! 심심하다!"
     show hu_looking
@@ -10,9 +12,10 @@ label mk1:
             hide hu_looking
             show hu_happy at left
             ph "좋다! 당장 놀러가가게 채비하거라!"
-            show 공원
+            scene hu_park
             play sound "hu_catsound.ogg"
             ph "와!! 고양이!!"
+            hide hu_happy
             show hu_withcat
             menu:
                 "털날려 내려놔":
@@ -24,6 +27,7 @@ label mk1:
                     ph "인간 주제에 말이 많구나. 털이 많이 빠져도 이몸이 마법으로 치우면 그만이니라. 그러니 그 입 다물라!"
                 "고양이 좋아해?":
                     $pl=pl+15
+                    hide hu_withcat
                     show hu_withcat2
                     ph "응!"
                     ph "이녀석들은 인간과 달리 아주 귀여운 구석이 많다! 일단 시끄럽지 않지! 그리고 인간과 달리 조금 먹고 쓸때없이 싸우지 않느니라. 그리고 생긴것부터가 아주 귀엽지 않느냐! 아마 이녀석도 마족의 후예일 것이다! ... ..."
@@ -57,34 +61,40 @@ label mk1:
 
     menu:
         "비싼 레스토랑":
-            #hide 하품하는 휴
+            hide 하품하는 휴
             $pl=pl+20
-            #show 눈을 빛내는 휴
+            show hu_lighteye
             ph "짐이 요리 잘하는곳을 알아! 따라오거라!"
-            #scene 레스토랑
+            scene 레스토랑
             ph "주인장!!!"
-            #scene 만찬이 차려진 레스토랑
+            scene 만찬이 차려진 레스토랑
+            $ renpy.notify('밥 먹고 난 후')
+            pause 2.0
             jump firstgnight
         "길거리 장터":
-            #hide 하품하는 휴
+            hide 하품하는 휴
             $pl=pl-20
-            #show 가소로운표정의 휴
-            ph "오호 짐은 더러운 음식은 먹지 아니하느니라. 역시 하등한 인간다운 생각이로고."
-            #scene 야시장
-            #hide 가소로운표정의 휴
-            #show 아이스크림 가게
-            #show 눈을 빛내는 휴
+            show 가소로운표정의 휴
+            ph "짐은 더러운 음식은 먹지 아니하느니라. 역시 하등한 인간다운 생각이로고."
+            scene 야시장
+            hide 가소로운표정의 휴
+            show 아이스크림 가게 at right
+            show hu_lighteye at left
 
             menu:
                 "사줄까?":
                     $pl=pl+5
-                    #show 침흘리는 휴
+                    hide hu_lighteye
+                    show hu_lookingfood
                     ph "마왕은 저런거 좋아하지 않아! 하지만 그대가 준 성의를 봐서 먹어주도록 하겠어. 짐은 너그러운 마왕이니까..!"
-                    #hide 침흘리는 휴
+                    hide hu_lookingfood
+                    $ renpy.notify('밥 먹고 난 후')
+                    pause 2.0
                     jump firstgnight
                 "ㅋ길거리 음식 싫어한다면서":
                     $pl=pl-10
-                    #show 정색한 휴
+                    hide hu_lighteye
+                    show 정색한 휴 at left
                     ph "뭔가 큰 오해를 하고 있구나.짐은 이딴 인간들의 음식따위 줘도 먹지 않는다."
-                    #hide 정색한 휴
+                    hide 정색한 휴
                     jump firstbnight
