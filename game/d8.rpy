@@ -13,42 +13,43 @@ label d8:
         #김치 볶음밥
         "[gfood_lunch[0]]":
             gm "역시 만들기 쉬운 김치 볶음밥"
-            #볶음밥 이미지
             python:
                 gchoice = gfood_lunch[0]
+            image gchoice_food = "food/[gfood_lunch[0]].png"
 
-        "[gfood_lunch[1]]":
-            #김밥 이미지 
+        "[gfood_lunch[1]]": 
             gm "김밥에는 오이가 듬뿍 들어가야 맛있지."
             python:
                 gchoice = gfood_lunch[1]
+            image gchoice_food = "food/[gfood_lunch[1]].png"
                 
         "[gfood_lunch[2]]":
             gm "역시 만들기 쉬운 샌드위치."
             python:
                 gchoice = gfood_lunch[2]
-
+            image gchoice_food = "food/[gfood_lunch[2]].png"
+                
         "[gfood_lunch[3]]":
-            # 짬뽕밥 이미지
             gm "역시 운동하고 나서 먹는 든든한 짬뽕밥."
             python:
                 gchoice = gfood_lunch[3]
-
-        #image gfood_choice = "food/[gchoice].png"
+            image gchoice_food = "food/[gfood_lunch[3]].png"
+                
 
     $ renpy.notify('약속 장소')
     scene gchoice_place
     gm "자연아 ! 여기야! 출발할까? "
     
-    show gw_main_all 
-    gw "자 안전하게 탑시다. "
-    hide gw_main_top
-
-    #자전거 타는 이미지
-    show gw_main_top
+    show gbike at right
+    show gw_trainng 
+    gw "자 안전하게 타자구~ "
+    hide gw_trainng
+    
+    scene gm_ride_bike3     # 몇 초동안 보여주기
     gm "자전거 드라이빙 너무 재밌다!"
-    gw "너가 자전거의 맛을 알게되어서 너무 기뻐."
+    gw "너가 자전거 타기의 즐거움을 알게 되어서 너무 기뻐."
 
+    scene gchoice_place
     menu:
         "종종 같이 오자! 너랑 같이라 재밌는 거 같아.":
             gw "뭐야..! 빨리 뉴비 탈출해서 더 어려운 곳도 가자"
@@ -63,31 +64,35 @@ label d8:
     gw "배고프지 않아? 점심 뭐 먹지?"
     gm "오늘의 점심은 바로 내가 손수 만든 도시락!"
     gw "뭐라고 !!!!???!!"
-    gm "메뉴는 바로~   [gchoice] " 
+    gm "메뉴는 바로~  [gchoice]! " 
     # 음식 이미지 보여주기 
     
     if gchoice == gfood_lunch[0] :
-        scene gfood_choice
+        #scene gchoice_food
+        scene grice
         gw "맛있겠다."
-        ga "호감RR도 +5"
+        ga "호감도 +5"
         $hogam += 5
         
     elif gchoice == gfood_lunch[1] :
-        scene gfood_choice
+        #scene gchoice_food
+        scene gkimbab
         gw "와 오이 듬뿍?? 진짜 진짜 맛있겠다!!!" 
         ga "호감도 +20"
         $hogam += 20
 
         
     elif gchoice == gfood_lunch[2] :
-        scene tmp_back
+        #scene gchoice_food
+        #scene gsandwitch2
         show gsandwitch
         gw "와 샌드위치?? 나쁘지 않은데!" 
         ga "호감도 +5"
         $hogam += 5
         
     elif gchoice == gfood_lunch[3] :
-        scene gfood_choice
+        #scene gchoice_food
+        scene gzzanmbbong
         gw "[gfood_lunch[3]]?? 음.. 잘먹을게.." 
         ga "호감도 - 20"
         $hogam += -20

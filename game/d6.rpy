@@ -1,14 +1,13 @@
 #d6
 label d6:
-    $ renpy.notify('    주말    ')
+    $ renpy.notify('    주말 공원   ')
     $gday_count += 1
-    scene gblack
+    scene gpark
     ga "화창한 어느날 공원. "
 
     show gw_main_top
-    show tmp
     gw "여태까지 갈고 닦은 실력을 보여줄래?"
-    #hide gw_main_top
+    hide gw_main_top
 
 
     scene gm_ride_bike2
@@ -25,9 +24,11 @@ label d6:
             ga "호감도 +0"
             $hogam += 0
 
+    scene gpark
     gw "이정도면 다음 동아리 정기 모임에서는 문제없겠어."
     gw "잘탈 수 있지?"
     gm "당연하지."
+    #scene gpark
 
     menu:
         "먼저 집에가. 나는 좀만 더 연습하다가 갈게":

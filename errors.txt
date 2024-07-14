@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/d10.rpy", line 5: expected 'image_name_component' not found.
-    show '[gd_choice]'.png
-         ^
+File "game/d10.rpy", line 116: expected statement.
+    gw
+      ^
+
+File "game/d10.rpy", line 117: choice menuitem expects a non-empty block.
+    "특훈의 결과인가봐":
+                ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jul  8 04:27:09 2024
+Mon Jul 15 04:52:50 2024

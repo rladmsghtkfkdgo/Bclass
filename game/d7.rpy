@@ -7,13 +7,15 @@ label d7:
     ga "오늘은 동아리 정기 자전거 타는 날입니다. 그동안 연습한 실력을 보여줍시다."
     
     scene gm_ride_bike3
+    # 몇 초동안 보여주기 ? 
     gp1 "어이어이 남주! 자전거 처음 아니었냐고 ! 이게 뭐야 ! 꽤나 하잖아 이녀석 !"
     gp2 "제법인데."
 
-    #show gw_main_top
+    scene gpark
+    show gw_main_top
     gm "난희 너의 특훈덕분에 칭찬 많이 들었어. 고마워! "
     gm "덕분에 굉장히 뿌듯하고 기분이 좋아."
-    gw "별말씀을 후후"
+    gw happy "별말씀을 후후"
     gm "그.. 혹시 같이 주말에 자 전거 드라이브 안 갈래? 장소는.."
 
     init python:
