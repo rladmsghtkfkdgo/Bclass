@@ -12,6 +12,7 @@ label d7:
     gp2 "제법인데."
 
     scene gpark
+    show gbike at right
     show gw_main_top
     gm "난희 너의 특훈덕분에 칭찬 많이 들었어. 고마워! "
     gm "덕분에 굉장히 뿌듯하고 기분이 좋아."
@@ -36,5 +37,19 @@ label d7:
 
     gw "주말에 그럼 늘 보던 그 곳에서 만나자. 시간은 10시 어때?"
     gm "오케이 ~ "
+
+    scene groom
+    $renpy.notify('집')
+    gm "오늘도 즐거웠다.  "
+    ga "[str_question]"
+
+    menu:
+        "간다":
+            $hogam += 5
+            ga "당신은 운동을 하러 밖으로 나갔습니다.."
+
+        "가지 않는다":
+            $hogam += 0
+
 
     jump d8

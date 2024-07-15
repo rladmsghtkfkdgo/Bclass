@@ -47,7 +47,7 @@ label d8:
     
     scene gm_ride_bike3     # 몇 초동안 보여주기
     gm "자전거 드라이빙 너무 재밌다!"
-    gw "너가 자전거 타기의 즐거움을 알게 되어서 너무 기뻐."
+    gw happy "너가 자전거 타기의 즐거움을 알게 되어서 너무 기뻐."
 
     scene gchoice_place
     menu:
@@ -63,7 +63,7 @@ label d8:
 
     gw "배고프지 않아? 점심 뭐 먹지?"
     gm "오늘의 점심은 바로 내가 손수 만든 도시락!"
-    gw "뭐라고 !!!!???!!"
+    gw happy "뭐라고 !!!!???!!"
     gm "메뉴는 바로~  [gchoice]! " 
     # 음식 이미지 보여주기 
     
@@ -77,7 +77,7 @@ label d8:
     elif gchoice == gfood_lunch[1] :
         #scene gchoice_food
         scene gkimbab
-        gw "와 오이 듬뿍?? 진짜 진짜 맛있겠다!!!" 
+        gw happy "와 오이 듬뿍?? 진짜 진짜 맛있겠다!!!" 
         ga "호감도 +20"
         $hogam += 20
 
@@ -93,7 +93,7 @@ label d8:
     elif gchoice == gfood_lunch[3] :
         #scene gchoice_food
         scene gzzanmbbong
-        gw "[gfood_lunch[3]]?? 음.. 잘먹을게.." 
+        gw angry "[gfood_lunch[3]]?? 음.. 잘먹을게.." 
         ga "호감도 - 20"
         $hogam += -20
         
@@ -103,13 +103,28 @@ label d8:
     
     menu:
         "너랑 먹으려고 만든다고 생각하니까 너무 재밌더라.":
-            gw "뭐야~ 잘 먹을게 고마워."
+            gw happy "뭐야~ 잘 먹을게 고마워."
             ga "호감도 +10"
             $hogam += 10
 
         "운동하고 도시락 먹으면 재밌을 것 같아서 싸봤어. 소풍 온 느낌나잖아.":
-            gw "뭐야~ 잘 먹을게 고마워."
+            gw happy "뭐야~ 잘 먹을게 고마워."
             ga "호감도 +10"
             $hogam += 10
+
+
+    scene groom
+    $renpy.notify('집')
+    gm "오늘도 즐거웠다.  "
+    ga "[str_question]"
+
+    menu:
+        "간다":
+            $hogam += 5
+            ga "당신은 운동을 하러 밖으로 나갔습니다.."
+
+        "가지 않는다":
+            $hogam += 0
+
 
     jump d9

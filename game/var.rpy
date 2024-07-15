@@ -37,6 +37,7 @@ image tmp_back = "background/tmp_back.png"
 
 image gw_main_all = im.FactorScale("character/gw/gw_main_all.png", 0.5)
 
+#side 이미지
 image side gm = im.FactorScale("character/gm1.png", 0.7, 0.7) 
 image side gw  = im.FactorScale("character/gw/gw_side.png", 0.74, 0.74)
 image side gw happy = im.FactorScale("character/gw/gw_side_happy.png", 0.74, 0.74)

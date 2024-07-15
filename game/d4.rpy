@@ -7,7 +7,7 @@ label d4_1:
     ga "당신은 저녁으로 [gdiner[0]] 먹으러 왔습니다. "
     
     scene gdiner_jju
-    gw"우와 ~~~! 맛있겠다!! "
+    gw happy "우와 ~~~! 맛있겠다!! "
     gm "맛있게 먹어!"
 
     jump d4_main
@@ -47,7 +47,7 @@ label d4_4:
     
     scene gdiner_ttok
     gm "맛있게 먹어!"
-    gw "응.. 너도~.."
+    gw angry "응.. 너도~.."
 
     jump d4_main
 
@@ -63,7 +63,7 @@ label d4_main:
     ga "후식은?"
     menu: 
         "탕후루":
-            gw "..너 먹어.. 난 옆에서 구경할게. 단거 별로.. "
+            gw angry "..너 먹어.. 난 옆에서 구경할게. 단거 별로.. "
             ga "호감도 -10"
             $hogam += -10
 
@@ -73,11 +73,11 @@ label d4_main:
             $hogam += 5
 
         "망고 빙수":
-            gw "오!!"
+            gw happy "오!!"
             ga "호감도 +15"
             $hogam += 15
 
-    gw "오늘 저녁 잘먹었어 ~"
+    gw happy "오늘 저녁 잘먹었어 ~"
     gm "나도 재밌었어."
     gm "조심히 들어가! "
 
@@ -92,6 +92,7 @@ label d4_fin:
     menu:
         "간다":
             $hogam += 5
+            ga "당신은 운동을 하러 밖으로 나갔습니다.."
 
         "가지 않는다":
             $hogam += 0

@@ -5,6 +5,7 @@ label d9:
         gdrink = ['단백질쉐이크', '옥수수 수염차', '달달한 커피', '신상 고농축 망고 주스']
         gdrink_img_list =["단백질쉐이크.png", "food/[gdrink[1]].png", "food/[gdrink[2]].png", "food/[gdrink[3]].png" ]
         gd_choice = " "
+
     scene black
     ga "학교가는 날입니다.편의점에 들려서 마실 것을 삽시다."
 
@@ -79,7 +80,7 @@ label d9:
         show gdan
         gm "난희야 이거 선물이야. "
         gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
-        gw "[gd_choice]! 고마워 잘 마실게!"
+        gw happy "[gd_choice]! 고마워 잘 마실게!"
         $hogam += 20
 
         jump d10
@@ -91,9 +92,9 @@ label d9:
         #show drink_gift
         gm "난희야 이거 선물이야. "
         gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
-        gw "[gd_choice] 고마워."
+        gw angry "[gd_choice] 고마워."
         $hogam += -5
-        
+
         jump d10
 
 #고카페인
@@ -115,7 +116,7 @@ label d9:
         #show drink_gift
         gm "난희야 이거 선물이야. "
         gm "[gd_choice] 마셔. 1+1이더라고. 나 2개까지 못 마셔. "
-        gw "[gd_choice]! 고마워...."
+        gw angry "[gd_choice]! 고마워...."
         $hogam += -20
 
         jump d10

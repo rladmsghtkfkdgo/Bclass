@@ -11,21 +11,21 @@ label d12:
     show gbike
     gw "스으으응철~~~~~"
     gm "난희! "
-    gw "일단 가볍게 세 바퀴 돌아볼까?"
+    gw happy "일단 가볍게 세 바퀴 돌아볼까?"
     
     menu:
         "3바퀴? 날도 더운데 1바퀴만 돌자~":
-            ga "호감도 += -10"
+            ga "호감도  -10"
             $hogam += -10
             gw "약한 소리 하지마~! 3바퀴 다 돌거야."
 
         "자 출발 ~":
-            ga "호감도 += 10"
-            $hogam += 10
+            ga "호감도 + 10"
+            $hogam += 10 
 
     $ renpy.notify('    다 돈 후   ')
     gm "크아악 힘들다. "
-    gw "후 ~ 상쾌하다. "
+    gw happy "후 ~ 상쾌하다. "
     gw "자 물 마셔. 안 가지고 왔지?"
     gm "이런 간파당했다!"
     gm "............."
@@ -39,21 +39,29 @@ label d12:
                 gw "나도 좋아. 너 내 남자친구해라. "
                 jump ending_love
 
-            else : 
+            elif hogam>=100 : 
                 gw "갑자기 뭐야. 징그러"
                 jump ending_friend
+
+            else : 
+                gw "????"
+                jump ending_bad
         
         "나랑 오래 친구하자.":
             if hogam>=200:
                 gw "난 친구하기 싫은데? 승철이 여자친구 할게."
                 jump ending_love
 
-            else : 
-                gw "갑자기 뭐야. 징그러"
+            elif hogam>=100 : 
+                gw "갑자기 뭐야? 뭐 잘못했니..?"
                 jump ending_friend
-        
-        
 
+            else : 
+                gw "????"
+                jump ending_bad
+
+
+#엔딩
 label ending_love:
     scene black
     ga "당신은 이난희와 연인이 되었습니다. "
@@ -63,4 +71,9 @@ label ending_friend:
     scene black
     ga "당신은 이난희와 우정을 기약했습니다. "
     scene 친구
+    
+label ending_bad:
+    scene black
+    ga "당신은 이난희에게 절교 당했습니다. "
+    scene 절교
     
