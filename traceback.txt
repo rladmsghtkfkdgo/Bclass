@@ -1,40 +1,49 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/d2.rpy", line 10, in script
-    queue music ["audio/yujin/놀람_남자.mp3" noloop, "audio/yujin/차분.mp3" fadeout 0.5]
-  File "renpy/common/000statements.rpy", line 220, in execute_queue_music
-    _audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-SyntaxError: invalid syntax (game/d2.rpy, line 10)
+  File "game/d12_ending.rpy", line 78, in script
+    ga "당신은 이난희와 연인이 되었습니다. "
+OSError: Couldn't find file 'audio/yujin/엔딩_러브.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/d2.rpy", line 10, in script
-    queue music ["audio/yujin/놀람_남자.mp3" noloop, "audio/yujin/차분.mp3" fadeout 0.5]
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
-    self.call("execute")
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 220, in execute_queue_music
-    _audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1207, in py_eval
-    code = py_compile(code, 'eval')
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1144, in py_compile
-    raise e
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1081, in py_compile
-    raise orig_e
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/d2.rpy, line 10)
+  File "game/d12_ending.rpy", line 78, in script
+    ga "당신은 이난희와 연인이 되었습니다. "
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\display\core.py", line 3022, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/yujin/엔딩_러브.mp3'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Mon Jul 15 16:18:47 2024
+Mon Jul 15 17:08:21 2024

@@ -129,6 +129,8 @@ label d2_저녁:
             ga "호감도 -20"
             $hogam -= 20
 
+    stop music
+
 label d2_집:
     scene groom
     $ renpy.notify('  집  ')

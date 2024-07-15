@@ -47,7 +47,7 @@ label d8:
         play music "audio/yujin/한강.mp3" fadeout 0.5
     
     
-    gm "자연아 ! 여기야! 출발할까? "
+    gm "난희! 여기야! 출발할까? "
     
     show gbike at right
     show gw_trainng 
