@@ -96,10 +96,9 @@ image gforest = "background/산속.jpg"
 ## love
 image glove_end = "background/러브.png"
 ## freind
-image gnormal_end:
-    "background/우정.png"
+image gnormal_end= "background/우정.png"
 ## 절교
-image gbad_end = "background/"
+image gbad_end = "background/절교.png"
 
 #파이썬 변수
 init python:
