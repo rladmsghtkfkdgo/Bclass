@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/d12_ending.rpy", line 53: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-                    gw shy "승철이 여자친구 
+File "game/var.rpy", line 14: expected statement.
+    music alert = "audio/yujin/알람음.mp3" noloop
+                ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jul 15 12:40:49 2024
+Mon Jul 15 16:33:14 2024

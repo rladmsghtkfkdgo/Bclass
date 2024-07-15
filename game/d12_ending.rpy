@@ -1,11 +1,14 @@
 label d12:
     $gday_count += 1
     $ renpy.notify('    어느날 저녁   ')
+    play music "audio/yujin/전화음.mp3" noloop
     ga "전화가 울립니다."
+    stop music
     gm "여보세요?"
     gw "나와! 저녁 자전거타기하자!"
     gm "지금? 알았어~"
 
+    play music "audio/yujin/저녁_공원.mp3" fadeout 0.5
     $ renpy.notify('    공원   ')
     scene gpark_night
     show gbike
@@ -70,6 +73,7 @@ label d12:
 #엔딩
 ## 245 ~ 108
 label ending_love:
+    play music "audio/yujin/엔딩_러브.mp3" fadeout 0.5
     scene glove_end
     ga "당신은 이난희와 연인이 되었습니다. "
     
@@ -77,14 +81,17 @@ label ending_love:
 
 ## 107 ~ -29
 label ending_friend:
+    play music "audio/yujin/경쾌.mp3" fadeout 0.5
     scene gnormal_end
     ga "당신은 이난희와 우정을 기약했습니다. "
+
 
     return
     
 
 ## - 30 ~  그 이하 
 label ending_bad:
+    play music "audio/yujin/엔딩_베드.mp3" fadeout 0.5
     scene gbad_end
     ga "당신은 이난희에게 절교 당했습니다. "
 

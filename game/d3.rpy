@@ -2,9 +2,11 @@ label d3:
     $gday_count += 1
     scene gblack
     $ renpy.notify('다음날')
+    play music "audio/yujin/알람음.mp3" noloop
     ga "오늘은 학교가는 날 입니다."
 
-    scene gschool_morning   #  등교길 이미지 수정
+    play music "audio/yujin/웅성웅성.mp3" fadeout 0.5
+    scene gschool_morning 
     gm "어 ! [gw]이다! 인사할까?"
     
     menu:

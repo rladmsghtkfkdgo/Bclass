@@ -10,6 +10,8 @@ define gp1= Character('강찬(동아리 회장)', color="#9c90a5", window_left_p
 define gp2 = Character('수진(동아리 부원)', color="#9c90a5", window_left_padding = 200, image='gp2')
 define gn= Character('이름 모르는 사람', color="#9c90a5")
 
+#음악
+#music alert = "audio/yujin/알람음.mp3" noloop
 
 ## gw
 image gw_main_all = "character/gw/gw_main_all.png"

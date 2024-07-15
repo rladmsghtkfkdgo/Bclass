@@ -12,7 +12,9 @@ label yj:
    
     label alert:
         $ renpy.notify('시작입니다! \n즐거운 시간되세요.')
+        play music "audio/yujin/알람음.mp3" noloop
         ga "[gf]님이 메세지를 보냈습니다. "
+        gf "그래서 동아리 어디가입할건데?? "
         #show image = "카톡 이미지.png"
 
         gm main "아 맞다! 내일 동아리 홍보제구나. 어디 가입하지?"

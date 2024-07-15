@@ -2,9 +2,13 @@ label d2_만나기_전:
     $gday_count += 1
     $ renpy.notify('  어느 주말 아침  ')
     scene gblack
+    play music "audio/yujin/알람음.mp3" noloop
     ga "오늘은 주말입니다. 당신은 [gw]의 자전거 스터디 강습을 나가야합니다. 당신은 늦잠을 잤습니다. "
     
+
     scene groom
+    play music "audio/yujin/놀람_남자.mp3" noloop
+    play music "audio/yujin/차분.mp3" fadeout 0.5
     gm "맙소사! 맙소사! 맙 소사! 맙소사! 맙소사! 맙소사!"
     gm "시간이 왜이래!!!! 맙소사 맙소사!!!"
 
@@ -17,6 +21,7 @@ label d2_만나기_전:
             scene gblack
             gw "흠.. 급똥은 어쩔 수 없지."
             gm "(휴.. 빨리 준비해서 나가자!!!)"
+            play music "audio/yujin/알람음.mp3" noloop
             ga "호감도 +0 ."
             $hogam +=0;
 
@@ -24,6 +29,7 @@ label d2_만나기_전:
             scene gblack
             gw angry "그래 알았어 ~ (누구는 수행평가 준비 안하나?)"
             gm "(휴.. 빨리 준비해서 나가자!!!)"
+            play music "audio/yujin/알람음.mp3" noloop
             ga "호감도 -5"
             $hogam -=5;
     
@@ -32,6 +38,7 @@ label d2_만나기_전:
             scene gblack
             gw "흠.. 운동하느라 늦게 일어났다고? \n피곤할만 하지.."
             gm "(휴.. 빨리 준비해서 나가자!!!)"
+            play music "audio/yujin/알람음.mp3" noloop
             ga "호감도 +5"
             $hogam +=5;
 
@@ -40,6 +47,7 @@ label d2_만나기_전:
 
 label d2_공원: 
     scene gpark
+    play music "audio/yujin/경쾌_기본.mp3" fadeout 1.0
     show gw_angry    
     gm "미안 늦어서! 오늘 저녁에 시간 돼? 내가 밥 살게."
     
@@ -89,12 +97,15 @@ label d2_공원:
     gm "뭐라고?!!!!!!!!!!!"
     scene gride_bike    # 자전거 타는 그림 수정 
 
+    play music "audio/yujin/알람음.mp3" noloop
     ga "당신은 자전거를 배웠습니다."
 
 label d2_저녁:
-    scene gpark
+    scene gpark_night
     show gw_main_top
+    play music "audio/yujin/저녁_공원.mp3" fadeout 1.0
     gm "그.. 자전거 알려줘서 고마워. 너 혹시 영화 좋아하니? \n시간 괜찮으면 영화보러 가자. 내가 살게! "
+    
     ga "어떤 영화를 보자고 할까?"
     
     menu:
@@ -122,6 +133,7 @@ label d2_집:
     scene groom
     $ renpy.notify('  집  ')
     gm "오늘  많은 일이 있었지.. "
+    play music "audio/yujin/알람음.mp3" noloop
     ga "[str_question]"
 
     menu:

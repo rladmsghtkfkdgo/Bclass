@@ -1,17 +1,29 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/d12_ending.rpy", line 38, in script
-    if hogam >= 108:
-SyntaxError: invalid syntax (game/d12_ending.rpy, line 42)
+  File "game/d2.rpy", line 10, in script
+    queue music ["audio/yujin/놀람_남자.mp3" noloop, "audio/yujin/차분.mp3" fadeout 0.5]
+  File "renpy/common/000statements.rpy", line 220, in execute_queue_music
+    _audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+SyntaxError: invalid syntax (game/d2.rpy, line 10)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/d12_ending.rpy", line 38, in script
-    if hogam >= 108:
-  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
+  File "game/d2.rpy", line 10, in script
+    queue music ["audio/yujin/놀람_남자.mp3" noloop, "audio/yujin/차분.mp3" fadeout 0.5]
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
+    self.call("execute")
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Program Files\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 220, in execute_queue_music
+    _audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
   File "D:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1207, in py_eval
     code = py_compile(code, 'eval')
   File "D:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1144, in py_compile
@@ -20,9 +32,9 @@ Full traceback:
     raise orig_e
   File "D:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1073, in py_compile
     tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/d12_ending.rpy, line 42)
+SyntaxError: invalid syntax (game/d2.rpy, line 10)
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 casanoba project 1.0
-Mon Jul 15 13:48:15 2024
+Mon Jul 15 16:18:47 2024

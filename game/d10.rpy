@@ -2,10 +2,12 @@ label d10:
     $gday_count += 1
     scene black
     $ renpy.notify(' 여름 방학 ')
+    play music "audio/yujin/알람음.mp3" noloop
     ga "몇 주후 방학이 되었습니다."
     
     $ renpy.notify(' 동아리 모임 ')
     scene gclassroom2
+    play music "audio/yujin/경쾌_기본.mp3" fadeout 0.5
     gp1 "방학 때 특훈을 한번 가질까합니다. "
     gp1 "장소는 아직 미정이긴하나 아마 강원도로 갈 것 같습니다."
     gp1 "희망자는 다음주 월요일까지 저에게 개인 연락 주세요."
@@ -43,6 +45,7 @@ label d10:
 
     scene gblack
     $ renpy.notify(' 어느날 저녁 ')
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     scene gstreet
     gf "너.. 갑자기 너네 동아리 특훈왜가?"
     gf "방학에는 무조건 피시방에 사는애가.. "
@@ -53,8 +56,10 @@ label d10:
 
     scene gblack
     $ renpy.notify(' 동아리 특훈 ')
+    play music "audio/yujin/알람음.mp3" noloop
     ga "동아리 특훈날입니다."
 
+    play music "audio/yujin/숲속.mp3" fadeout 0.5
     scene gforest
     gp1 "여러분 다들 준비되었나요?"
     gn "네 ~~~~~~"
@@ -67,8 +72,8 @@ label d10:
     gw "(승철이 이제 혼자 잘타네.. 신규 부원도 가르칠 만큼 늘었어..)"
     gw "(뿌듯하네...)"
 
+    play music "audio/yujin/쿵.mp3" noloop
     gw angry ".....어!! 아악 !!!!!"
-    # 쾅하는 소리 
     gm "난희야!!"
     gp1 "난희!!!!!!"
     gp1 "이게 무슨일이야. 실수 잘 안하는 애가..괜찮아? 계속 탈 수 있겠어? "
@@ -93,6 +98,7 @@ label d10:
             jump d10_2
 
 label d10_1:
+    play music "audio/yujin/숲속.mp3" fadeout 0.5
     gm "난희 얼마나 다친거야.. 많이 아파?"
     gw angry "모르겠어.. 걸을 순 있는데 걸으면 아파."
     gm "흠.. 엎혀. 내가 이 날을 위해 열심히 운동을 한 것 같네."
@@ -104,6 +110,7 @@ label d10_1:
     jump d10_3
 
 label d10_2:
+    play music "audio/yujin/숲속.mp3" fadeout 0.5
     gm "헉헉 난희야.. 헉헉 타고 왔어."
     gw "푸화하하. 그래도 생각보다 엄청 빨리 왔네. 너가 제일 처음 내려왔어."
     menu:
@@ -124,6 +131,7 @@ label d10_2:
     jump d10_3
 
 label d10_3: 
+    play music "audio/yujin/숲속.mp3" fadeout 0.5
     gm "실수 잘안한다면서 왜 그런 실수를 했어?"
     gw "너가 혼자서 이제 잘 타길래.. 너 구경하다가.. "
     gm "내려가면 병원 먼저가자. 당분간은 자전거 타기 금지야."

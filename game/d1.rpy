@@ -4,6 +4,8 @@ label d1_1:
     $gday_count += 1
     $ renpy.notify('    동아리 홍보회   ')
     scene gschool_morning
+    play music "audio/yujin/웅성웅성.mp3" 
+
     gf main "야! [gm] 어디 가입할거야!"
     gf "난 농구부 가입할랜다. 역시 남자는 농구지. "
     scene gdong
@@ -12,11 +14,15 @@ label d1_1:
     gn "저희 동아리 들어와요! 학교 지원금 빵빵 합니다!"
     
     gm "산악회 재밌겠는데? 저기로 결정했다."
+    play music "audio/yujin/알람음.mp3" noloop
     ga "당신은 산악회에 가입했습니다."
+    stop music
 
     $ renpy.notify('동아리실')
     scene gclassroom1
+    play music "audio/yujin/경쾌_기본.mp3" 
     gp1 main "자! 저희 산악자전거 동아리에 가입해주셔서 감사합니다. 저는 회장 [gp1]입니다."
+
     gm "뭐?!?!?!?!??"
     gm "산악.. 자전거??????????????!!!!!!!!!!!!!!"
     gm "나 자전거 탈 줄 몰라 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 어떡하지..? 나가?"
@@ -49,6 +55,8 @@ label d1_1:
     gw happy "'확실히 산악 자전거는 접하기 어렵긴 해. 나도 선배한테 배웠으니까..'"
     gw "그래~ 알려줄게. "
     gm "어! 고마워 !! "
+    stop music fadeout 0.5
+
 
     jump d2_만나기_전
     

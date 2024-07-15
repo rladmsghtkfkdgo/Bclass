@@ -3,8 +3,10 @@ label d6:
     $ renpy.notify('    주말 공원   ')
     $gday_count += 1
     scene gpark
+    play music "audio/yujin/알람음.mp3" noloop
     ga "화창한 어느날 공원. "
 
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     show gbike at right
     show gw_main_top
     gw "여태까지 갈고 닦은 실력을 보여줄래?"
@@ -46,10 +48,12 @@ label d6:
             gw angry "그래 내일 보자."
             ga "호감도 - 20"
             $hogam += -20
-
+    stop music
+    
     scene groom
     $renpy.notify('집')
     gm "오늘도 즐거웠다.  "
+    play music "audio/yujin/알람음.mp3" noloop
     ga "[str_question]"
 
     menu:

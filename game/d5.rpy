@@ -4,8 +4,10 @@ label d5:
 
     $gday_count += 1
     scene gblack
+    play music "audio/yujin/알람음.mp3" noloop
     ga "오늘은 동아리 정기 모임입니다."
 
+    play music "audio/yujin/경쾌_기본.mp3" fadeout 0.5
     scene gclassroom2
     gp1 "여러분! 첫 동아리 일정으로 어디를 갈 건지 정해야합니다. "
     gp1 "각 조별로 회의해서 알려주세요.첫 공식 일정은 2주뒤로 하겠습니다. "
@@ -44,11 +46,12 @@ label d5:
 
     hide gw_main_top
     scene gblack
+    stop music
+
     $ renpy.notify('    집  ')
     gm "오늘도 재밌는 하루였다. "
 
-    #scene groom
-    # 운동갈까요? 
+    play music "audio/yujin/알람음.mp3" noloop
     ga "[str_question]"
 
     menu:
