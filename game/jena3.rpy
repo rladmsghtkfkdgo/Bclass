@@ -31,9 +31,11 @@ label j_lz:
             "그 후로 옆집 사람을 보지 못했다."
             "듣기로는 이사를 간 듯 싶다."
             scene black
-            "Ending_04 어색한 옆집사람"
-            "diEngn_00.후회"
-            "ngndiE_00.후회"       
+            with fade
+            scene bg j_end_04 at right
+            with fade
+            $ renpy.pause(7.0)
+            
 
             return
 

@@ -205,6 +205,70 @@ label j_erty:
 
 label j_rtyu:
     "연애"
+    jp "어, 서윤씨 전화네?"
+    jp "네, 여보세요?"
+    show j_su3 at right
+    js "네, 여보세요"
+    js "혹시 오늘 시간 괜찮으세요?"
+    hide j_su3
+    show j_su2 at right
+    jp "네, 괜찮아요!"
+    hide j_su2
+    show j_su3 at right
+    js "그러면 라온카페에서 3시에 봬요."
+    hide j_su3
+    show j_su2 at right
+    jp "네, 그때 봬요!"
+    hide j_su2
+    show bg j_room_en
+    show j_labe_za
+    ""
+    hide j_labe_za
+    show j_su3 at right
+    js "앗 여기에요!"
+    hide j_su3
+    show j_su2 at right
+    jp "안녕하세요"
+    jp "조금 더 일찍 나올 걸 그랬네요"
+    hide j_su2
+    show j_su3 at right
+    js "아니에요"
+    js "저도 조금전에 도착했어요."
+    js "어디 앉으실래요?"
+    hide j_su3
+    show j_su2 at right
+    jp "음.. 저기 앉죠"
+    hide j_su2
+    show j_su3 at right
+    js "좋아요"
+    hide j_su3
+    show j_su2 at right
+    jp "혹시 오늘 부르신 이유가.."
+    hide j_su2
+    show j_su3 at right
+    js "그게.."
+    js "사실 저는 '유피아'라는 이름으로 활동중인 유튜버예요."
+    js "요즘 많이 힘들었는데 [jp]씨 덕분에 잘 이겨낼 수 있었어요"
+    js "그래서 감사하다고 말하고 싶었어요"
+    hide j_su3
+    show j_su2 at right
+    jp "아, 아니에요"
+    jp "크게 해드린 것도 없는 걸요"
+    hide j_su2
+    show j_su3 at right
+    #볼이 상기된 서윤
+    js "아니에요, 저한텐 정말 큰 도움이었어요."
+    js "혹시 [jp]씨만 괜찮으시다면 저와 사귀어 주실래요?"
+    hide j_su3
+    show j_su2 at right
+    jp "...!"
+    jp "좋아요!"
+    hide j_su2
+    show j_su3 at right
+    scene black
+    with fade
+    scene bg j_room1
+    with fade
     "그 후, 우리는 연인이 되었다."
     "서윤은 계속해서 유튜브를 하고있다."
     "시간이 지나며 악플도 사그라들었다."

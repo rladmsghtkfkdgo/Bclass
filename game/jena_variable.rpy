@@ -35,6 +35,8 @@ image bg j_room_ser = "j_room_ser.png" #설거지 그릇
 image bg j_room_en = "j_room_en.png" #엔딩 카페
 image bg j_white = "j_white.png"
 
+image bg j_end_04 = "j_end_04.png"
+
 image bg j_trash = "j_trash.png" #쓰레기
 
 image j_food_pa = "j_food_pa.png" #파스타
