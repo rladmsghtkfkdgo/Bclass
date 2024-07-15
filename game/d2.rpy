@@ -85,7 +85,7 @@ label d2_공원:
 
     scene gblack
     gm "제발 안돼 ! 나 아직 무서워 ! "
-    gw happy "사실 한참 전부터 놨었어. 만재야 성공이야! "
+    gw happy "사실 한참 전부터 놨었어. 이야~~ 성공이야! "
     gm "뭐라고?!!!!!!!!!!!"
     scene gride_bike    # 자전거 타는 그림 수정 
 

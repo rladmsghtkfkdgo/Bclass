@@ -15,8 +15,8 @@ label yj:
         ga "[gf]님이 메세지를 보냈습니다. "
         #show image = "카톡 이미지.png"
 
-        gm main "아 맞다! 내일 동아리 어디 가입하지?"
-        gm main ".. 내일 구경해보고 결정하자 ~ "
+        gm main "아 맞다! 내일 동아리 홍보제구나. 어디 가입하지?"
+        gm main ".. 모르겠다 ~ 내일 구경해보고 결정하자 ~ "
 
 
         #$ renpy.call_screen("popup", str="이봐 친구!!! 동아리 어디 가입할거야!!!")
