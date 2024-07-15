@@ -35,43 +35,53 @@ label d12:
 
     menu:
         "니가 좋다 이난희":
-            if hogam>=200:
+            if (hogam >= 108):
                 gw "나도 좋아. 너 내 남자친구해라. "
                 jump ending_love
 
-            elif hogam>=100 : 
+            elif hogam >= -29 : 
                 gw "갑자기 뭐야. 징그러"
                 jump ending_friend
 
             else : 
                 gw "????"
+                gw angry "우웩 이게 고백 공격 이런건가?"
+                gw angry "좋게 봐주려고 했더니.. 안되겠다. 그냥 오늘 마지막으로 아는척하지 말자. "
+
                 jump ending_bad
         
         "나랑 오래 친구하자.":
-            if hogam>=200:
-                gw "난 친구하기 싫은데? 승철이 여자친구 할게."
+            if (hogam >= 108):
+                gw "난 친구하기 싫은데? "
+                gw shy "승철이 여자친구하고 싶어."
+
                 jump ending_love
 
-            elif hogam>=100 : 
+            elif hogam >= -29 : 
                 gw "갑자기 뭐야? 뭐 잘못했니..?"
                 jump ending_friend
 
             else : 
                 gw "????"
+                gw angry "사실 오늘 널 부른건 이제 마지막으로 같이 자전거 타자고 부른거야."
+                gw angry "너 나랑 안 맞아. 우리 그냥 앞으로 아는척하지 말자."
                 jump ending_bad
 
 
 #엔딩
+## 245 ~ 108
 label ending_love:
     scene black
     ga "당신은 이난희와 연인이 되었습니다. "
     scene 러브
 
+## 107 ~ -29
 label ending_friend:
     scene black
     ga "당신은 이난희와 우정을 기약했습니다. "
     scene 친구
-    
+
+## - 30 ~  그 이하 
 label ending_bad:
     scene black
     ga "당신은 이난희에게 절교 당했습니다. "

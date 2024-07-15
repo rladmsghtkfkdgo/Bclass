@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/d10.rpy", line 116: expected statement.
-    gw
-      ^
-
-File "game/d10.rpy", line 117: choice menuitem expects a non-empty block.
-    "특훈의 결과인가봐":
-                ^
+File "game/d12_ending.rpy", line 53: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                    gw shy "승철이 여자친구 
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jul 15 04:52:50 2024
+Mon Jul 15 12:40:49 2024
