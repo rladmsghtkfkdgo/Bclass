@@ -10,15 +10,6 @@ define gp1= Character('강찬(동아리 회장)', color="#9c90a5", window_left_p
 define gp2 = Character('수진(동아리 부원)', color="#9c90a5", window_left_padding = 200, image='gp2')
 define gn= Character('이름 모르는 사람', color="#9c90a5")
 
- 
-
-#인물 이미지
-#image gw_main_top = "character/gw_main.png"
-#image gw_main_shy = "character/gw_main_shy.png"  #shy 이미지 
-##image gn = ""
-#image gf = "character/gf.png"
-#image gp1 = "character/gp1.png"
-#image gp2 = "character/gp2.png"
 
 ## gw
 image gw_main_all = "character/gw/gw_main_all.png"
@@ -31,8 +22,8 @@ image gw_trainng = im.FactorScale("character/gw/gw_traninng.png", 0.4)
 #image gw_black = "character/gw/gw_main_black.png"
 
 ## tmp 이미지
-image tmp = im.FactorScale("character/tmp.png", 0.34)
-image tmp_back = "background/tmp_back.png"
+#image tmp = im.FactorScale("character/tmp.png", 0.34)
+#image tmp_back = "background/tmp_back.png"
 
 
 image gw_main_all = im.FactorScale("character/gw/gw_main_all.png", 0.5)
@@ -101,11 +92,14 @@ image gstreet =im.FactorScale("background/길거리.png", 1.45)
 image gbike = im.FactorScale("background/자전거.png", 0.8)
 image gforest = "background/산속.jpg"
 
-#image gpark_biy ="background/자전거와 공원.jpg"
-#image gpark_biy2 ="background/자전거와 공원2.jpg"
-#image ghangang =im.FactorScale("background/한강자전거길.jpg", 0.2)
-#image gbeach ="background/해변자전거길.jpg"
-
+#엔딩 이미지 
+## love
+image glove_end = "background/러브.png"
+## freind
+image gnormal_end:
+    "background/우정.png"
+## 절교
+image gbad_end = "background/"
 
 #파이썬 변수
 init python:

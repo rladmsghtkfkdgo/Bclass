@@ -71,19 +71,20 @@ label d12:
 #엔딩
 ## 245 ~ 108
 label ending_love:
-    scene black
+    scene glove_end
     ga "당신은 이난희와 연인이 되었습니다. "
-    scene 러브
+    scene glove_end
 
 ## 107 ~ -29
 label ending_friend:
     scene black
+    scene gnormal_end
     ga "당신은 이난희와 우정을 기약했습니다. "
-    scene 친구
+    scene gnormal_end
 
 ## - 30 ~  그 이하 
 label ending_bad:
     scene black
     ga "당신은 이난희에게 절교 당했습니다. "
-    scene 절교
+    scene gbad_end
     
