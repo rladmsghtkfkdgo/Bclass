@@ -73,19 +73,7 @@ label j_cv:
                 show j_labe_ha
                 " "
                 hide j_labe_ha
-                jp "슬슬 다른 거 할까?"
-                jp "이제 뭐하지?"
-                jp "옷 안 산지 꽤 된 것 같은데.."
-                jp "옷 살까"
-                jp "뭐 사지?"
-                menu:
-                    "무난하게 깔끔한 티":
-                        jump j_tyu
-                    "내가 좋아하는 노란 형광티":
-                        jump j_tyu
-                label j_tyu:
-                    jp "혹시 모르니까 둘 다 사야겠다."
-                    "마음에 드는 옷을 사, 기분 좋게 잠들었다."
+                "그 후, 한참 유튜브를 보다 잠에 들었다."
                     scene black
                     with fade
                     scene bg j_room1
