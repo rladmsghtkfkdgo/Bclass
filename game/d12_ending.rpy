@@ -39,7 +39,7 @@ label d12:
                 gw shy "나도 좋아. 너 내 남자친구해라. "
                 jump ending_love
 
-            elif (hogam >= -29 & hogam < 108) : 
+            elif (hogam >= -29) & (hogam < 108) : 
                 gw "갑자기 뭐야. 징그러"
                 jump ending_friend
 
@@ -56,14 +56,14 @@ label d12:
                 gw shy "승철이 여자친구하고 싶어."
                 jump ending_love
 
-            elif (hogam >= -29 & hogam < 108) : 
+            elif (hogam >= -29) & (hogam < 108) : 
                 gw "갑자기 뭐야? 뭐 잘못했니..?"
                 jump ending_friend
 
             else : 
                 gw "????"
                 gw angry "사실 오늘 널 부른건 이제 마지막으로 같이 자전거 타자고 부른거야."
-                gw angry "너 나랑 안 맞아. 우리 그냥 앞으로 아는척하지 말자."
+                gw happy "너 나랑 안 맞아. 우리 그냥 앞으로 아는척하지 말자."
                 jump ending_bad
 
 
