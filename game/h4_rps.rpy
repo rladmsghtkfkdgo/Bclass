@@ -7,7 +7,7 @@ label rps:
             $pp_game="바위"
         "보":
             $pp_game="보"          
-    $ choice = renpy.random.choice(("가위","바위","보")) ## These are the events I want to have the code choose from.
+    $ choice = renpy.random.choice(("보","바위","가위")) ## These are the events I want to have the code choose from.
     ph "[choice]" 
     if pp_game == choice:
         ph "비겼구나!, 다시하자!"

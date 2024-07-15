@@ -57,19 +57,18 @@ label mk:
     stop music
     scene hu_room2
     with dissolve 
-    show hu_시무룩
+    show hu_simurook at left
     ph "그때 짐은 태어난지 2년된 유체였다네. 다시 차원문을 열어볼까했지만 그것또한 짐의 뜻대로 되지 않았다."
     ph "그대는 이름이 무엇인고?"
     $pname=renpy.input("내 이름은 ")
     $pl=pl+30
-    "[pl]"
 
-
-    show hu_handswithchest
+    hide hu_simurook
+    show hu_happy at left
     ph "그래 [pp]! 짐에게 인간세상을 알려다오!\n 짐이 화려하게 이 세상을 명망시켜보도록하겠다!"
     pp "아니 세상을 멸망시키면 나는 어떻ㄱ..."
     "시야가 흔들린다." with hpunch
-    hide hu_handssithchest
+    hide hu_happy
     scene black
     with fade
     ph "흠. 이정도로 기절하다니 인간이라 그런지 확실히 나약하구나.\n 짐은 너그러운 마왕이니 다음부턴 마력을 조정해보겠느니라!"

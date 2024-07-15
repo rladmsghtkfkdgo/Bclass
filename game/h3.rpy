@@ -11,33 +11,33 @@ label mk2:
         menu:
             "음,맛있네. 휴가 한거야?":
                 $pl=pl+5
-                show 뿌듯해하는휴 at right
+                show hu_nug at right
                 ph "후후 요리또한 마왕의 덕목이니라. 휴는 못하는게 없지!"
                 pp "하하.역시 마왕님 대단하네."
                 ph "이런것쯤이야 별거 아니니라. 다음에 또 먹고싶다면 내게 말하거라!"
                 pp "그래 다음에 또 해줘."
-                hide 뿌듯해하는휴
+                hide hu_nug
             "고마워.다음엔 내가 해줄게.":
                 $pl=pl+10
-                show 눈감고생각하는휴
+                show hu_smile at right
                 ph "휴는 아이스크림이 좋아. 신선한 아이스크림으로 잡아오도록."
                 pp "휴. 아이스크림은 살아있는게 아니야...식사대용도 아니고..."
-                hide 눈감고생각하는휴
-                show 가소롭다는듯이 눈을 붉게 빛내는 휴
+                hide hu_smile
+                show hu_yumm at left
                 ph "인간. 나는 마왕. 인간따위의 식사를 한다고 기력이 차지 않는다. 허면 내 기력을 채울만한 싱싱한 인간을 여럿 잡아오겠느냐?"
                 pp "생각해보니 신선한 아이스크림 좋은거같아. 응 그렇고말고"
-                hide 가소롭다는듯이 눈을 붉게 빛내는 휴
+                hide hu_yumm
             "웩. 어디서 사온거야. 상한거같은데":
                 $pl=pl-10
-                show hu_anger
+                show hu_angry
                 ph "먹지 않아도 되느니. 하등한 인간놈이 뭘 알겠느냐."
                 pp "하등....;다음부터 그냥 요리는 내가 할게."
                 ph "기가 차는구나. 짐이 네놈따위를 위해 아침을 또 차려줄 줄 알았느냐?"
                 pp "..."
-                hide hu_anger
+                hide hu_angry
             "와. 너.무.맛.있.어.":
                 $pl=pl-30
-                show hu_anger
+                show hu_angry
                 ph "인간. 감히 짐을 앞에두고 거짓을 고하는구나. 내가 그것하나 간파하지 못할것같으냐?"
                 pp "아..아니 정말 맛있어서...."
                 ph "닥치거라.짐은 바람 좀 쐬고 오겠다."
@@ -78,9 +78,9 @@ label mk2:
             ph "양껏 들거라. 짐이 준비한 만찬이니라."
             pp "휴. 인간은 이걸 다 먹지 못해..."
             hide hu_happy
-            show 깔보기휴 at left
+            show hu_angry1 at left
             ph "쯧쯔.. 그러니 인간들이 나약한것이다!"
-            hide 깔보기휴
+            hide hu_angry1
             scene hu_withcat_park
             play sound "hu_catsound.ogg"
             ph "야옹!"
@@ -88,10 +88,10 @@ label mk2:
                 "털날려 내려놔":
                     scene hu_park
                     $pl-=20
-                    show hu_withcat1 at right
+                    show hu_angry at right
                     ph "네놈. 여전히 깨닫는게 없는거같구나."
                     pp "아니 밥먹는데 털날리잖"
-                    hide hu_withcat1
+                    hide hu_angry
                     show hu_intro2 at right
                     ph "Wechseln Sie zu Katze"
                     "[pp]는 고양이로 변했다"
@@ -119,8 +119,9 @@ label mk2:
             ph "피시방....기계들이 널려있는 그곳말이냐? 인간들은 도무지 이해할 수가 없군...굳이 지하에 갇혀서 짜여진 마력을 보며 좋아하다니."
             pp "휴...내가 아는 피시방이 맞다면 그곳은 마력으로 돌아가는게 아니야.."
             ph "헹 그럴리가 없느니! 마력이 아닌데 그렇게 돌아갈수는 없느니라"
-            #scene hu_pcroom
-            #show 2시간후
+            scene hu_pcroom
+            $ renpy.notify('2시간 후')
+            pause 2.0  
             show hu_happy at left
             ph "[pp]!!! 이거 아주 재미있구나! 인간들이 왜 이 기계만 찾아다니는지 알것도 같다!"
             pp "저녁은 여기서 해결할까? 여기 음식도 맛있어."
@@ -128,38 +129,55 @@ label mk2:
             show hu_lighteye at left
             ph "이곳은 음식도 대령한단말이냐? 으음 쾌락으로 인간들 모두를 가둬두려는 속셈이로고.."
             pp "다 놀았어? 나가서 아이스크림먹을까요?"
+            hide hu_lighteye 
+            show hu_yumm at left
+            ph "응!"
         "공방가기":
             ph "공방..? 공방전을 말하는것이냐?"
             pp "음 그게 아니라 무언가를 만드는 장소를 공방이라고해요. 휴는 뭐 만들어보고싶은거 없어?"
+            hide hu_talking
+            show hu_happy at left
             ph "아이스크림!"
             pp "흠...비슷한곳을 알아. 가자."
-            #scene 임실치즈마을st.아이스크림이랑 치즈만드는곳
+            scene 임실치즈마을st아이스크림이랑 치즈만드는곳
+            show hu_yumm at right
             ph "인간! 특별히 니놈이 만든 아이스크림을 내게 진상할 수 있는 기회를 주지."
             menu:
                 "그럼 우리 바꿔먹어볼까?":
                     $pl+=10
+                    hide hu_yumm
+                    show hu_happy at right
                     ph "좋다! 이 휴님이 만든것을 맛볼 기회를 주마"
 
                 "아냐 휴 각자꺼 먹자 그냥..ㅎ":
                     $pl-=5
-                    h "네놈은 목숨이 여러개인가보구나. 감히 짐의 말에 토를 다는걸 보아하니. 어디 네놈이 아이스크림이 되는게 빠를지 곱게 니놈의 아이스크림을 내놓는게 빠를지 겨뤄보겠느냐."
-                    p "아뇨 가져가세요..."
+                    hide hu_yumm
+                    show hu_angry at left
+                    ph "네놈은 목숨이 여러개인가보구나. 감히 짐의 말에 토를 다는걸 보아하니. 어디 네놈이 아이스크림이 되는게 빠를지 곱게 니놈의 아이스크림을 내놓는게 빠를지 겨뤄보겠느냐."
+                    pp "아뇨 가져가세요..."
     scene hu_street
-    show hu_icecream at left
+    show hu_icecream3 at right
+    show hu_smile at left
     ph "[pp]. 오늘 덕분에 즐거웠느니. 네놈에게 마신의 가호가 있기를 바라마."
     menu:
         "휴는 왜 세상을 멸망시키려는거야?":
             $pl-=5
+            hide hu_smile
+            hide hu_icecream3
+            show hu_talking at left
             ph "그야 이몸은 마왕이니까. 세상을 지배해서 마계로 만들어 군림하는것이 이몸의 숙명이니라."
             pp "그렇게 되면 나와 이렇게 놀 수 없는데도?"
             ph "...[pp]. 인간은 언젠가 죽지. 너 하나로 포기할만큼 내 숙명은 하찮은것이 아니야."
             pp "...그래"
         "그래그래 얼른 집이나 가자 마왕님.":
             $pl+=10
+            hide hu_smile
+            hide hu_icecream3
+            show hu_happy at left
             ph "오냐! 오늘은 기분이 좋으니 이몸의 마법으로 이동시켜주마!"
-            #show hu_magic_happy
+            show hu_yumm at left
             pp "아뇨 괜찮은데요.마법을 써서 제가 안전하다는 보장이..."
-            ph "לך הביתה!!"
+            ph "Nach Hause gehen!!"
             pp "아 제발."
             scene black
             with fade
