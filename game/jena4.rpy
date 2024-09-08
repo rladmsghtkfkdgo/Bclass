@@ -74,11 +74,11 @@ label j_cv:
                 " "
                 hide j_labe_ha
                 "그 후, 한참 유튜브를 보다 잠에 들었다."
-                    scene black
-                    with fade
-                    scene bg j_room1
-                    with fade
-                    jump j_yui
+                scene black
+                with fade
+                scene bg j_room1
+                with fade
+                jump j_yui
 
 
                 

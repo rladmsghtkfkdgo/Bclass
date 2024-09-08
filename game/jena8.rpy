@@ -204,7 +204,7 @@ label j_erty:
         return
 
 label j_rtyu:
-    "연애"
+    #"연애"
     jp "어, 서윤씨 전화네?"
     jp "네, 여보세요?"
     show j_su3 at right

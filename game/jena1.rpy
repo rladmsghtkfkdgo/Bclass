@@ -172,7 +172,7 @@ label jn:
                 show bg j_room_ser
                 jw"아.. 근데 설거지.."
                 jw"일단 자고 일어나서 할까.."
-                "그 후, 피곤해서 금방 잠들었다."
+                "그 후, 피곤한 탓인지 금방 잠들었다."
                 jump j_ho
 
             label j_ka:

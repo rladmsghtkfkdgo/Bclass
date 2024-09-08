@@ -82,8 +82,10 @@ label j_ho:
                 jw"고양이다!"
                 jw"배고픈가..?"
                 jw"뭐라도 사올까.."
-                hide bg j_room_ca1
+                scene black
+                with fade
                 show bg j_room_co
+                with fade
                 show j_co_1 at left
                 jco "안녕하세요, Gu입니다."
                 jw "안녕하세요."
@@ -95,8 +97,10 @@ label j_ho:
                 jco "감사합니다, 또 오세요"
                 jw "안녕히 계세요~"
                 hide j_co_1
-                hide bg j_room_co
+                scene black
+                with fade
                 show bg j_room_ca2
+                with fade
                 jw"고양이.. 아직 있으려나?"
                 show bg j_room_ca1
                 jw"아, 있다!"
@@ -152,7 +156,10 @@ label j_ho:
                     label j_sd:
                         hide j_su1
                         jp "이제 편의점 가야지."
+                        scene black
+                        with fade
                         show bg j_room_co
+                        with fade
                         show j_co_1 at left
                         jco "안녕하세요, Gu입니다."
                         jp "안녕하세요."
