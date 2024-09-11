@@ -273,10 +273,21 @@ label j_rtyu:
     "서윤은 계속해서 유튜브를 하고있다."
     "시간이 지나며 악플도 사그라들었다."
     "같이 힘든 시기를 이겨내며 우리 사이는 더 가까워졌다."
+    scene black
+    with fade
+    scene bg j_ending_03 at right
+    with fade
     "요즘은 데이트를 하며 시간을 보낸다."
     "앞으로도 이런 날이 계속되길."
     
-    "Ending_03.혼자가 아닌 나날"
+    scene black
+    with fade
+    scene bg j_end_03 at right
+    with fade
+    $ renpy.pause(7.0)
+            
+
+    return
 
 
 
