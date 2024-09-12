@@ -32,7 +32,7 @@ label j_lz:
             "듣기로는 이사를 간 듯 싶다."
             scene black
             with fade
-            scene bg j_end_04 at right
+            scene bg j_end_05 at right
             with fade
             $ renpy.pause(7.0)
             
