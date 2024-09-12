@@ -206,7 +206,13 @@ label j_erty:
         "우리는 앞으로도 함께할 것이다."
         " "
         " "
-        "Ending_02.행복한 결혼"
+        scene black
+        with fade
+        scene bg j_end_02 at right
+        with fade
+        $ renpy.pause(7.0)
+            
+
         return
 
 label j_rtyu:
@@ -364,8 +370,19 @@ label j_tyuiw: #친구
     "서윤은 악플을 잘 이겨내고 유튜브를 이어나가고 있다."
     "종종 서윤의 유튜브를 보며 연락을 주고받곤 한다"
     "그러다가 가끔 마주치면 함께 고양이를 놀아주기도한다."
+    scene black
+    with fade
+    scene bg j_ending_04
+    with fade
     "가끔이지만 만나면 즐거운 애다."
-    "Ending_04.가끔 연락하는 애"
+    scene black
+    with fade
+    scene bg j_end_04 at right
+    with fade
+    $ renpy.pause(7.0)
+            
+
+    return
     
 
     

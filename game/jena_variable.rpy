@@ -41,7 +41,9 @@ image bg j_end_03 = "j_end_03.png"
 image bg j_end_04 = "j_end_04.png"
 image bg j_end_05 = "j_end_05.png"
 
-
+image bg j_ending_03 = "j_ending_03.png"
+image bg j_ending_04 = "j_ending_04.png"
+image bg j_ending_05 = "j_ending_05.png"
 
 image bg j_trash = "j_trash.png" #쓰레기
 
