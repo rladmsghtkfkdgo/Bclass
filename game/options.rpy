@@ -28,7 +28,7 @@ define config.version = "1.0"
 ## 게임의 about 스크린에 배치되는 텍스트입니다. 텍스트를 삼중 따옴표 사이에 배치
 ## 하고 단락 사이에 빈 줄을 남겨 둡니다.
 
-define gui.about = _p("""
+define gui.about = _p("""여기에 쓰면 어디에 뜰까
 """)
 
 
@@ -139,7 +139,7 @@ default preferences.afm_time = 15
 ## 이것은 일반적으로 변경해서는 안 되며, 항상 표현형식이 아닌 정확한 문자열이어
 ## 야 합니다.
 
-define config.save_directory = "casanobaproject-1716341365"
+define config.save_directory = "Bclass-1716341365"
 
 
 ## Icon ########################################################################

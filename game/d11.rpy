@@ -4,9 +4,11 @@ label d11:
     # 교실 이미지 
     scene gblack
     $ renpy.notify('    새로운 학기     ')
+    play music "audio/yujin/알람음.mp3" noloop
     ga "새로운 학기가 시작되었습니다."
     ga "당신은 산악자전거 동아리에 남기로 하였습니다."
 
+    play music "audio/yujin/차분.mp3" fadeout 0.5
     scene gclassroom1
     gp1 "어 승철 잘 지냈니? 특훈 이후로는 오랜만이다. 방학동안 자전거 소홀히 하지는 않았지?"
     gm "여어~ [gp1]. 오랜만이다. 무무물론.. 맨날 탔지~ "
@@ -18,10 +20,12 @@ label d11:
     gm "난희~ "
     gw "하하하 안녕"
     hide gw_main_top
+    stop music
 
     gp1 "자 그러면~ 여러분 2학기 동아리 OT를 시작하겠습니다. 새로 들어오신 분도 있으니 소개를 하자면,  .  .(생략). . . "
     gp1 "..이제 조 추첨식을 진행하겠습니다."
 
+    play music "audio/yujin/차분.mp3" fadeout 0.5
     ga "몇 번을 뽑을까요?"
     menu:
         "1조" :
@@ -33,13 +37,13 @@ label d11:
         "2조" :
             show gw_main_top
             gm "난희야 몇 조야?"
-            gw "나는 1조"
+            gw "나는 2조"
             gm "어!!! 같은 조다! 오예 ~ ! 이번학기 동아리 활동 너무 재밋겠다!"
 
         "3조" :
             show gw_main_top
             gm "난희야 몇 조야?"
-            gw "나는 1조"
+            gw "나는 3조"
             gm "어!!! 같은 조다! 오예 ~ ! 이번학기 동아리 활동 너무 재밋겠다!"
 
     gp1 "뭐야 ~ 둘이 꽤나 친해졌네. "
@@ -50,10 +54,12 @@ label d11:
     else :
         gw ".."
 
+    stop music
+
     scene gblack
     $ renpy.notify('    저녁    ')
+    play music "audio/yujin/알람음.mp3" noloop
     ga "저녁이 되었습니다. "
-
     ga "[str_question]"
 
     menu:

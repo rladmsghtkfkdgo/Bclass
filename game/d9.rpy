@@ -6,9 +6,11 @@ label d9:
         gdrink_img_list =["단백질쉐이크.png", "food/[gdrink[1]].png", "food/[gdrink[2]].png", "food/[gdrink[3]].png" ]
         gd_choice = " "
 
-    scene black
+    scene gblack
+    play music "audio/yujin/알람음.mp3" noloop
     ga "학교가는 날입니다.편의점에 들려서 마실 것을 삽시다."
 
+    play music "audio/yujin/경쾌_기본.mp3" fadeout 0.5
     scene gmarket
     gm "오늘은 어떤 마실거를 살까.."
     ga "어떤 음료수를 살까요?"
@@ -42,13 +44,14 @@ label d9:
             #image drink_gift = "[gd_choice].png" 
             gm "이거 새로 나온거잖아! 마침 1+1이니 난희 줘야겠다."
 
-
+    play music "audio/yujin/웅성웅성.mp3" fadeout 0.5
     scene gschool_morning
     gm "어! 난희다. "
     ga "어떻게 인사할까요?"
     
     menu:
         "조용히 다가가서 놀래킨다. ":
+            play music "audio/yujin/놀람_남자.mp3" noloop
             gm "...........왁!!!!!!!!!!! "
             gw "아잇!!!!!!!!!!!!!!!!!!!! 깜짝이야. "
             ga "호감도 + 0 "
@@ -63,6 +66,7 @@ label d9:
             
 
         "지금 위치에서 우렁차게 \"이난희!\"하고 부른다. ":
+            play music "audio/yujin/놀람_남자2.mp3" noloop
             gm "이!!!!!!난!!!!!!!!!!!!희!!!!!!!!!"
             gp1 "뭐야 쟤 승철이아니야? 아침부터 우렁차네."
             gw angry ".............."

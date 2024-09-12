@@ -1,27 +1,74 @@
-label d3_학교 : 
-    scene classroom2
-    gsys "오늘은 학교가는 날 입니다."
+label d3: 
+    $gday_count += 1
+    scene gblack
+    $ renpy.notify('다음날')
+    play music "audio/yujin/알람음.mp3" noloop
+    ga "오늘은 학교가는 날 입니다."
 
-    gm "어 ! 자연이다! 인사할까?"
+    play music "audio/yujin/웅성웅성.mp3" fadeout 0.5
+    scene gschool_morning 
+    gm "어 ! [gw]이다! 인사할까?"
     
     menu:
         "인사한다." : 
             gw "어! 안녕!"
-            gsys "호감도 +0"
+            ga "호감도 +0"
+            $hogam += 0
 
         "인사하지 않는다." :
-            gw "뭐야 남주! 반갑다!"
-            gsys "호감도 +0"
+            gw "뭐야 [gm]! 반갑다!"
+            ga "호감도 +0"
+            $hogam += 0
 
-        "춤추면서 달려간다.":
-            gw "누구세요?"
-            gsys "호감도 -10"
+        "춤추면서 달려간 후 인사한다.":
+            gw angry "누구세요?"
+            ga "호감도 -10"
+            $hogam += -10
 
-    gm "자연아 수업가?"
+    
+    gm "[gw] 수업가?"
     gw "응. 이동 수업 가려고."
     gm "이동수업? 혹시 다음교시 영어야?"
     gw "어~"
-    gm "뭐야 나돈데. 우리 옆반이었네. 자주 놀러올게욥 ~ "
-    gm "아 ! 자연아 ! 내일 저녁 알지? 내가 저녁 사기로 한 날! "
+    gm "뭐야 나돈데. 우리 옆반이었네. 자주 놀러가야겠다. ~ "
+    gm "아 ! [gw] ! 내일 저녁 알지? 내가 저녁 사기로 한 날! "
 
-    jump d4_1_밥_약속의_날
+    gw happy "알지알지 기억하지."
+    ga "저녁은 뭘 먹자고 할까?"
+
+
+    # 저녁 메뉴에 따라 다르게 보여주기.
+    init python:
+        gdiner = ["쭈꾸미 볶음", "하와이안 피자", "마라탕", "떡볶이"]
+    
+    menu :
+        "[gdiner[0]]":
+            gm "[gdiner[0]]으로 먹자"
+            gw happy "좋은데! "
+            ga "호감도 +10"
+            $hogam += 10
+            jump d4_1
+
+
+        "[gdiner[1]]":
+            gm "[gdiner[1]]로 먹자"
+            gw "나쁘지 않네"
+            ga "호감도 +0"
+            $hogam += 0
+            jump d4_2
+
+        "[gdiner[2]]":
+            gm "[gdiner[2]]으로 먹자"
+            gw ".........음"
+            ga "호감도 +0"
+            $hogam += 0
+            jump d4_3
+
+        "[gdiner[3]]":
+            gm "[gdiner[3]]으로 먹자"
+            gw angry ".........음...........음...........이게 최선이야?"
+            ga "호감도 -20"
+            $hogam += -20
+            jump d4_4
+
+    

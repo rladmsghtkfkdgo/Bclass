@@ -4,8 +4,10 @@ label d7:
     $gday_count += 1
     $ renpy.notify('    동아리 정기 활동일  ')
     scene black
+    play music "audio/yujin/알람음.mp3" noloop
     ga "오늘은 동아리 정기 자전거 타는 날입니다. 그동안 연습한 실력을 보여줍시다."
     
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     scene gm_ride_bike3
     # 몇 초동안 보여주기 ? 
     gp1 "어이어이 남주! 자전거 처음 아니었냐고 ! 이게 뭐야 ! 꽤나 하잖아 이녀석 !"
@@ -37,10 +39,12 @@ label d7:
 
     gw "주말에 그럼 늘 보던 그 곳에서 만나자. 시간은 10시 어때?"
     gm "오케이 ~ "
+    stop music
 
     scene groom
     $renpy.notify('집')
     gm "오늘도 즐거웠다.  "
+    play music "audio/yujin/알람음.mp3" noloop
     ga "[str_question]"
 
     menu:

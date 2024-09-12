@@ -9,61 +9,30 @@
 # 여기에서부터 게임이 시작합니다.
 # 프롤로그 
 label yj:
-    scene room
-    ga "지금 우리 동네에 핫한 동호회!
-            이런 동호회는 어때요?"
-
-    #alert "이런 동호회는 어때요? "
-
-    gm "운동 동호회? 이번에는 좀 괜찮은 곳일까? "
-    gm "매번 어떻게 가입하는 곳마다 사건이 터지냐..  "
-
-    menu: 
-        "동호회에 가입한다":
-            gm "그래, 가입만 해보자"
-
-        "동호회에 가입하지 않는다.":
-            gm "가입만 하는건데 뭐 어때.. 가입해보자!"
-    
-
+   
     label alert:
-        ga "박승철님이 메세지를 보냈습니다. "
+        $ renpy.notify('시작입니다! \n즐거운 시간되세요.')
+        play music "audio/yujin/알람음.mp3" noloop
+        ga "[gf]님이 메세지를 보냈습니다. "
+        gf "그래서 동아리 어디가입할건데?? "
         #show image = "카톡 이미지.png"
 
-        gm "아 맞다! 내일 동아리 어디 가입하지?"
-        gm ".. 내일 구경해보고 결정하자 ~ "
+        gm main "아 맞다! 내일 동아리 홍보제구나. 어디 가입하지?"
+        gm main ".. 모르겠다 ~ 내일 구경해보고 결정하자 ~ "
+
+
+        #$ renpy.call_screen("popup", str="이봐 친구!!! 동아리 어디 가입할거야!!!")
+        screen hello_world():
+            tag example
+            zorder 1
+            modal False
+            text "Hello, World."
+
+        #$ renpy.call_screen("hello_world")
 
     #==========================================================
     # Day 1
-    jump d1_first
-    jump d1
-
-    # Day 2
-    jump d2_만나기_전
-    jump d2_공원
-    jump d2_저녁
-    jump d2_집
-
-    # Day 3
-    jump d3_학교
-
-    # Day 4
-    jump d4_1_밥_약속의_날
-
-    # Day 5
-    jump d5_동아리_정기_모임
-
-    # Day 6
-    jump d6
+    jump d1_1
     
-    # Day 7
-    jump d7
-
-    # Day 8
-    #jump d8
-
-    # Day 9
-    jump d9
-return
 
     

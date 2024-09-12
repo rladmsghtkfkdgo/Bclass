@@ -7,6 +7,7 @@ label d8:
         gchoice= " "
 
     scene gblack
+    play music "audio/yujin/알람음.mp3" noloop
     ga "당신은 점심 도시락을 싸려고 합니다. 뭘 만들까요?"
 
     menu:
@@ -37,8 +38,16 @@ label d8:
                 
 
     $ renpy.notify('약속 장소')
-    scene gchoice_place
-    gm "자연아 ! 여기야! 출발할까? "
+    if gspace == "해안가":
+        scene gchoice_place
+        play music "audio/yujin/파도.mp3" fadeout 0.5
+
+    else :
+        scene gchoice_place
+        play music "audio/yujin/한강.mp3" fadeout 0.5
+    
+    
+    gm "난희! 여기야! 출발할까? "
     
     show gbike at right
     show gw_trainng 
@@ -111,11 +120,12 @@ label d8:
             gw happy "뭐야~ 잘 먹을게 고마워."
             ga "호감도 +10"
             $hogam += 10
-
+    stop music
 
     scene groom
     $renpy.notify('집')
     gm "오늘도 즐거웠다.  "
+    play music "audio/yujin/알람음.mp3" noloop
     ga "[str_question]"
 
     menu:

@@ -3,6 +3,7 @@ label d4_1:
     #호감 +10
     $renpy.notify('저녁')
     $gday_count += 1
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     scene gblack
     ga "당신은 저녁으로 [gdiner[0]] 먹으러 왔습니다. "
     
@@ -14,6 +15,7 @@ label d4_1:
 
 label d4_2:
     #호감 +0
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     $renpy.notify('저녁')
     $gday_count += 1
     scene gblack
@@ -26,6 +28,7 @@ label d4_2:
     jump d4_main
 
 label d4_3:
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     #호감 +0
     $renpy.notify('저녁')
     $gday_count += 1
@@ -39,6 +42,7 @@ label d4_3:
     jump d4_main
 
 label d4_4:
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     #호감 - 20 
     $renpy.notify('저녁')
     $gday_count += 1
@@ -53,6 +57,7 @@ label d4_4:
 
 
 label d4_main:
+    play music "audio/yujin/경쾌_빠른.mp3" fadeout 0.5
     $renpy.notify('다 먹은 후..')
     scene gstreet
     show gw_main_top
@@ -80,6 +85,7 @@ label d4_main:
     gw happy "오늘 저녁 잘먹었어 ~"
     gm "나도 재밌었어."
     gm "조심히 들어가! "
+    stop music
 
 
 
@@ -87,6 +93,7 @@ label d4_fin:
     scene groom
     $renpy.notify('집')
     gm "오늘도 즐거웠다.  "
+    play music "audio/yujin/알람음.mp3" noloop
     ga "[str_question]"
 
     menu:
