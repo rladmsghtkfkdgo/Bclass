@@ -186,9 +186,15 @@ label j_erty:
         "우리는 앞으로도 함께할 것이다."
         " "
         " "
-        "Ending_01 만우절의 결혼"
-        return
+        scene black
+        with fade
+        scene bg j_end_01 at right
+        with fade
+        $ renpy.pause(7.0)
+            
 
+        return
+        
     label j_yuio:
         "그만두기로 했다"
         "서윤, 그러니까 유피아는 마지막 영상을 올리고 유튜브를 그만두었다."
