@@ -3,7 +3,7 @@ label j_vbn: #길
     with fade
     scene bg j_room1
     with fade
-    "[ju]"
+    " "
     show j_labe_me
     " "
     hide j_labe_me
@@ -187,7 +187,7 @@ label j_nbvq: #산
     show j_labe_da
     " "
     hide j_labe_da
-    "[u]"
+    " "
     show j_labe_me
     " "
     hide j_labe_me
