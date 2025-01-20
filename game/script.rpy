@@ -1,4 +1,5 @@
-﻿# 이 파일에 게임 스크립트를 입력합니다.
+﻿
+# 이 파일에 게임 스크립트를 입력합니다.
 
 label start:
     #play music "movie.ogg"
